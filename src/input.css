@@ -6,3 +6,7 @@
 .img-style {
     @apply w-full h-full overflow-hidden object-cover
 }
+
+span, p {
+    @apply text-[#4F4F4F]
+}
