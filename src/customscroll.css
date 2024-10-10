@@ -1,0 +1,19 @@
+@layer components {
+  .custom-scrollbar {
+    @apply overflow-auto; /* Áp dụng các tiện ích Tailwind như overflow */
+  }
+
+  .custom-scrollbar::-webkit-scrollbar {
+    height: 11px;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+
+  .custom-scrollbar::-webkit-scrollbar-thumb {
+    background-color: blue;
+    border-radius: 13px;
+    border: 2px solid #f1f1f1;
+  }
+}

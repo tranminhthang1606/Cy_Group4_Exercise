@@ -1,4 +1,5 @@
 /** @type {import('tailwindcss').Config} */
+
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
@@ -21,7 +22,10 @@ module.exports = {
         bgColor: '#356C07',
         price: '#E10000',
         hover: '#68C114'
-      }
+      },
+      // backgroundImage: {
+      //   'hotsale': "url('../assets/images/bg-hotsale.png')",
+      // }
     },
   },
   plugins: [],
