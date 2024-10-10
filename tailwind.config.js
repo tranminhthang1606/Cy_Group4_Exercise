@@ -3,16 +3,20 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    container:{
+    screens: {
+      'sm': { 'max': '376px' },
+    },
+    container: {
       center: true,
-      screens:{
-        '2xl':'1920px'
+      screens: {
+        '2xl': '1920px',
+        // => @media (min-width: 640px) { ... }
       }
     },
-   
+
     extend: {
-      fontFamily:{
-        nunito:['Nunito', 'sans-serif']
+      fontFamily: {
+        nunito: ['Nunito', 'sans-serif']
       },
       colors: {
         bgColor: '#356C07',
