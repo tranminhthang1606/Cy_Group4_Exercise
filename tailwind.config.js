@@ -18,6 +18,9 @@ module.exports = {
         inherit: ['Nunito', 'sans-serif']
       },
       colors: {
+        'bgColor': '#356C07',
+        'price': '#E10000',
+        'hover': '#68C114',
         'green-regal': '#365C07',
         'black1A': '#1A1A1A',
         'FA': '#FAFAFA',
@@ -34,6 +37,7 @@ module.exports = {
         'EA': '#EAEAEA',
         'BD': '#BDBDBD',
         '8C': '#8C8C8C',
+        
       },
       margin: {
         '28': '28rem',
