@@ -947,6 +947,14 @@ video {
   margin-bottom: 204px;
 }
 
+.mt-\[3000px\] {
+  margin-top: 3000px;
+}
+
+.ml-8 {
+  margin-left: 2rem;
+}
+
 .block {
   display: block;
 }
@@ -1133,6 +1141,10 @@ video {
 
 .h-screen {
   height: 100vh;
+}
+
+.h-auto {
+  height: auto;
 }
 
 .max-h-60 {
@@ -2625,6 +2637,26 @@ span, p {
     margin-top: 70px;
   }
 
+  .sm\:mb-2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .sm\:mt-\[80px\] {
+    margin-top: 80px;
+  }
+
+  .sm\:mt-\[90px\] {
+    margin-top: 90px;
+  }
+
+  .sm\:mt-\[100px\] {
+    margin-top: 100px;
+  }
+
+  .sm\:mt-44 {
+    margin-top: 11rem;
+  }
+
   .sm\:block {
     display: block;
   }
@@ -2667,6 +2699,10 @@ span, p {
 
   .sm\:h-\[9px\] {
     height: 9px;
+  }
+
+  .sm\:h-\[103px\] {
+    height: 103px;
   }
 
   .sm\:w-16\.875 {
@@ -2785,6 +2821,10 @@ span, p {
     gap: 15px;
   }
 
+  .sm\:gap-\[27px\] {
+    gap: 27px;
+  }
+
   .sm\:self-start {
     align-self: flex-start;
   }
@@ -2891,6 +2931,14 @@ span, p {
 
   .sm\:pb-\[105px\] {
     padding-bottom: 105px;
+  }
+
+  .sm\:pb-\[108px\] {
+    padding-bottom: 108px;
+  }
+
+  .sm\:pb-\[41px\] {
+    padding-bottom: 41px;
   }
 
   .sm\:text-left {
