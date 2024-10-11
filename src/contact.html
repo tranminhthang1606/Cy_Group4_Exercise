@@ -13,23 +13,22 @@
     <header class="w-full shadow-lg font-nunito">
         <div class="container">
             <header class="flex justify-between w-full max-w-6xl h-20 items-center mx-auto sm:p-3 relative">
-                <div class="hidden sm:block">
-                    <input type="checkbox" name="" id="menu" checked="false" hidden>
-                    <label for="menu"><img src="./assets/images/menu.svg" alt=""></label>
+                <div class="hidden sm:block toggle-button">
+                    <img src="./assets/images/menu.svg" alt="">
                 </div>
                 <div>
                     <img class="w-60 sm:w-[138px]" src="./assets/images/logo.png" alt="">
                 </div>
                 <div class="sm:hidden">
-                    <ul class="flex gap-8">
-                        <li><a class="focus:text-red-600" href="#">Sản Phẩm</a></li>
-                        <li><a class="focus:text-red-600" href="">Về Nông Thảo</a></li>
-                        <li><a class="focus:text-red-600" href="">Blog</a></li>
-                        <li><a class="focus:text-red-600" href="">Liên Hệ</a></li>
+                    <ul class="flex gap-8 uppercase">
+                        <li><a class="focus:text-bgColor" href="#">Sản Phẩm</a></li>
+                        <li><a class="focus:text-bgColor" href="">Về Nông Thảo</a></li>
+                        <li><a class="focus:text-bgColor" href="">Blog</a></li>
+                        <li><a class="focus:text-bgColor" href="">Liên Hệ</a></li>
                     </ul>
                 </div>
-                <div class="absolute left-0 top-0 h-screen bg-white px-4 z-10 py-6 hidden">
-                    <div class="max-w-[36px] max-h-[36px] float-right">
+                <div id="menu" class="fixed left-0 top-0 h-full bg-white px-4 z-10 py-6 hidden">
+                    <div class="max-w-[36px] max-h-[36px] float-right toggle-button">
                         <img class="img-style" src="./assets/images/Cross.png" alt="">
                     </div>
                     <div>
@@ -37,7 +36,7 @@
                     </div>
 
                     <div class="max-w-[252px] w-full flex relative mt-[27px]">
-                        <input class="w-full  bg-bgColor rounded-2xl py-2 px-4" type="text"
+                        <input class="w-full  bg-[#ebf0e6]  rounded-2xl py-2 px-4" type="text"
                             placeholder="Bạn muốn tìm..."><img class="absolute right-0 top-[0.13rem] h-[36px] w-[36px]"
                             src="./assets/images/navbar-search-icon.png" alt="">
                     </div>
@@ -63,8 +62,10 @@
                         <div class="mt-4"><a class="text-bgColor" href="">LIÊN HỆ</a></div>
                     </div>
 
-                    <div class="mt-12">
-                        <button class="w-full py-3 px-8 bg-red-600">0988.818.841</button>
+                    <div class="mt-12 flex flex-col items-center gap-3">
+                        <button
+                            class="w-full py-3 px-8 bg-red-600 text-[18px] font-bold text-white">0988.818.841</button>
+                        <span class="text-bgColor">Gọi hỗ trợ ngay!</span>
                     </div>
                 </div>
                 <div class="flex gap-4">
@@ -75,7 +76,7 @@
         </div>
     </header>
     <div class="container mx-auto font-nunito w-full">
-        <div class=" bg-F6 sm:bg-FF sm:pt-[15px]">
+        <div class=" bg-F6 sm:bg-transparent sm:pt-[15px]">
             <div class="relative mb-5 sm:hidden">
                 <img src="./assets/images/banner-home.png" alt="Banner">
                 <div
@@ -83,7 +84,7 @@
                     Liên hệ với nông thảo
                 </div>
             </div>
-            <div class="max-w-[1170px] mx-auto pb-[108px] sm:max-w-[338px]">
+            <div class="max-w-[1170px] mx-auto pb-[108px] sm:pb-[41px] sm:max-w-[338px]">
                 <div class="flex max-w-66 mb-[60px] text-[14px] font-normal sm:mb-[27px]">
                     <div class="text-black-grey text-sm font-normal ">Trang chủ &nbsp; &gt; &nbsp;</div>
                     <div class="text-C4 text-sm font-normal">Liên hệ</div>
@@ -92,7 +93,7 @@
                     <img class="w-[42px] mr-2" src="./assets/images/grass.png" alt="">
                     <div class="uppercase text-xl font-bold">Liên hệ với nông thảo</div>
                 </div>
-                <div class="flex gap-[71px] text-base sm:flex-col">
+                <div class="flex gap-[71px] sm:gap-[27px] text-base sm:flex-col">
                     <div class="w-5/12 font-normal sm:w-full">
                         <div class="mb-[27px] text-base text-black-grey font-bold leading-[22px]">
                             Vui lòng để lại lời nhắn cho Nông Thảo. Chúng tôi sẽ liên hệ lại với bạn trong thời gian sớm
@@ -264,6 +265,8 @@
             </div>
         </div>
     </div>
+
+    <script src="./assets/js/toggle.js"></script>
 </body>
 
 </html>
