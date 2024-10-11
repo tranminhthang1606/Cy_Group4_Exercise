@@ -10,14 +10,78 @@
     <title>Document</title>
 </head>
 <body class="text-[14px] font-nunito">
-    <div class="container max-w-1920 max-h-full">
+    <div class="container max-w-1920 max-h-full sm:overflow-x-hidden">
+        <header class="w-full shadow-lg font-nunito">
+            <div class="container">
+                <header class="flex justify-between w-full max-w-6xl h-20 items-center mx-auto sm:p-3 relative">
+                    <div class="hidden sm:block">
+                        <input type="checkbox" name="" id="menu" checked="false" hidden>
+                        <label for="menu"><img src="./assets/images/menu.svg" alt=""></label>
+                    </div>
+                    <div>
+                        <img class="w-[229px] sm:w-[138px]" src="./assets/images/logo.png" alt="">
+                    </div>
+                    <div class="sm:hidden">
+                        <ul class="flex gap-8">
+                            <li><a class="focus:text-red-600" href="#">Sản Phẩm</a></li>
+                            <li><a class="focus:text-red-600" href="">Về Nông Thảo</a></li>
+                            <li><a class="focus:text-red-600" href="">Blog</a></li>
+                            <li><a class="focus:text-red-600" href="">Liên Hệ</a></li>
+                        </ul>
+                    </div>
+                    <div class="absolute left-0 top-0 h-screen bg-white px-4 z-10 py-6 hidden">
+                        <div class="max-w-[36px] max-h-[36px] float-right">
+                            <img class="img-style" src="./assets/images/Cross.png" alt="">
+                        </div>
+                        <div>
+                            <img class="w-32" src="./assets/images/logo.png" alt="">
+                        </div>
+        
+                        <div class="max-w-[252px] w-full flex relative mt-[27px]">
+                            <input class="w-full  bg-bgColor rounded-2xl py-2 px-4" type="text"
+                                placeholder="Bạn muốn tìm..."><img class="absolute right-0 top-[0.13rem] h-[36px] w-[36px]"
+                                src="./assets/images/navbar-search-icon.png" alt="">
+                        </div>
+                        <div class="flex flex-col">
+                            <div class="flex justify-between border-b-2 pb-1 mt-5">
+                                <h3><a class="text-bgColor" href="">SẢN PHẨM</a></h3>
+                                <div><img src="./assets/images/arrow-navbar.svg" alt=""></div>
+                            </div>
+                            <div class="mt-3">
+                                <ul class="px-4 flex flex-col gap-2">
+                                    <li class="border-b-2"><a href="">Thảo dược</a></li>
+                                    <li class="border-b-2"><a href="">Nông sản</a></li>
+                                    <li class="border-b-2"><a href="">Hoa quả</a></li>
+                                </ul>
+        
+                            </div>
+                            <div class="pb-1 mt-6">
+                                <h3 class="border-b-2"><a class="text-bgColor " href="">VỀ NÔNG THẢO</a></h3>
+                            </div>
+                            <div class="flex justify-between border-b-2 pb-1 mt-4"><a class="text-bgColor" href="">BLOGS</a>
+                                <div><img src="./assets/images/arrow-navbar.svg" alt=""></div>
+                            </div>
+                            <div class="mt-4"><a class="text-bgColor" href="">LIÊN HỆ</a></div>
+                        </div>
+        
+                        <div class="mt-12">
+                            <button class="w-full py-3 px-8 bg-red-600">0988.818.841</button>
+                        </div>
+                    </div>
+                    <div class="flex gap-4">
+                        <img class="sm:hidden" src="./assets/images/search-glass.svg" alt="">
+                        <img src="./assets/images/cart.svg" alt="">
+                    </div>
+                </header>
+            </div>
+        </header>
         <div class="content max-w-full max-h-full">
             <div class="max-w-full max-h-full relative">
-                <img src="./assets/images/GioiThieuNongThao.png" alt="GioiThieuNongThao images" class="max-w-full">
-                <p class=" absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] text-white text-[36px] font-[700]">VỀ NÔNG THẢO</p>
+                <img src="./assets/images/GioiThieuNongThao.png" alt="GioiThieuNongThao images" class="max-w-full sm:hidden">
+                <p class=" absolute top-[50%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] text-white text-[36px] font-[700] sm:text-[#1A1A1A] sm:text-[16px]">VỀ NÔNG THẢO</p>
             </div>
 
-            <div class="w-[1168px] max-w-full max-h-full mx-auto" style="border: 1px solid black;">
+            <div class="w-[1168px] max-w-full max-h-full mx-auto">
                 <div class="flex items-center w-[180.99px] mb-[60px] mt-[20px]">
                     <p class="mr-2">Trang chủ</p>
                     <svg class="mr-2" width="6" height="11" viewBox="0 0 6 11" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -28,8 +92,8 @@
                     <p class="text-[#C4C4C4] ">Về nông thảo</p>
                 </div>
 
-                <div class="max-w-full max-h-full mx-auto" style="border: 1px solid red;">
-                    <div class="flex justify-between max-h-full">
+                <div class="max-w-full max-h-full mx-auto">
+                    <div class="flex justify-between max-h-full flex-wrap sm:bg-red-600">
                         <div class="w-[527px] max-w-full max-h-full text-[16px]">
                             <p class="max-w-full max-h-full mb-3">Thương hiệu <span class="font-[700]">Nông Thảo</span> bắt nguồn từ nhu cầu sử dụng các sản phẩm nông sản tự nhiên, thảo dược
                                 tốt cho cơ thể. Chúng tôi
@@ -53,62 +117,62 @@
                         </div>
                         
                         <div>
-                            <img src="./assets/images/rau.png" alt="" class="max-w-full max-h-full w-[531px] h-[527px]">
+                            <img src="./assets/images/rau.png" alt="" class="max-w-full max-h-full w-[531px] h-[527px] sm:h-[400px]">
                         </div>
                     </div>
 
-                    <div class="flex justify-between max-w-full max-h-full mt-[60px]">
-                        <img src="./assets/images/TuoiVangThom.png" alt="" class="max-w-full max-h-full w-[531px] h-[527px]">
+                    <div class="flex justify-between max-w-full max-h-full mt-[60px] flex-wrap">
+                        <img src="./assets/images/TuoiVangThom.png" alt="" class="max-w-full max-h-full w-[531px] h-[400px]">
                         <div class="w-[570px] max-w-full max-h-full">
-                            <div class="flex max-w-full max-h-full">
-                                <img src="./assets/images/co.png" alt="" class="max-w-full w-[44px] max-h-full">
-                                <p class="max-w-full max-h-full">TẠI SAO LẠI LỰA CHỌN NÔNG THẢO</p>
+                            <div class="flex max-w-full max-h-full items-center gap-[10px]">
+                                <img src="./assets/images/co.png" alt="" class="max-w-full w-[44px] max-h-full h-[30px]">
+                                <p class="max-w-full max-h-full text-[#1A1A1A] text-[28px] font-[700] sm:text-[16px]">TẠI SAO LẠI LỰA CHỌN NÔNG THẢO</p>
                             </div>
 
-                            <p class="max-w-full max-h-full">Chúng tôi mang đến cho bạn các sản phẩm nông sản và thảo dược được sản xuất sạch bền vững và không có hóa chất.</p>
+                            <p class="max-w-full max-h-full text-[#4F4F4F] text-[16px] mt-4">Chúng tôi mang đến cho bạn các sản phẩm nông sản và thảo dược được sản xuất sạch bền vững và không có hóa chất.</p>
 
                             <div class="mt-[27px] max-w-full flex">
                                 <div class="max-w-full w-[72px] h-[361px]">
                                     <div class="max-w-full max-h-full h-[361px] flex flex-col items-center justify-between">
                                         <div class="max-w-full">
-                                            <img src="./assets/images/1.png" alt="" class="max-w-full max-h-full w-[72px] h-[72px] flex-grow">
+                                            <img src="./assets/images/1.png" alt="" class="max-w-full w-[72px] h-[72px] sm:h-[60px] sm:w-[60px]">
                                         </div>
                             
                                         <div class="max-w-full">
-                                            <img src="./assets/images/stick.png" alt="" class="max-w-full max-h-full w-[2px]">
+                                            <img src="./assets/images/stick.png" alt="" class="max-w-full max-h-full w-[2px] sm:hidden">
                                         </div>
                             
                                         <div class="max-w-full">
-                                            <img src="./assets/images/2.png" alt="" class="max-w-full max-h-full w-[72px] h-[72px]">
+                                            <img src="./assets/images/2.png" alt="" class="max-w-full max-h-full w-[72px] h-[72px] sm:h-[60px] sm:w-[60px]">
                                         </div>
                             
                                         <div class="max-w-full">
-                                            <img src="./assets/images/stick.png" alt="" class="max-w-full max-h-full w-[2px]">
+                                            <img src="./assets/images/stick.png" alt="" class="max-w-full max-h-full w-[2px] sm:hidden">
                                         </div>
                             
                                         <div class="max-w-full">
-                                            <img src="./assets/images/3.png" alt="" class="max-w-full max-h-full w-[72px] h-[72px]">
+                                            <img src="./assets/images/3.png" alt="" class="max-w-full max-h-full w-[72px] h-[72px] sm:h-[60px] sm:w-[60px]">
                                         </div>
                                     </div>
                                 </div>
                             
                                 <div class="max-w-full ml-5">
-                                    <div class="max-w-[414px]">
-                                        <p class="leading-[48px] text-[21px] max-w-full">100% hữu cơ</p>
-                                        <p class="leading-[28px] text-[16px] mb-[35px] max-w-full">Thực hành tốt trồng trọt theo tiêu chuẩn GACP-WHO
+                                    <div class="max-w-[414px] sm:max-w-[243px]">
+                                        <p class="leading-[48px] text-[21px] max-w-full sm:text-[16px]">100% hữu cơ</p>
+                                        <p class="leading-[28px] text-[16px] mb-[35px] max-w-full sm:text-[14px]">Thực hành tốt trồng trọt theo tiêu chuẩn GACP-WHO
                                             để nguyên liệu an toàn cho sức khỏe của bạn</p>
                                     </div>
                             
-                                    <div class="max-w-[477px]">
-                                        <p class="leading-[48px] text-[21px] max-w-full">Công nghệ</p>
-                                        <p class="leading-[28px] text-[16px] mb-[35px] max-w-full">Áp dụng công nghệ sản xuất tiêu chuẩn tùy theo
+                                    <div class="max-w-[477px] sm:max-w-[243px]">
+                                        <p class="leading-[48px] text-[21px] max-w-full sm:text-[16px]">Công nghệ</p>
+                                        <p class="leading-[28px] text-[16px] mb-[35px] max-w-full sm:text-[14px]">Áp dụng công nghệ sản xuất tiêu chuẩn tùy theo
                                             loại sản phẩm. Tuân thủ phương pháp sản xuất khoa học, bền
                                             vững.</p>
                                     </div>
                             
-                                    <div class="max-w-[477px]">
-                                        <p class="leading-[48px] text-[21px] max-w-full">Trách nhiệm</p>
-                                        <p class="leading-[28px] text-[16px] mb-[35px] max-w-full">Nông Thảo chăm chút từng khâu sản xuất, kiểm định
+                                    <div class="max-w-[477px] sm:max-w-[243px]">
+                                        <p class="leading-[48px] text-[21px] max-w-full sm:text-[16px]">Trách nhiệm</p>
+                                        <p class="leading-[28px] text-[16px] mb-[35px] max-w-full sm:text-[14px]">Nông Thảo chăm chút từng khâu sản xuất, kiểm định
                                             và phân phối
                                             để sản phẩm đến tay bạn có chất lượng tốt nhất</p>
                                     </div>
@@ -207,6 +271,105 @@
                 </div>
             </div>
         </div>
+
+        <footer class="w-full bg-[#356C07] font-nunito mt-[60px]">
+        
+            <div class="flex max-h-60">
+                <div>
+                    <img class="img-style" src="./assets/images/footer-1.png" alt="">
+                </div>
+                <div>
+                    <img class="img-style" src="./assets/images/footer-2.png" alt="">
+                </div>
+                <div>
+                    <img class="img-style" src="./assets/images/footer-3.png" alt="">
+                </div>
+                <div>
+                    <img class="img-style sm:hidden" src="./assets/images/footer-4.png" alt="">
+                </div>
+                <div>
+                    <img class="img-style sm:hidden" src="./assets/images/footer-5.png" alt="">
+                </div>
+                <div>
+                    <img class="img-style sm:hidden" src="./assets/images/footer-2.png" alt="">
+                </div>
+                <div>
+                    <img class="img-style sm:hidden" src="./assets/images/footer-4.png" alt="">
+                </div>
+                <div>
+                    <img class="img-style sm:hidden" src="./assets/images/footer-6.png" alt="">
+                </div>
+            </div>
+            <div
+                class="container mt-10 flex justify-between max-w-6xl text-white py-5 sm:flex sm:flex-col sm:px-6 sm:gap-[15px] mx-auto">
+                <div class="max-w-sm">
+                    <div>
+                        <img class="mix-blend-color-dodge" src="./assets/images/footer.png" alt="">
+                    </div>
+                    <p class="mt-6 text-white">MST: 012345678910 - Ngày cấp: 10/02/2022 <br>
+                        Nơi cấp: Sở Kế hoạch & Đầu tư TP Hà Nội</p>
+                    <div class="flex gap-4 mt-6">
+                        Liên kết
+                        <img class="w-6 h-6 rounded-full" src="./assets/images/shopee.png" alt="">
+                        <img class="w-6 h-6 rounded-full" src="./assets/images/tiki.png" alt="">
+                        <img class="w-6 h-6 rounded-full" src="./assets/images/lazada.png" alt="">
+                        <img class="w-6 h-6 rounded-full" src="./assets/images/facebook.png" alt="">
+                        <img class="w-6 h-6 rounded-full" src="./assets/images/in.png" alt="">
+                        <img class="w-6 h-6 rounded-full" src="./assets/images/tiktok.png" alt="">
+                    </div>
+                </div>
+                <div class="max-w-[248px]  sm:max-w-full sm:border-t-2 sm:border-b-2 sm:py-3">
+                    <h4>Liên Hệ</h4>
+                    <ul class="mt-8 flex flex-col gap-3 sm:hidden">
+                        <li class="flex items-start gap-3">
+                            <img src="./assets/images/location.svg" alt="">Tầng 4-5-6, Tòa nhà Capital Place, số 29 đường
+                            Liễu Giai, P.Ngọc Khánh, Q.Ba
+                            Đình, Hà Nội
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <img src="./assets/images/phone.svg" alt="">0969.71.6848
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <img src="./assets/images/mail.svg" alt="">hotro@nongthao.vn
+                        </li>
+                    </ul>
+                </div>
+                <div class="max-w-xs sm:border-b-2 sm:py-3">
+                    <h4>Thông tin</h4>
+                    <ul class="list-disc ml-4 mt-4 flex flex-col gap-3 sm:hidden">
+                        <li><a href="">Giới thiệu Nông Thảo</a></li>
+                        <li><a href="">Điều khoản</a></li>
+                        <li><a href="">Chính sách bảo mật</a></li>
+                        <li><a href="">Hướng dẫn mua hàng</a></li>
+                        <li><a href="">Trả hàng & hoàn tiền</a></li>
+                        <li><a href="">Nông Thảo Blogs</a></li>
+                    </ul>
+                </div>
+                <div class="max-w-[270px] sm:max-w-full">
+                    <h4>Đăng ký nhận tin</h4>
+                    <p class="mt-6 text-white">Vui lòng nhập email để nhận thêm nhiều ưu đãi từ Nông Thảo</p>
+                    <div class="mt-2 flex">
+                        <input class="px-3 py-2 sm:w-full" placeholder="Email của bạn..." type="text"><span
+                            class="bg-[#68C114] max-w-[47px] max-h-[45px] flex items-center justify-center py-3 px-3">
+                            <div>
+                                <img class="" src="./assets/images/send.svg" alt="">
+                            </div>
+                        </span>
+                    </div>
+                    <div class="flex justify-between mt-8">
+                        <div>
+                            <img class="img-style" src="./assets/images/bocongthuong.png" alt="">
+                        </div>
+                        <div>
+                            <img class="img-style" src="./assets/images/dmca.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="flex items-center justify-center py-3 opacity-50 bg-gray-50">
+                <p class="text-center text-sm">© 2022 - Bản quyền thuộc về Công ty TNHH Nông Thảo.</p>
+            </div>
+        </footer>
     </div>
 </body>
 </html>
