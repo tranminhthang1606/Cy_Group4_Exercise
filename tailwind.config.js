@@ -1,19 +1,20 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{html,js}"],
+  content: ["./src/**/*.html"],
+
   theme: {
 
-    container:{
-      center: true,
-      screens:{
-        '2xl':'1920px'
-      }
+    screens: {
+      'sm': { 'max': '376px' }
     },
    
     extend: {
+
       fontFamily:{
-        nunito:['Nunito', 'sans-serif']
+        nunito:['Nunito', 'sans-serif'],
+        'dancing': ['Dancing Script', 'cursive'],
       },
+
       colors: {
         bgColor: '#356C07',
         price: '#E10000',
@@ -83,6 +84,7 @@ module.exports = {
         'custom-size': '16.667px',
         '21': '21px',
         '16px': '16px', 
+        '30': '30px',
       },
 
       borderRadius: {
@@ -92,6 +94,10 @@ module.exports = {
 
       lineHeight: {
         '141': '1.411', // Tùy chỉnh line-height (141.1% = 1.411)
+      },
+
+      margin: {
+        '1/2': '50%', // Thêm lớp ml-1/2
       },
     },
   },
