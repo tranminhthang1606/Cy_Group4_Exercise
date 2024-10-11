@@ -99,6 +99,10 @@ module.exports = {
       margin: {
         '1/2': '50%', // Thêm lớp ml-1/2
       },
+
+      boxShadow: {
+        custom: '0px 0px 34px 0px rgba(0, 0, 0, 0.10)',
+      },
     },
   },
   plugins: [],
