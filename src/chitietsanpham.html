@@ -12,23 +12,22 @@
     <header class="w-full shadow-lg font-nunito">
         <div class="container">
             <header class="flex justify-between w-full max-w-6xl h-20 items-center mx-auto sm:p-3 relative">
-                <div class="hidden sm:block">
-                    <input type="checkbox" name="" id="menu" checked="false" hidden>
-                    <label for="menu"><img src="./assets/images/menu.svg" alt=""></label>
+                <div class="hidden sm:block toggle-button">
+                    <img src="./assets/images/menu.svg" alt="">
                 </div>
                 <div>
-                    <img class="w-60" src="./assets/images/logo.png" alt="">
+                    <img class="w-60 sm:w-[138px]" src="./assets/images/logo.png" alt="">
                 </div>
                 <div class="sm:hidden">
                     <ul class="flex gap-8">
-                        <li><a class="focus:text-red-600" href="#">Sản Phẩm</a></li>
-                        <li><a class="focus:text-red-600" href="">Về Nông Thảo</a></li>
-                        <li><a class="focus:text-red-600" href="">Blog</a></li>
-                        <li><a class="focus:text-red-600" href="">Liên Hệ</a></li>
+                        <li><a class="focus:text-bgColor" href="#">Sản Phẩm</a></li>
+                        <li><a class="focus:text-bgColor" href="">Về Nông Thảo</a></li>
+                        <li><a class="focus:text-bgColor" href="">Blog</a></li>
+                        <li><a class="focus:text-bgColor" href="">Liên Hệ</a></li>
                     </ul>
                 </div>
-                <div class="absolute left-0 top-0 h-screen bg-white px-4 z-10 py-6 hidden">
-                    <div class="max-w-[36px] max-h-[36px] float-right">
+                <div id="menu" class="fixed left-0 top-0 h-full bg-white px-4 z-10 py-6 hidden">
+                    <div class="max-w-[36px] max-h-[36px] float-right toggle-button">
                         <img class="img-style" src="./assets/images/Cross.png" alt="">
                     </div>
                     <div>
@@ -36,7 +35,7 @@
                     </div>
 
                     <div class="max-w-[252px] w-full flex relative mt-[27px]">
-                        <input class="w-full  bg-bgColor rounded-2xl py-2 px-4" type="text"
+                        <input class="w-full  bg-[#ebf0e6]  rounded-2xl py-2 px-4" type="text"
                             placeholder="Bạn muốn tìm..."><img class="absolute right-0 top-[0.13rem] h-[36px] w-[36px]"
                             src="./assets/images/navbar-search-icon.png" alt="">
                     </div>
@@ -62,8 +61,10 @@
                         <div class="mt-4"><a class="text-bgColor" href="">LIÊN HỆ</a></div>
                     </div>
 
-                    <div class="mt-12">
-                        <button class="w-full py-3 px-8 bg-red-600">0988.818.841</button>
+                    <div class="mt-12 flex flex-col items-center gap-3">
+                        <button
+                            class="w-full py-3 px-8 bg-red-600 text-[18px] font-bold text-white">0988.818.841</button>
+                        <span class="text-bgColor">Gọi hỗ trợ ngay!</span>
                     </div>
                 </div>
                 <div class="flex gap-4">
@@ -77,50 +78,53 @@
     <div class="w-full ">
         <div class="container">
             <div class="max-w-6xl mx-auto">
-                <div class="font-nunito my-5">
+                <div class="font-nunito my-5 px-4">
                     <span class="font-nunito">Trang chủ</span> > <span class="font-nunito text-[#C4C4C4]">Thảo
                         dược</span>
                 </div>
 
-                <div class="flex justify-center gap-11 sm:flex-col items-center">
-                    <div class="flex flex-col max-w-[470px]">
+                <div class="flex justify-center gap-11 sm:flex-col items-center sm:px-4">
+                    <div class="flex flex-col max-w-[470px] sm:max-w-[340px]">
                         <div class="relative w-full">
-                            <div class="h-[470px]">
+                            <div class="h-[470px] sm:h-[340px]">
                                 <img class="img-style" src="./assets/images/products.jpg" alt="">
                             </div>
                             <div class="absolute left-1/2 bottom-1/2 translate-y-1/2 -translate-x-1/2">
                                 <img src="./assets/images/play-button.png" alt="">
                             </div>
                         </div>
-                        <div class="flex gap-5 justify-between max-w-[471px] h-[80px] mt-4 relative">
-                            <div class="max-w-[79px] relative">
+                        <div class="flex gap-5 justify-between max-w-[471px] h-[80px] sm:h-[56px] mt-4 relative">
+                            <div class="max-w-[79px] sm:max-w-[56px] relative">
                                 <img class="img-style" src="./assets/images/products.jpg" alt="">
                                 <img class="absolute w-[15px] h-[15px] left-1/2 bottom-1/2 translate-y-1/2 -translate-x-1/2"
                                     src="./assets/images/play-button.png" alt="">
                             </div>
-                            <div class="max-w-[79px]">
+                            <div class="max-w-[79px] sm:max-w-[56px]">
                                 <img class="img-style" src="./assets/images/products.jpg" alt="">
                             </div>
-                            <div class="max-w-[79px]">
+                            <div class="max-w-[79px] sm:max-w-[56px]">
                                 <img class="img-style" src="./assets/images/products.jpg" alt="">
                             </div>
-                            <div class="max-w-[79px]">
+                            <div class="max-w-[79px] sm:max-w-[56px]">
                                 <img class="img-style" src="./assets/images/products.jpg" alt="">
                             </div>
-                            <div class="max-w-[79px]">
+                            <div class="max-w-[79px] sm:max-w-[56px]">
                                 <img class="img-style" src="./assets/images/products.jpg" alt="">
                             </div>
                             <div class="absolute left-0 h-full ">
                                 <img class="img-style" src="./assets/images/swept-slide-left.svg" alt="">
                             </div>
 
-                            <div class="absolute right-0 h-full"><img class="img-style"
-                                    src="./assets/images/swept-slide-right.png" alt=""></div>
+                            <div class="absolute right-0 h-full">
+                                <img class="img-style" src="./assets/images/swept-slide-right.png" alt="">
+                            </div>
 
                         </div>
                     </div>
-                    <div class="">
-                        <p class="font-nunito font-[600] text-3xl">Mứt chanh tây sấy lạnh 100% hữu cơ</p>
+                    <div>
+                        <p class="font-nunito px-2 font-semibold text-3xl sm:text-[18px] sm:px-4 whitespace-nowrap">Mứt
+                            chanh tây sấy lạnh
+                            100% hữu cơ</p>
                         <div class="p-5 bg-[#FAFAFA] mt-[12px]">
                             <del class="font-nunito text-base text-[#C4C4C4]">300.000 ₫</del>
                             <div class="flex items-center justify-between max-w-[259px] mt-[9px]">
@@ -144,7 +148,7 @@
                             </div>
                             <div class="flex justify-between max-w-[435px] items-center sm:flex-wrap sm:items-start">
                                 <span class="font-nunito">Số lượng: </span>
-                                <div>
+                                <div class="flex items-center gap-5 sm:flex-col sm:items-end">
                                     <div class="flex max-w-[145px] justify-between items-center">
                                         <button
                                             class="flex items-center text-center border-2 border-gray-40 py-3 px-4 h-[35px]">-</button>
@@ -155,23 +159,24 @@
                                     <span class="font-nunito">4352 sản phẩm có sẵn</span>
                                 </div>
                             </div>
-                            <div class="flex gap-4 sm:justify-between">
+                            <div class="flex gap-[15px] sm:justify-between">
                                 <button
                                     class="flex items-center text-bgColor gap-2 py-3 px-4 border-2 border-[#356C07] sm:hidden">
                                     <div>
                                         <img src="./assets/images/message.svg" alt="">
                                     </div>
-                                    <span class="font-nunito font-bold">Chat Ngay</span>
+                                    <span class="font-nunito font-bold text-bgColor">Chat Ngay</span>
                                 </button>
                                 <button
-                                    class="flex items-center text-[#E10000] border-[#E10000] gap-2 border-2 py-[10px] px-3">
+                                    class="flex items-center bg-[#FFF2F2] text-[#E10000] border-[#E10000] border-2 py-[10px] px-3 sm:px-2">
                                     <div>
                                         <img src="./assets/images/cart-detail.svg" alt="">
                                     </div>
-                                    <span class="sm:hidden ">Thêm vào giỏ hàng</span>
-                                    <span class="hidden sm:block sm:py-0 sm:px-0">Thêm vào giỏ</span>
+                                    <span class="sm:hidden text-[18px] font-nunito text-[#E10000] ">Thêm vào giỏ
+                                        hàng</span>
+                                    <span class="hidden sm:block text-[#E10000]">Thêm vào giỏ</span>
                                 </button>
-                                <button class="py-3 px-[61px] bg-[#E10000] text-white sm:py-0 sm:px-6">
+                                <button class="py-3 px-[61px] bg-[#E10000] text-white sm:py-0 sm:px-[45px]">
                                     Thanh toán
                                 </button>
                             </div>
@@ -201,12 +206,16 @@
             </div>
         </div>
         <div class="container max-w-[650px] mx-auto mt-[36px] px-[20px]">
-            <div class="text-center">
+            <div class="text-center relative">
                 <h3 class="font-nunito font-bold text-[18px] uppercase">chi tiết sản phẩm</h3>
+                <hr class="bg-[#356C07]">
+                <div class="absolute bg-[#356C07] h-[3px] w-[176px] left-1/2 -translate-x-1/2">
+
+                </div>
             </div>
-            <hr class="bg-[#356C07]">
+
             <div class="mt-[36px]">
-                <p>
+                <p class="font-nunito">
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                     pariatur. Excepteur sint occaecat cupidatat non proident.Lorem ipsum dolor sit amet, consectetur
                     adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -223,10 +232,10 @@
             </div>
 
             <div class="mt-[51px]">
-                <h3 class="text-[28px]">Sản phẩm từ nông trại hữu cơ</h3>
+                <h3 class="text-[28px] font-nunito">Sản phẩm từ nông trại hữu cơ</h3>
             </div>
             <div class="mt-[37px]">
-                <span>
+                <span class="font-nunito">
                     Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
                     pariatur. Excepteur sint occaecat cupidatat non proident.Lorem ipsum dolor sit amet, consectetur
                     adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
@@ -516,6 +525,8 @@
             </div>
         </div>
     </div>
+
+    <script src="./assets/js/toggle.js"></script>
 </body>
 
 </html>
