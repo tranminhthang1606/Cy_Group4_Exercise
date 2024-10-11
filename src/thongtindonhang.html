@@ -12,23 +12,22 @@
     <header class="w-full shadow-lg font-nunito">
         <div class="container">
             <header class="flex justify-between w-full max-w-6xl h-20 items-center mx-auto sm:p-3 relative">
-                <div class="hidden sm:block">
-                    <input type="checkbox" name="" id="menu" checked="false" hidden>
-                    <label for="menu"><img src="./assets/images/menu.svg" alt=""></label>
+                <div class="hidden sm:block toggle-button">
+                    <img src="./assets/images/menu.svg" alt="">
                 </div>
                 <div>
                     <img class="w-60 sm:w-[138px]" src="./assets/images/logo.png" alt="">
                 </div>
                 <div class="sm:hidden">
                     <ul class="flex gap-8">
-                        <li><a class="focus:text-red-600" href="#">Sản Phẩm</a></li>
-                        <li><a class="focus:text-red-600" href="">Về Nông Thảo</a></li>
-                        <li><a class="focus:text-red-600" href="">Blog</a></li>
-                        <li><a class="focus:text-red-600" href="">Liên Hệ</a></li>
+                        <li><a class="focus:text-bgColor" href="#">Sản Phẩm</a></li>
+                        <li><a class="focus:text-bgColor" href="">Về Nông Thảo</a></li>
+                        <li><a class="focus:text-bgColor" href="">Blog</a></li>
+                        <li><a class="focus:text-bgColor" href="">Liên Hệ</a></li>
                     </ul>
                 </div>
-                <div class="absolute left-0 top-0 h-screen bg-white px-4 z-10 py-6 hidden">
-                    <div class="max-w-[36px] max-h-[36px] float-right">
+                <div id="menu" class="fixed left-0 top-0 h-full bg-white px-4 z-10 py-6 hidden">
+                    <div class="max-w-[36px] max-h-[36px] float-right toggle-button">
                         <img class="img-style" src="./assets/images/Cross.png" alt="">
                     </div>
                     <div>
@@ -36,7 +35,7 @@
                     </div>
 
                     <div class="max-w-[252px] w-full flex relative mt-[27px]">
-                        <input class="w-full  bg-bgColor rounded-2xl py-2 px-4" type="text"
+                        <input class="w-full  bg-[#ebf0e6]  rounded-2xl py-2 px-4" type="text"
                             placeholder="Bạn muốn tìm..."><img class="absolute right-0 top-[0.13rem] h-[36px] w-[36px]"
                             src="./assets/images/navbar-search-icon.png" alt="">
                     </div>
@@ -62,8 +61,10 @@
                         <div class="mt-4"><a class="text-bgColor" href="">LIÊN HỆ</a></div>
                     </div>
 
-                    <div class="mt-12">
-                        <button class="w-full py-3 px-8 bg-red-600">0988.818.841</button>
+                    <div class="mt-12 flex flex-col items-center gap-3">
+                        <button
+                            class="w-full py-3 px-8 bg-red-600 text-[18px] font-bold text-white">0988.818.841</button>
+                        <span class="text-bgColor">Gọi hỗ trợ ngay!</span>
                     </div>
                 </div>
                 <div class="flex gap-4">
@@ -263,7 +264,7 @@
                                     </span>
                                 </div>
                             </div>
-                           
+
                         </div>
 
 
@@ -478,7 +479,7 @@
     </div>
 
     <footer class="w-full bg-[#356C07] font-nunito ">
-        
+
         <div class="flex max-h-60">
             <div>
                 <img class="img-style" src="./assets/images/footer-1.png" alt="">
@@ -575,6 +576,21 @@
             <p class="text-center text-sm">© 2022 - Bản quyền thuộc về Công ty TNHH Nông Thảo.</p>
         </div>
     </footer>
+    <div class="w-full relative ">
+        <div class="fixed bottom-0 right-0 flex flex-col sm:pr-[6px] gap-[14px] pr-[22px] pb-9">
+            <div>
+                <img src="./assets/images/phone-home.png" alt="icon" class="max-w-[48px]" />
+            </div>
+            <div>
+                <img src="./assets/images/Facebook-messenger.png" alt="icon" class="max-w-[48px]" />
+            </div>
+            <div>
+                <img src="./assets/images/arrow.png" alt="icon" class="max-w-[48px]" />
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/toggle.js"></script>
 </body>
 
 </html>
