@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="w-full shadow-lg font-nunito">
+        <div class="container">
+            <header class="flex justify-between w-full max-w-6xl h-20 items-center mx-auto sm:p-3 relative">
+                <div class="hidden sm:block">
+                    <input type="checkbox" name="" id="menu" checked="false" hidden>
+                    <label for="menu"><img src="./assets/images/menu.svg" alt=""></label>
+                </div>
+                <div>
+                    <img class="w-60 sm:w-[138px]" src="./assets/images/logo.png" alt="">
+                </div>
+                <div class="sm:hidden">
+                    <ul class="flex gap-8">
+                        <li><a class="focus:text-red-600" href="#">Sản Phẩm</a></li>
+                        <li><a class="focus:text-red-600" href="">Về Nông Thảo</a></li>
+                        <li><a class="focus:text-red-600" href="">Blog</a></li>
+                        <li><a class="focus:text-red-600" href="">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <div class="absolute left-0 top-0 h-screen bg-white px-4 z-10 py-6 hidden">
+                    <div class="max-w-[36px] max-h-[36px] float-right">
+                        <img class="img-style" src="./assets/images/Cross.png" alt="">
+                    </div>
+                    <div>
+                        <img class="w-32" src="./assets/images/logo.png" alt="">
+                    </div>
+
+                    <div class="max-w-[252px] w-full flex relative mt-[27px]">
+                        <input class="w-full  bg-bgColor rounded-2xl py-2 px-4" type="text"
+                            placeholder="Bạn muốn tìm..."><img class="absolute right-0 top-[0.13rem] h-[36px] w-[36px]"
+                            src="./assets/images/navbar-search-icon.png" alt="">
+                    </div>
+                    <div class="flex flex-col">
+                        <div class="flex justify-between border-b-2 pb-1 mt-5">
+                            <h3><a class="text-bgColor" href="">SẢN PHẨM</a></h3>
+                            <div><img src="./assets/images/arrow-navbar.svg" alt=""></div>
+                        </div>
+                        <div class="mt-3">
+                            <ul class="px-4 flex flex-col gap-2">
+                                <li class="border-b-2"><a href="">Thảo dược</a></li>
+                                <li class="border-b-2"><a href="">Nông sản</a></li>
+                                <li class="border-b-2"><a href="">Hoa quả</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="pb-1 mt-6">
+                            <h3 class="border-b-2"><a class="text-bgColor " href="">VỀ NÔNG THẢO</a></h3>
+                        </div>
+                        <div class="flex justify-between border-b-2 pb-1 mt-4"><a class="text-bgColor" href="">BLOGS</a>
+                            <div><img src="./assets/images/arrow-navbar.svg" alt=""></div>
+                        </div>
+                        <div class="mt-4"><a class="text-bgColor" href="">LIÊN HỆ</a></div>
+                    </div>
+
+                    <div class="mt-12">
+                        <button class="w-full py-3 px-8 bg-red-600">0988.818.841</button>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <img class="sm:hidden" src="./assets/images/search-glass.svg" alt="">
+                    <img src="./assets/images/cart.svg" alt="">
+                </div>
+            </header>
+        </div>
+    </header>
+
+    <div class="w-full mb-[50px]">
+        <div class="container">
+            <div class="max-w-[1170px] mx-auto">
+                <div class="font-nunito my-5 flex sm:px-[18.5px]">
+                    <div><img src="./assets/images/Arrow left.svg" alt=""></div>
+                    <span>Trang trước</span>
+                </div>
+                <div class="flex justify-between">
+                    <div class="max-w-[770px] w-full sm:flex sm:flex-col sm:gap-4">
+                        <div class="sm:px-[18.5px]">
+                            <h2 class="bg-[#EBF1E7] font-bold text-[18px] py-[10px] px-[19px]">A. THÔNG TIN GIỎ HÀNG
+                            </h2>
+                            <table class="w-full table-auto bg-white rounded-lg ">
+                                <thead class="sm:hidden">
+                                    <tr class="bg-[#F2FFF9]">
+                                        <th class="p-4 text-left">Sản phẩm</th>
+                                        <th class="p-4 text-center">Số lượng</th>
+                                        <th class="p-4 text-center">Giá</th>
+                                        <th class="p-4 text-center"></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b">
+                                        <td class="py-4 flex items-center sm:items-start">
+                                            <div class="max-w-[120px] h-[120px] sm:max-w-[80px] sm:h-[80px]">
+                                                <img src="./assets/images/products.jpg" alt="Product Image"
+                                                    class="img-style rounded mr-4">
+                                            </div>
+                                            <div>
+                                                <div class="ml-[20px] max-w-[221px]">
+                                                    <p class="font-semibold">Mứt chanh tây sấy lạnh 100% hữu cơ (Sản
+                                                        phẩm
+                                                        cao cấp)</p>
+                                                    <div class="flex gap-3 items-center sm:justify-between mt-3">
+                                                        <span class="font-nunito">Loại (g):</span>
+                                                        <div class="flex gap-3">
+                                                            <div class="p-2 bg-bgColor text-white">150</div>
+                                                            <div class="p-2 bg-[#F6F6F6] text-[#4F4F4F]">250</div>
+                                                            <div class="p-2 bg-[#F6F6F6] text-[#4F4F4F]">500</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="p-4 text-center font-semibold items-center gap-2 hidden sm:flex">
+                                                    <del class="font-nunito text-[10px] text-[#C4C4C4]">300.000 ₫</del>
+                                                    <p class="text-[#E10000]">250.000 đ</p>
+                                                </div>
+                                                <div class="p-4 text-center hidden sm:block">
+                                                    <div class="flex max-w-[145px] justify-between items-center">
+                                                        <button
+                                                            class="flex items-center text-center border-2 border-gray-40 py-2 px-4 h-[35px]">-</button>
+                                                        <div
+                                                            class="flex items-center justify-center w-[65px] border-2 h-[35px]">
+                                                            1</div>
+                                                        <button
+                                                            class="flex items-center text-center border-2 border-gray-40 py-2 px-4 h-[35px]">+</button>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </td>
+                                        <td class="p-4 text-center sm:hidden">
+                                            <div class="flex max-w-[145px] justify-between items-center">
+                                                <button
+                                                    class="flex items-center text-center border-2 border-gray-40 py-2 px-4 h-[35px]">-</button>
+                                                <div
+                                                    class="flex items-center justify-center w-[65px] border-2 h-[35px]">
+                                                    1</div>
+                                                <button
+                                                    class="flex items-center text-center border-2 border-gray-40 py-2 px-4 h-[35px]">+</button>
+                                            </div>
+                                        </td>
+                                        <td class="p-4 text-center font-semibold sm:hidden">
+                                            <p class="text-[#E10000]">250.000 đ</p>
+                                        </td>
+                                        <td class="p-4 text-center sm:hidden">
+                                            <button class="text-red-500 hover:text-red-700 font-semibold"><img
+                                                    src="./assets/images/oval-cross.svg" alt=""></button>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td class="py-4 flex items-center sm:items-start">
+                                            <div class="max-w-[120px] h-[120px] sm:max-w-[80px] sm:h-[80px]">
+                                                <img src="./assets/images/products.jpg" alt="Product Image"
+                                                    class="img-style rounded mr-4">
+                                            </div>
+                                            <div>
+                                                <div class="ml-[20px] max-w-[221px]">
+                                                    <p class="font-semibold">Mứt chanh tây sấy lạnh 100% hữu cơ (Sản
+                                                        phẩm
+                                                        cao cấp)</p>
+                                                    <div class="flex gap-3 items-center sm:justify-between mt-3">
+                                                        <span class="font-nunito">Loại (g):</span>
+                                                        <div class="flex gap-3">
+
+                                                            <div class="p-2 bg-[#F6F6F6] text-[#4F4F4F]">150</div>
+                                                            <div class="p-2 bg-bgColor text-white">250</div>
+                                                            <div class="p-2 bg-[#F6F6F6] text-[#4F4F4F]">500</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div
+                                                    class="p-4 text-center font-semibold items-center gap-2 hidden sm:flex ">
+                                                    <del class="font-nunito text-[10px] text-[#C4C4C4]">300.000 ₫</del>
+                                                    <p class="text-[#E10000]">250.000 đ</p>
+                                                </div>
+                                                <div class="p-4 text-center hidden sm:block">
+                                                    <div class="flex max-w-[145px] justify-between items-center">
+                                                        <button
+                                                            class="flex items-center text-center border-2 border-gray-40 py-2 px-4 h-[35px]">-</button>
+                                                        <div
+                                                            class="flex items-center justify-center w-[65px] border-2 h-[35px]">
+                                                            1</div>
+                                                        <button
+                                                            class="flex items-center text-center border-2 border-gray-40 py-2 px-4 h-[35px]">+</button>
+                                                    </div>
+                                                </div>
+
+
+                                            </div>
+                                        </td>
+                                        <td class="p-4 text-center sm:hidden">
+                                            <div class="flex max-w-[145px] justify-between items-center">
+                                                <button
+                                                    class="flex items-center text-center border-2 border-gray-40 py-2 px-4 h-[35px]">-</button>
+                                                <div
+                                                    class="flex items-center justify-center w-[65px] border-2 h-[35px]">
+                                                    1</div>
+                                                <button
+                                                    class="flex items-center text-center border-2 border-gray-40 py-2 px-4 h-[35px]">+</button>
+                                            </div>
+                                        </td>
+                                        <td class="p-4 text-center font-semibold sm:hidden">
+                                            <p class="text-[#E10000]">350.000 đ</p>
+                                        </td>
+                                        <td class="p-4 text-center sm:hidden">
+                                            <button class="text-red-500 hover:text-red-700 font-semibold"><img
+                                                    src="./assets/images/oval-cross.svg" alt=""></button>
+                                        </td>
+                                    </tr>
+
+                                    <tr class="border-b sm:hidden">
+                                        <td class="py-4 flex items-center">
+                                            <button
+                                                class="py-[10px] px-[16px] font-nunito border-[1px] border-bgColor text-bgColor font-semibold rounded-[3px]">Mua
+                                                thêm sản phẩm</button>
+                                        </td>
+
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="bg-[#FFFAFA] max-w-[369px] w-full py-[20px] px-[25px] hidden sm:block">
+                            <div>
+                                <h3 class="font-bold text-[24px]">
+                                    Tóm tắt đơn hàng
+                                </h3>
+                            </div>
+                            <hr class="mt-[14px]">
+                            <div class="flex gap-[15px] flex-col mt-[20px]">
+                                <div class="flex justify-between">
+                                    <span>
+                                        02 Sản phẩm
+                                    </span>
+                                    <span class="text-[#E10000] font-semibold">
+                                        600.000 đ
+                                    </span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span>
+                                        Phí ship
+                                    </span>
+                                    <span class="text-[#E10000] font-semibold">
+                                        35.000 đ
+                                    </span>
+                                </div>
+                                <div class="flex justify-between">
+                                    <span class="font-semibold">
+                                        TỔNG
+                                    </span>
+                                    <span class="text-[#E10000] font-bold">
+                                        635.000 đ
+                                    </span>
+                                </div>
+                            </div>
+                           
+                        </div>
+
+
+                        <div class="mt-[58px] sm:mt-0 sm:px-[18.5px]">
+                            <h2 class="bg-[#EBF1E7] font-bold text-[18px] py-[10px] px-[19px] uppercase">B. Thông tin
+                                người mua hàng</h2>
+                            <div class="flex mt-[20px] flex-wrap justify-between gap-4">
+                                <div class="relative w-full max-w-[369px]">
+                                    <input type="text" id="floatingInput" placeholder="Nguyễn Trần Thị Khánh Ly"
+                                        class="peer block w-full px-3 py-2 text-[#343434] bg-transparent border border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-500" />
+                                    <label for="floatingInput"
+                                        class="absolute text-gray-500 duration-300 transform -translate-y-4 scale-75 top-1 z-10 origin-[0] bg-white px-2 left-3">Họ
+                                        và tên *</label>
+                                    <div class="px-2">
+                                        <p class="mt-1 text-sm text-red-600 italic">Vui lòng nhập lại họ và tên</p>
+                                    </div>
+                                </div>
+                                <div class="relative w-full max-w-[369px]">
+                                    <input type="text" id="floatingInput" placeholder="0988818841"
+                                        class="peer block w-full px-3 py-2 text-[#343434] bg-transparent border border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-500" />
+                                    <label for="floatingInput"
+                                        class="absolute text-gray-500 duration-300 transform -translate-y-4 scale-75 top-1 z-10 origin-[0] bg-white px-2 left-3">Số
+                                        điện thoại *</label>
+                                    <div class="px-2">
+                                        <p class="mt-1 text-sm text-red-600 italic">Vui lòng nhập lại số điện thoại</p>
+                                    </div>
+                                </div>
+                                <div class="relative w-full max-w-[369px]">
+                                    <input type="text" id="floatingInput" placeholder="vikhanhtq@gmail.com"
+                                        class="peer block w-full px-3 py-2 text-[#343434] bg-transparent border border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-500" />
+                                    <label for="floatingInput"
+                                        class="absolute text-gray-500 duration-300 transform -translate-y-4 scale-75 top-1 z-10 origin-[0] bg-white px-2 left-3">Email</label>
+                                    <div class="px-2">
+                                        <p class="mt-1 text-sm text-red-600 italic">Vui lòng nhập lại địa chỉ email</p>
+                                    </div>
+                                </div>
+                                <div class="items-center gap-[10px] hidden sm:flex">
+                                    <input type="checkbox" name="" id="receive" class="w-[14px] h-[14px]">
+                                    <label for="receive">Gọi người khác nhận hộ (nếu có)</label>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-[10px] sm:hidden">
+                                <input type="checkbox" name="" id="receive" class="w-[14px] h-[14px]">
+                                <label for="receive">Gọi người khác nhận hộ (nếu có)</label>
+                            </div>
+                        </div>
+
+                        <div class="mt-[30px] sm:mt-0 sm:px-[18.5px]">
+                            <h2 class="bg-[#EBF1E7] font-bold text-[18px] py-[10px] px-[19px] uppercase">C. Địa chỉ nhận
+                                hàng</h2>
+
+                            <div class="flex mt-[20px] flex-wrap justify-between">
+                                <div class="relative w-full">
+                                    <input type="text" id="floatingInput" placeholder="Nguyễn Trần Thị Khánh Ly"
+                                        class="peer block w-full px-3 py-2 text-[#343434] bg-transparent border border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-500" />
+                                    <label for="floatingInput"
+                                        class="absolute text-gray-500 duration-300 transform -translate-y-4 scale-75 top-1 z-10 origin-[0] bg-white px-2 left-3">Họ
+                                        và tên *</label>
+                                    <div class="px-2">
+                                        <p class="mt-1 text-sm text-red-600 italic">Vui lòng nhập lại họ và tên</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="flex justify-between mt-[21px] sm:flex-col gap-4">
+
+                                <div class="flex flex-wrap justify-between">
+                                    <div class="relative w-full max-w-[230px] sm:max-w-full">
+                                        <input type="text" id="floatingInput" placeholder="Nam Từ Liêm"
+                                            class="peer block w-full px-3 py-2 text-[#343434] bg-transparent border border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-500" />
+                                        <label for="floatingInput"
+                                            class="absolute text-gray-500 duration-300 transform -translate-y-4 scale-75 top-1 z-10 origin-[0] bg-white px-2 left-3">Phường/
+                                            Xã *</label>
+                                        <div class="px-2">
+                                            <p class="mt-1 text-sm text-red-600 italic">Vui lòng nhập lại phường/ xã</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="flex flex-wrap justify-between">
+                                    <div class="relative w-full max-w-[230px] sm:max-w-full">
+                                        <input type="text" id="floatingInput" placeholder="Nam Từ Liêm"
+                                            class="peer block w-full px-3 py-2 text-[#343434] bg-transparent border border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-500" />
+                                        <label for="floatingInput"
+                                            class="absolute text-gray-500 duration-300 transform -translate-y-4 scale-75 top-1 z-10 origin-[0] bg-white px-2 left-3">Quận/
+                                            Huyện *</label>
+                                        <div class="px-2">
+                                            <p class="mt-1 text-sm text-red-600 italic">Vui lòng nhập lại quận/ huyện
+                                            </p>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="flex flex-wrap justify-between">
+                                    <div class="relative w-full max-w-[230px] sm:max-w-full">
+                                        <input type="text" id="floatingInput" placeholder="Nam Từ Liêm"
+                                            class="peer block w-full px-3 py-2 text-[#343434] bg-transparent border border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-500" />
+                                        <label for="floatingInput"
+                                            class="absolute text-gray-500 duration-300 transform -translate-y-4 scale-75 top-1 z-10 origin-[0] bg-white px-2 left-3">Tỉnh/
+                                            Thành phố *</label>
+                                        <div class="px-2">
+                                            <p class="mt-1 text-sm text-red-600 italic">Vui lòng nhập lại tỉnh/ thành
+                                                phố</p>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+                            <div class="flex mt-[20px] flex-wrap justify-between">
+                                <div class="relative w-full">
+                                    <input type="text" id="floatingInput"
+                                        placeholder="Chỉ giao giờ hành chính (Gọi trước 30 phút cho 0988.818.841)"
+                                        class="peer block w-full px-3 py-2 text-[#343434] bg-transparent border border-gray-300 appearance-none focus:outline-none focus:ring-0 focus:border-blue-500" />
+                                    <label for="floatingInput"
+                                        class="absolute text-gray-500 duration-300 transform -translate-y-4 scale-75 top-1 z-10 origin-[0] bg-white px-2 left-3">Ghi
+                                        chú giao hàng (nếu có)</label>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="mt-[20px] border-dotted border-b-2 sm:mt-0 sm:px-[18.5px]">
+                            <h2 class="bg-[#EBF1E7] font-bold text-[18px] py-[10px] px-[19px] uppercase">D. PHƯƠNG THỨC
+                                THANH TOÁN</h2>
+                            <div class="flex items-center gap-[10px] my-[20px]">
+                                <input type="radio" name="" id="cod" class="w-[14px] h-[14px] ">
+                                <label for="cod">Thanh toán khi giao hàng (COD)</label>
+                            </div>
+
+                            <div class="my-[20px]">
+                                <p>
+                                    Không cần thanh toán trực tuyến. Bạn có thể thanh toán sau khi các sản phẩm được
+                                    giao!
+                                    Thông tin chi tiết về tài khoản ngân hàng của bạn sẽ chỉ được yêu cầu nếu bạn muốn
+                                    trả lại bất kỳ sản phẩm nào để được hoàn tiền.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="mt-30 sm:mt-0 sm:px-[18.5px]">
+                            <div class="flex items-center gap-[10px] my-[20px]">
+                                <input type="checkbox" name="" id="csbm" class="w-[14px] h-[14px] ">
+                                <label for="csbm">Tôi đồng ý việc thu thập và sử dụng thông tin của tôi theo quy định
+                                    tại <span class="text-[#79c92b] font-semibold">Chính sách Bảo mật</span></label>
+                            </div>
+                            <div class="flex items-center gap-[10px] my-[20px]">
+                                <input type="checkbox" name="" id="dkdk" class="w-[14px] h-[14px] ">
+                                <label for="dkdk">Tôi đã đọc, hiểu và chấp thuận <span
+                                        class="text-[#79c92b] font-semibold">Chính sách Bảo mật</span> và <span
+                                        class="text-[#79c92b] font-semibold">Các Điều khoản & Điều kiện</span>.</label>
+                            </div>
+                            <div>
+                                <button class="py-3 px-[59px] bg-[#E10000] font-bold text-white rounded-md sm:w-full">
+                                    ĐẶT HÀNG NGAY
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-[#FFFAFA] max-w-[369px] w-full py-[20px] px-[25px] h-full sm:hidden">
+                        <div>
+                            <h3 class="font-bold text-[24px]">
+                                Tóm tắt đơn hàng
+                            </h3>
+                        </div>
+                        <hr class="mt-[14px]">
+                        <div class="flex gap-[15px] flex-col mt-[20px]">
+                            <div class="flex justify-between">
+                                <span>
+                                    02 Sản phẩm
+                                </span>
+                                <span class="text-[#E10000] font-semibold">
+                                    600.000 đ
+                                </span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>
+                                    Phí ship
+                                </span>
+                                <span class="text-[#E10000] font-semibold">
+                                    35.000 đ
+                                </span>
+                            </div>
+                            <div class="flex justify-between">
+                                <span class="font-semibold">
+                                    TỔNG
+                                </span>
+                                <span class="text-[#E10000] font-bold">
+                                    635.000 đ
+                                </span>
+                            </div>
+                        </div>
+                        <div class="text-center">
+                            <button class="mt-[44px] py-[13px] w-full bg-[#E10000] font-bold text-[18px] text-white">ĐẶT
+                                HÀNG NGAY</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <footer class="w-full bg-[#356C07] font-nunito ">
+        
+        <div class="flex max-h-60">
+            <div>
+                <img class="img-style" src="./assets/images/footer-1.png" alt="">
+            </div>
+            <div>
+                <img class="img-style" src="./assets/images/footer-2.png" alt="">
+            </div>
+            <div>
+                <img class="img-style" src="./assets/images/footer-3.png" alt="">
+            </div>
+            <div>
+                <img class="img-style sm:hidden" src="./assets/images/footer-4.png" alt="">
+            </div>
+            <div>
+                <img class="img-style sm:hidden" src="./assets/images/footer-5.png" alt="">
+            </div>
+            <div>
+                <img class="img-style sm:hidden" src="./assets/images/footer-2.png" alt="">
+            </div>
+            <div>
+                <img class="img-style sm:hidden" src="./assets/images/footer-4.png" alt="">
+            </div>
+            <div>
+                <img class="img-style sm:hidden" src="./assets/images/footer-6.png" alt="">
+            </div>
+        </div>
+        <div
+            class="container mt-10 flex justify-between max-w-6xl text-white py-5 sm:flex sm:flex-col sm:px-6 sm:gap-[15px]">
+            <div class="max-w-sm">
+                <div>
+                    <img class="mix-blend-color-dodge" src="./assets/images/footer.png" alt="">
+                </div>
+                <p class="mt-6 text-white">MST: 012345678910 - Ngày cấp: 10/02/2022 <br>
+                    Nơi cấp: Sở Kế hoạch & Đầu tư TP Hà Nội</p>
+                <div class="flex gap-4 mt-6">
+                    Liên kết
+                    <img class="w-6 h-6 rounded-full" src="./assets/images/shopee.png" alt="">
+                    <img class="w-6 h-6 rounded-full" src="./assets/images/tiki.png" alt="">
+                    <img class="w-6 h-6 rounded-full" src="./assets/images/lazada.png" alt="">
+                    <img class="w-6 h-6 rounded-full" src="./assets/images/facebook.png" alt="">
+                    <img class="w-6 h-6 rounded-full" src="./assets/images/in.png" alt="">
+                    <img class="w-6 h-6 rounded-full" src="./assets/images/tiktok.png" alt="">
+                </div>
+            </div>
+            <div class="max-w-[248px]  sm:max-w-full sm:border-t-2 sm:border-b-2 sm:py-3">
+                <h4>Liên Hệ</h4>
+                <ul class="mt-8 flex flex-col gap-3 sm:hidden">
+                    <li class="flex items-start gap-3">
+                        <img src="./assets/images/location.svg" alt="">Tầng 4-5-6, Tòa nhà Capital Place, số 29 đường
+                        Liễu Giai, P.Ngọc Khánh, Q.Ba
+                        Đình, Hà Nội
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <img src="./assets/images/phone.svg" alt="">0969.71.6848
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <img src="./assets/images/mail.svg" alt="">hotro@nongthao.vn
+                    </li>
+                </ul>
+            </div>
+            <div class="max-w-xs sm:border-b-2 sm:py-3">
+                <h4>Thông tin</h4>
+                <ul class="list-disc ml-4 mt-4 flex flex-col gap-3 sm:hidden">
+                    <li><a href="">Giới thiệu Nông Thảo</a></li>
+                    <li><a href="">Điều khoản</a></li>
+                    <li><a href="">Chính sách bảo mật</a></li>
+                    <li><a href="">Hướng dẫn mua hàng</a></li>
+                    <li><a href="">Trả hàng & hoàn tiền</a></li>
+                    <li><a href="">Nông Thảo Blogs</a></li>
+                </ul>
+            </div>
+            <div class="max-w-[270px] sm:max-w-full">
+                <h4>Đăng ký nhận tin</h4>
+                <p class="mt-6 text-white">Vui lòng nhập email để nhận thêm nhiều ưu đãi từ Nông Thảo</p>
+                <div class="mt-2 flex">
+                    <input class="px-3 py-2 sm:w-full" placeholder="Email của bạn..." type="text"><span
+                        class="bg-[#68C114] max-w-[47px] max-h-[45px] flex items-center justify-center py-3 px-3">
+                        <div>
+                            <img class="" src="./assets/images/send.svg" alt="">
+                        </div>
+                    </span>
+                </div>
+                <div class="flex justify-between mt-8">
+                    <div>
+                        <img class="img-style" src="./assets/images/bocongthuong.png" alt="">
+                    </div>
+                    <div>
+                        <img class="img-style" src="./assets/images/dmca.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center justify-center py-3 opacity-50 bg-gray-50">
+            <p class="text-center text-sm">© 2022 - Bản quyền thuộc về Công ty TNHH Nông Thảo.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
