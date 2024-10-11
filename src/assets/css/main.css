@@ -1268,6 +1268,14 @@ video {
   width: 100%;
 }
 
+.w-\[2px\] {
+  width: 2px;
+}
+
+.w-\[267px\] {
+  width: 267px;
+}
+
 .min-w-\[340px\] {
   min-width: 340px;
 }
@@ -1442,6 +1450,10 @@ video {
 
 .max-w-xs {
   max-width: 20rem;
+}
+
+.max-w-\[267px\] {
+  max-width: 267px;
 }
 
 .table-auto {
@@ -2536,6 +2548,32 @@ video {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.shadow {
+  --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.shadow-red-500 {
+  --tw-shadow-color: #ef4444;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-red-800 {
+  --tw-shadow-color: #991b1b;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-\[\] {
+  --tw-shadow-color: ;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
+.shadow-\[\#0000001A\] {
+  --tw-shadow-color: #0000001A;
+  --tw-shadow: var(--tw-shadow-colored);
+}
+
 .duration-300 {
   transition-duration: 300ms;
 }
@@ -2875,6 +2913,10 @@ span, p {
     gap: 1.25rem;
   }
 
+  .sm\:gap-\[10px\] {
+    gap: 10px;
+  }
+
   .sm\:gap-\[12px\] {
     gap: 12px;
   }
@@ -2883,12 +2925,12 @@ span, p {
     gap: 15px;
   }
 
-  .sm\:gap-\[36px\] {
-    gap: 36px;
+  .sm\:gap-\[27px\] {
+    gap: 27px;
   }
 
-  .sm\:gap-\[10px\] {
-    gap: 10px;
+  .sm\:gap-\[36px\] {
+    gap: 36px;
   }
 
   .sm\:overflow-hidden {
@@ -2933,6 +2975,11 @@ span, p {
     background-color: transparent;
   }
 
+  .sm\:object-cover {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+
   .sm\:p-3 {
     padding: 0.75rem;
   }
@@ -2971,12 +3018,20 @@ span, p {
     padding-bottom: 0.75rem;
   }
 
+  .sm\:pb-0 {
+    padding-bottom: 0px;
+  }
+
   .sm\:pb-20 {
     padding-bottom: 5rem;
   }
 
   .sm\:pb-\[100px\] {
     padding-bottom: 100px;
+  }
+
+  .sm\:pl-1 {
+    padding-left: 0.25rem;
   }
 
   .sm\:pl-\[14px\] {
@@ -2987,32 +3042,16 @@ span, p {
     padding-right: 6px;
   }
 
+  .sm\:pt-0 {
+    padding-top: 0px;
+  }
+
   .sm\:pt-4 {
     padding-top: 1rem;
   }
 
   .sm\:pt-\[15px\] {
     padding-top: 15px;
-  }
-
-  .sm\:pt-0 {
-    padding-top: 0px;
-  }
-
-  .sm\:pb-0 {
-    padding-bottom: 0px;
-  }
-
-  .sm\:pl-\[4\] {
-    padding-left: 4;
-  }
-
-  .sm\:pl-\[4px\] {
-    padding-left: 4px;
-  }
-
-  .sm\:pl-1 {
-    padding-left: 0.25rem;
   }
 
   .sm\:text-center {
