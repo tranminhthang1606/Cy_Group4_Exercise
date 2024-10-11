@@ -1643,10 +1643,6 @@ video {
   gap: 9px;
 }
 
-.gap-\[\] {
-  gap: ;
-}
-
 .gap-x-0\.875 {
   -moz-column-gap: 0.875rem;
        column-gap: 0.875rem;
@@ -1865,9 +1861,19 @@ video {
   background-color: rgb(250 250 250 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#FFF2F2\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 242 242 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#FFFAFA\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 250 250 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#ebf0e6\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(235 240 230 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#fff\] {
@@ -1921,11 +1927,6 @@ video {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#FFF2F2\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 242 242 / var(--tw-bg-opacity));
 }
 
 .bg-cover {
@@ -2329,10 +2330,6 @@ video {
   line-height: 1rem;
 }
 
-.font-\[600\] {
-  font-weight: 600;
-}
-
 .font-black {
   font-weight: 900;
 }
@@ -2599,6 +2596,11 @@ span, p {
   border-color: rgb(107 114 128 / var(--tw-border-opacity));
 }
 
+.focus\:text-bgColor:focus {
+  --tw-text-opacity: 1;
+  color: rgb(53 108 7 / var(--tw-text-opacity));
+}
+
 .focus\:text-red-600:focus {
   --tw-text-opacity: 1;
   color: rgb(220 38 38 / var(--tw-text-opacity));
@@ -2680,10 +2682,6 @@ span, p {
     display: block;
   }
 
-  .sm\:inline {
-    display: inline;
-  }
-
   .sm\:flex {
     display: flex;
   }
@@ -2706,6 +2704,10 @@ span, p {
 
   .sm\:h-\[177px\] {
     height: 177px;
+  }
+
+  .sm\:h-\[340px\] {
+    height: 340px;
   }
 
   .sm\:h-\[39px\] {
@@ -2818,6 +2820,10 @@ span, p {
 
   .sm\:max-w-\[378px\] {
     max-width: 378px;
+  }
+
+  .sm\:max-w-\[56px\] {
+    max-width: 56px;
   }
 
   .sm\:max-w-\[80px\] {
@@ -2950,9 +2956,14 @@ span, p {
     padding: 1rem;
   }
 
-  .sm\:px-0 {
-    padding-left: 0px;
-    padding-right: 0px;
+  .sm\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .sm\:px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 
   .sm\:px-5 {
@@ -2970,6 +2981,11 @@ span, p {
     padding-right: 18.5px;
   }
 
+  .sm\:px-\[45px\] {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
   .sm\:py-0 {
     padding-top: 0px;
     padding-bottom: 0px;
@@ -2978,26 +2994,6 @@ span, p {
   .sm\:py-3 {
     padding-top: 0.75rem;
     padding-bottom: 0.75rem;
-  }
-
-  .sm\:px-\[\] {
-    padding-left: ;
-    padding-right: ;
-  }
-
-  .sm\:px-\[41px\] {
-    padding-left: 41px;
-    padding-right: 41px;
-  }
-
-  .sm\:px-\[45px\] {
-    padding-left: 45px;
-    padding-right: 45px;
-  }
-
-  .sm\:px-3 {
-    padding-left: 0.75rem;
-    padding-right: 0.75rem;
   }
 
   .sm\:pb-20 {
