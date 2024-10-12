@@ -2,16 +2,1146 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/main.css">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home</title>
+  <link rel="stylesheet" href="./assets/css/main.css" />
 </head>
 
 <body>
-    <h1 class="bg-red-500">
-        Hello world! 2
-    </h1>
+  <header class="w-full shadow-lg font-nunito">
+    <div class="container">
+      <div class="flex justify-between w-full max-w-6xl h-20 items-center mx-auto sm:p-3 relative">
+        <div class="hidden sm:block toggle-button">
+          <img src="./assets/images/menu.svg" alt="">
+        </div>
+        <div>
+          <a href="./index.html"><img class="w-60 sm:w-[138px]" src="./assets/images/logo.png" alt=""></a>
+        </div>
+        <div class="sm:hidden">
+          <ul class="flex gap-8 uppercase">
+            <li><a class="focus:text-bgColor" href="./danhmuctong.html">Sản Phẩm</a></li>
+            <li><a class="focus:text-bgColor" href="./NongThao.html">Về Nông Thảo</a></li>
+            <li><a class="focus:text-bgColor" href="./information.html">Blog</a></li>
+            <li><a class="focus:text-bgColor" href="./contact.html">Liên Hệ</a></li>
+          </ul>
+        </div>
+        <div id="menu" class="fixed left-0 top-0 h-full bg-white px-4 z-10 py-6 hidden">
+          <div class="max-w-[36px] max-h-[36px] float-right toggle-button">
+            <img class="img-style" src="./assets/images/Cross.png" alt="">
+          </div>
+          <div>
+            <img class="w-32" src="./assets/images/logo.png" alt="">
+          </div>
+
+          <div class="max-w-[252px] w-full flex relative mt-[27px]">
+            <input class="w-full  bg-[#ebf0e6]  rounded-2xl py-2 px-4" type="text" placeholder="Bạn muốn tìm..."><img
+              class="absolute right-0 top-[0.13rem] h-[36px] w-[36px]" src="./assets/images/navbar-search-icon.png"
+              alt="">
+          </div>
+          <div class="flex flex-col">
+            <div class="flex justify-between border-b-2 pb-1 mt-5">
+              <h3><a class="text-bgColor" href="./danhmuctong.html">SẢN PHẨM</a></h3>
+              <div><img src="./assets/images/arrow-navbar.svg" alt=""></div>
+            </div>
+            <div class="mt-3">
+              <ul class="px-4 flex flex-col gap-2">
+                <li class="border-b-2"><a href="./danhmuctong.html#thao_duoc">Thảo dược</a></li>
+                <li class="border-b-2"><a href="./danhmuctong.html#nong_san">Nông sản</a></li>
+                <li class="border-b-2"><a href="./danhmuctong.html#hoa_qua_huu_co">Hoa quả</a></li>
+              </ul>
+
+            </div>
+            <div class="pb-1 mt-6">
+              <h3 class="border-b-2"><a class="text-bgColor " href="./NongThao.html">VỀ NÔNG THẢO</a></h3>
+            </div>
+            <div class="flex justify-between border-b-2 pb-1 mt-4"><a class="text-bgColor"
+                href="./information.html">BLOGS</a>
+              <div><img src="./assets/images/arrow-navbar.svg" alt=""></div>
+            </div>
+            <div class="mt-4"><a class="text-bgColor" href="./contact.html">LIÊN HỆ</a></div>
+          </div>
+
+          <div class="mt-12 flex flex-col items-center gap-3">
+            <button class="w-full py-3 px-8 bg-red-600 text-[18px] font-bold text-white">0988.818.841</button>
+            <span class="text-bgColor">Gọi hỗ trợ ngay!</span>
+          </div>
+        </div>
+        <div class="flex gap-4">
+          <img class="sm:hidden" src="./assets/images/search-glass.svg" alt="">
+          <a href="./thongtindonhang.html"><img src="./assets/images/cart.svg" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div class="container">
+    <!-- Wrapper content -->
+    <div>
+      <!-- Banner -->
+      <img src="./assets/images/homepage-banner.jpg" alt="banner"
+        class="w-full object-cover overflow-hidden h-[490px] sm:h-[177px] sm:w-[378px]" />
+      <div class="w-full bg-[#FAFAFA]">
+        <div
+          class="max-w-[1170px] sm:gap-5 sm:max-w-[378px] sm:mx-auto flex-wrap flex justify-between sm:justify-around mx-auto py-9">
+          <!--  -->
+          <div class="flex gap-[10.5px] sm:flex-col sm:items-center sm:w-[122px]">
+            <img src="./assets/images/icon-ship.png" alt="ship" class="max-w-[70px] object-cover overflow-hidden" />
+            <div class="sm:text-center">
+              <p class="font-nunito text-base sm:text-sm text-hover uppercase font-bold">
+                Ship toàn quốc
+              </p>
+              <p class="font-nunito text-sm sm:text-xs font-normal">
+                Miễn phí đơn hàng từ 500k
+              </p>
+            </div>
+          </div>
+          <!--  -->
+          <div class="flex gap-[10.5px] sm:flex-col sm:items-center sm:w-[122px]">
+            <img src="./assets/images/icon-hh.png" alt="hh" class="max-w-[70px] object-cover overflow-hidden" />
+            <div class="sm:text-center">
+              <p class="sm:text-sm">Chất lượng</p>
+              <p class="sm:text-xs">Sản phẩm tốt nhất</p>
+            </div>
+          </div>
+          <!--  -->
+          <div class="flex gap-[10.5px] sm:flex-col sm:items-center sm:w-[122px]">
+            <img src="./assets/images/icon-time.png" alt="ship" class="max-w-[70px] object-cover overflow-hidden" />
+            <div class="sm:text-center">
+              <p>7 ngày đổi trả</p>
+              <p>Áp dụng cho tất cả đơn hàng</p>
+            </div>
+          </div>
+          <!--  -->
+          <div class="flex gap-[10.5px] sm:flex-col sm:items-center sm:w-[122px]">
+            <img src="./assets/images/icon-headphone.png" alt="ship"
+              class="max-w-[70px] object-cover overflow-hidden" />
+            <div class="sm:text-center">
+              <p>Tư vấn online</p>
+              <p>Hỗ trợ 24/7</p>
+            </div>
+          </div>
+        </div>
+        <!-- Banner -->
+        <!--  -->
+      </div>
+      <!-- ==== -->
+      <!-- Product hot -->
+      <div class="max-w-[1170px] sm:max-w-[378px] mx-auto sm:pl-[14px]">
+        <div class="flex justify-center gap-1 mt-[46px] mb-[24px]">
+          <img src="./assets/images/icon-la.png" alt="icon" class="max-w-[42px]" />
+          <p class="font-nunito font-bold text-[28px] sm:text-base uppercase">
+            Sản phẩm bán chạy
+          </p>
+        </div>
+        <!-- Prodcut -->
+        <div class="flex gap-[20px] sm:overflow-hidden">
+          <!-- Product-item -->
+          <div class="max-w-[270px] border-2 border-solid shadow-lg">
+            <div class="relative">
+              <img src="./assets/images/product-item.png" alt="product" class="max-w-[267px]" />
+              <img src="./assets/images/img50.png" alt="img" class="max-w-[52px] max-h-[54px] absolute top-0 right-0" />
+              <button
+                class="w-[267px] sm:hidden h-10 opacity-90 text-center bg-price text-base font-normal absolute bottom-0">
+                <a href="./chitietsanpham.html">Mua ngay </a>
+              </button>
+            </div>
+            <p class="font-nunito text-[#68C114] sm:text-xs px-[14px] pt-[10px] pb-[22px]">
+              Thảo dược Cao gà gai leo Yên <br />Thủy - 250g
+            </p>
+            <hr class="w-[240px] mx-auto" />
+            <div class="flex pt-[11px] pb-[15px] items-center justify-between px-[14px]">
+              <div class="flex items-center gap-[15px]">
+                <p class="font-nunito font-bold text-lg text-price">
+                  220.000 <span class="text-sm">đ</span>
+                </p>
+                <p class="font-nunito text-sm text-[#A1A1A1]">
+                  250.000<span class="text-xs">đ</span>
+                </p>
+              </div>
+              <a href="./thongtindonhang.html"><img src="./assets/images/Icon-green.png" alt="" /></a>
+            </div>
+          </div>
+          <div class="max-w-[270px] border-2 border-solid shadow-lg shadow-[#0000001A]">
+            <div class="">
+              <img src="./assets/images/product-item.png" alt="product" class="max-w-[270px]" />
+              <!-- -->
+            </div>
+            <p class="font-nunito text-[#68C114] px-[14px] pt-[10px] pb-[22px]">
+              Thảo dược Cao gà gai leo Yên <br />Thủy - 250g
+            </p>
+            <hr class="w-[240px] mx-auto" />
+            <div class="flex pt-[11px] pb-[15px] items-center justify-between px-[14px]">
+              <div class="flex items-center gap-[15px]">
+                <p class="font-nunito font-bold text-lg text-price">
+                  220.000 <span class="text-sm">đ</span>
+                </p>
+                <p class="font-nunito text-sm text-[#A1A1A1]">
+                  250.000<span class="text-xs">đ</span>
+                </p>
+              </div>
+              <a href="./thongtindonhang.html"><img src="./assets/images/Icon-green.png" alt="" /></a>
+            </div>
+          </div>
+          <div class="max-w-[270px] border-2 border-solid shadow-lg shadow-[#0000001A]">
+            <div class="">
+              <img src="./assets/images/product-item.png" alt="product" class="max-w-[270px]" />
+            </div>
+            <p class="font-nunito text-[#68C114] px-[14px] pt-[10px] pb-[22px]">
+              Thảo dược Cao gà gai leo Yên <br />Thủy - 250g
+            </p>
+            <hr class="w-[240px] mx-auto" />
+            <div class="flex pt-[11px] pb-[15px] items-center justify-between px-[14px]">
+              <div class="flex items-center gap-[15px]">
+                <p class="font-nunito font-bold text-lg text-price">
+                  220.000 <span class="text-sm">đ</span>
+                </p>
+                <p class="font-nunito text-sm text-[#A1A1A1]">
+                  250.000<span class="text-xs">đ</span>
+                </p>
+              </div>
+              <a href="./thongtindonhang.html"><img src="./assets/images/Icon-green.png" alt="" /></a>
+            </div>
+          </div>
+          <div class="max-w-[270px] border-2 border-solid shadow-lg shadow-[#0000001A]">
+            <div class="">
+              <img src="./assets/images/product-item.png" alt="product" class="max-w-[270px]" />
+            </div>
+            <p class="font-nunito text-[#68C114] px-[14px] pt-[10px] pb-[22px]">
+              Thảo dược Cao gà gai leo Yên <br />Thủy - 250g
+            </p>
+            <hr class="w-[240px] mx-auto" />
+            <div class="flex pt-[11px] pb-[15px] items-center justify-between px-[14px]">
+              <div class="flex items-center gap-[15px]">
+                <p class="font-nunito font-bold text-lg text-price">
+                  220.000 <span class="text-sm">đ</span>
+                </p>
+                <p class="font-nunito text-sm text-[#A1A1A1]">
+                  250.000<span class="text-xs">đ</span>
+                </p>
+              </div>
+              <a href="./thongtindonhang.html"><img src="./assets/images/Icon-green.png" alt="" /></a>
+            </div>
+          </div>
+          <!-- Product-item -->
+        </div>
+        <!-- scroll-button all -->
+        <div class="flex justify-center gap-[15px] py-[30px]">
+          <div class="w-[10px] h-[10px] bg-[#68C114] rounded-full"></div>
+          <div class="w-[10px] h-[10px] border-[1px] border-solid bg-white rounded-full"></div>
+          <div class="w-[10px] h-[10px] border-[1px] border-solid bg-white rounded-full"></div>
+        </div>
+        <div class="text-center sm:hidden">
+          <a href="./danhmuctong.html">
+            <button class="w-[160px] h-[45px] border-[1px] border-solid border-[#356C07] text-[#356C07]">
+              Xem tất cả
+            </button>
+          </a>
+          <div class="w-[159px] h-[1px] bg-bgColor mx-auto mt-[7px] mb-[48px]"></div>
+        </div>
+      </div>
+      <!-- Product hot -->
+      <div class="bg-cover w-full h-[711px] sm:max-w-[370px]"
+        style="background-image: url('./assets/images/bg-hotsale.png')">
+        <!-- title -->
+        <div class="flex justify-center gap-[6.84px] items-center pb-[29px] pt-[60px]">
+          <img src="./assets/images/fire.png" alt="icon" class="max-w[22px] h-[26px]" />
+          <p class="font-nunito sm:text-base font-bold text-[28px] uppercase">
+            Hot sale
+          </p>
+        </div>
+        <div class="flex max-w-[525px] sm:pl-[14px] mx-auto justify-around bg-white rounded-md mb-[41px]">
+          <p class="font-nunito sm:text-2xl font-bold text-[#68C144] text-4xl">
+            15
+            <span class="text-base text-[#343434] sm:text-[10px] font-normal">Ngày</span>
+          </p>
+          <p class="font-nunito sm:text-2xl font-bold text-[#68C144] text-4xl">
+            23
+            <span class="text-base text-[#343434] sm:text-[10px] font-normal">Giờ</span>
+          </p>
+          <p class="font-nunito sm:text-2xl font-bold text-[#68C144] text-4xl">
+            15
+            <span class="text-base text-[#343434] sm:text-[10px] font-normal">Phút</span>
+          </p>
+          <p class="font-nunito sm:text-2xl font-bold text-[#68C144] text-4xl">
+            33
+            <span class="text-base text-[#343434] sm:text-[10px] font-normal">Giây</span>
+          </p>
+        </div>
+        <!-- Product -->
+        <div class="max-w-[1170px] mx-auto">
+          <div class="flex gap-[30px] overflow-hidden">
+            <!-- Product-item -->
+            <div class="max-w-[270px] border-1 border-solid shadow-lg">
+              <div class="relative">
+                <img src="./assets/images/product-item.png" alt="product" class="max-w-[270px]" />
+                <img src="./assets/images/img50.png" alt="img"
+                  class="max-w-[52px] max-h-[54px] absolute top-0 right-0" />
+                <button
+                  class="w-[270px] sm:hidden h-10 opacity-90 text-center bg-price text-base font-normal absolute bottom-0">
+                  <a href="./chitietsanpham.html">Mua ngay</a>
+                </button>
+              </div>
+              <p class="font-nunito text-[#68C114] sm:text-xs px-[14px] pt-[10px] pb-[22px]">
+                Thảo dược Cao gà gai leo Yên <br />Thủy - 250g
+              </p>
+              <hr class="w-[240px] mx-auto" />
+              <div class="flex pt-[11px] pb-[15px] items-center justify-between px-[14px]">
+                <div class="flex items-center gap-[15px]">
+                  <p class="font-nunito font-bold text-lg text-price">
+                    220.000 <span class="text-sm">đ</span>
+                  </p>
+                  <p class="font-nunito text-sm text-[#A1A1A1]">
+                    250.000<span class="text-xs">đ</span>
+                  </p>
+                </div>
+                <a href="./thongtindonhang.html"><img src="./assets/images/Icon-green.png" alt="" /></a>
+              </div>
+            </div>
+            <div class="max-w-[270px] border-1 border-solid shadow-lg">
+              <div class="">
+                <img src="./assets/images/product-item.png" alt="product" class="max-w-[270px]" />
+              </div>
+              <p class="font-nunito sm:text-xs text-[#68C114] px-[14px] pt-[10px] pb-[22px]">
+                Thảo dược Cao gà gai leo Yên <br />Thủy - 250g
+              </p>
+              <hr class="w-[240px] mx-auto" />
+              <div class="flex pt-[11px] pb-[15px] items-center justify-between px-[14px]">
+                <div class="flex items-center gap-[15px]">
+                  <p class="font-nunito font-bold text-lg text-price">
+                    220.000 <span class="text-sm">đ</span>
+                  </p>
+                  <p class="font-nunito text-sm text-[#A1A1A1]">
+                    250.000<span class="text-xs">đ</span>
+                  </p>
+                </div>
+                <a href="./thongtindonhang.html"><img src="./assets/images/Icon-green.png" alt="" /></a>
+              </div>
+            </div>
+            <div class="max-w-[270px] border-1 border-solid shadow-lg">
+              <div class="">
+                <img src="./assets/images/product-item.png" alt="product" class="max-w-[270px]" />
+              </div>
+              <p class="font-nunito text-[#68C114] px-[14px] pt-[10px] pb-[22px]">
+                Thảo dược Cao gà gai leo Yên <br />Thủy - 250g
+              </p>
+              <hr class="w-[240px] mx-auto" />
+              <div class="flex pt-[11px] pb-[15px] items-center justify-between px-[14px]">
+                <div class="flex items-center gap-[15px]">
+                  <p class="font-nunito font-bold text-lg text-price">
+                    220.000 <span class="text-sm">đ</span>
+                  </p>
+                  <p class="font-nunito text-sm text-[#A1A1A1]">
+                    250.000<span class="text-xs">đ</span>
+                  </p>
+                </div>
+                <a href="./thongtindonhang.html"><img src="./assets/images/Icon-green.png" alt="" /></a>
+              </div>
+            </div>
+            <div class="max-w-[270px] border-1 border-solid shadow-lg">
+              <div class="">
+                <img src="./assets/images/product-item.png" alt="product" class="max-w-[270px]" />
+              </div>
+              <p class="font-nunito text-[#68C114] px-[14px] pt-[10px] pb-[22px]">
+                Thảo dược Cao gà gai leo Yên <br />Thủy - 250g
+              </p>
+              <hr class="w-[240px] mx-auto" />
+              <div class="flex pt-[11px] pb-[15px] items-center justify-between px-[14px]">
+                <div class="flex items-center gap-[15px]">
+                  <p class="font-nunito font-bold text-lg text-price">
+                    220.000 <span class="text-sm">đ</span>
+                  </p>
+                  <p class="font-nunito text-sm text-[#A1A1A1]">
+                    250.000<span class="text-xs">đ</span>
+                  </p>
+                </div>
+                <a href="./thongtindonhang.html"><img src="./assets/images/Icon-green.png" alt="" /></a>
+              </div>
+            </div>
+            <!-- Product-item -->
+          </div>
+          <!-- scroll-button all -->
+          <div class="flex justify-center gap-[15px] py-[48px]">
+            <div class="w-[10px] h-[10px] bg-[#68C114] rounded-full"></div>
+            <div class="w-[10px] h-[10px] border-[1px] border-solid bg-white rounded-full"></div>
+            <div class="w-[10px] h-[10px] border-[1px] border-solid bg-white rounded-full"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Product summer -->
+      <div class="max-w-[1170px] mx-auto flex gap-[20px] mt-[50px] sm:hidden">
+        <!-- Left -->
+        <div class="flex-col max-w-[270px]">
+          <div class="flex gap-1 mb-[24px]">
+            <img src="./assets/images/icon-la.png" alt="icon" class="max-w-[42px]" />
+            <p class="font-nunito font-bold text-[28px] uppercase">
+              Sản phẩm
+            </p>
+          </div>
+          <img src="./assets/images/summer.png " alt="" class="max-w-[270px] h-[791px]" />
+        </div>
+        <!-- right -->
+        <div class="flex-col w-[870px] pt-[14px]">
+          <!-- nav -->
+          <div class="flex justify-between mb-[24px] items-center">
+            <div>
+              <ul class="flex font-nunito text-lg gap-[41px]">
+                <li><a href="./danhmuctong.html#thao_duoc"> Thảo dược </a></li>
+                <li class="text-[#68C114]"><a href="./danhmuctong.html#nong_san"> Nông sản </a></li>
+                <li><a href="./danhmuctong.html#hoa_qua_huu_co"> Hoa quả hữu cơ </a></li>
+              </ul>
+            </div>
+            <div class="text-[#68C114] text-xs flex">
+              <p><a href="./danhmuctong.html">Xem tất cả</a></p>
+              <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M8.79351 13.2571L7.79122 12.2562L11.0496 8.99788L7.79122 5.73955L8.79351 4.74292L13.0506 9L8.79422 13.2571H8.79351ZM4.9508 13.2571L3.94922 12.2562L7.20755 8.99788L3.94922 5.7445L4.9508 4.74292L9.20859 9L4.95151 13.2571H4.9508Z"
+                  fill="#68C114" />
+              </svg>
+            </div>
+          </div>
+          <!--product  -->
+          <div class="flex flex-wrap gap-[20px]">
+            <div class="max-w-[270px] h-[385px] border-1 border-solid shadow-lg">
+              <div class="">
+                <img src="./assets/images/product-item.png" alt="product" class="max-w-[270px]" />
+              </div>
+              <p class="font-nunito text-[#68C114] px-[14px] pt-[10px] pb-[10px]">
+                Thảo dược Cao gà gai leo Yên <br />Thủy - 250g
+              </p>
+              <hr class="w-[240px] mx-auto" />
+              <div class="flex pt-[11px] pb-[15px] items-center justify-between px-[14px]">
+                <div class="flex items-center gap-[15px]">
+                  <p class="font-nunito font-bold text-lg text-price">
+                    220.000 <span class="text-sm">đ</span>
+                  </p>
+                  <p class="font-nunito text-sm text-[#A1A1A1]">
+                    250.000<span class="text-xs">đ</span>
+                  </p>
+                </div>
+                <a href="./thongtindonhang.html"><img src="./assets/images/Icon-green.png" alt="" /></a>
+              </div>
+            </div>
+            <div class="max-w-[270px] h-[385px] border-1 border-solid shadow-lg">
+              <div class="">
+                <img src="./assets/images/product-item.png" alt="product" class="max-w-[270px]" />
+              </div>
+              <p class="font-nunito text-[#68C114] px-[14px] pt-[10px] pb-[10px]">
+                Thảo dược Cao gà gai leo Yên <br />Thủy - 250g
+              </p>
+              <hr class="w-[240px] mx-auto" />
+              <div class="flex pt-[11px] pb-[15px] items-center justify-between px-[14px]">
+                <div class="flex items-center gap-[15px]">
+                  <p class="font-nunito font-bold text-lg text-price">
+                    220.000 <span class="text-sm">đ</span>
+                  </p>
+                  <p class="font-nunito text-sm text-[#A1A1A1]">
+                    250.000<span class="text-xs">đ</span>
+                  </p>
+                </div>
+                <a href="./thongtindonhang.html"><img src="./assets/images/Icon-green.png" alt="" /></a>
+              </div>
+            </div>
+            <div class="max-w-[270px] h-[385px] border-1 border-solid shadow-lg">
+              <div class="">
+                <img src="./assets/images/product-item.png" alt="product" class="max-w-[270px]" />
+              </div>
+              <p class="font-nunito text-[#68C114] px-[14px] pt-[10px] pb-[10px]">
+                Thảo dược Cao gà gai leo Yên <br />Thủy - 250g
+              </p>
+              <hr class="w-[240px] mx-auto" />
+              <div class="flex pt-[11px] pb-[15px] items-center justify-between px-[14px]">
+                <div class="flex items-center gap-[15px]">
+                  <p class="font-nunito font-bold text-lg text-price">
+                    220.000 <span class="text-sm">đ</span>
+                  </p>
+                  <p class="font-nunito text-sm text-[#A1A1A1]">
+                    250.000<span class="text-xs">đ</span>
+                  </p>
+                </div>
+                <a href="./thongtindonhang.html"><img src="./assets/images/Icon-green.png" alt="" /></a>
+              </div>
+            </div>
+            <div class="max-w-[270px] h-[385px] border-1 border-solid shadow-lg">
+              <div class="">
+                <img src="./assets/images/product-item.png" alt="product" class="max-w-[270px]" />
+              </div>
+              <p class="font-nunito text-[#68C114] px-[14px] pt-[10px] pb-[10px]">
+                Thảo dược Cao gà gai leo Yên <br />Thủy - 250g
+              </p>
+              <hr class="w-[240px] mx-auto" />
+              <div class="flex pt-[11px] pb-[15px] items-center justify-between px-[14px]">
+                <div class="flex items-center gap-[15px]">
+                  <p class="font-nunito font-bold text-lg text-price">
+                    220.000 <span class="text-sm">đ</span>
+                  </p>
+                  <p class="font-nunito text-sm text-[#A1A1A1]">
+                    250.000<span class="text-xs">đ</span>
+                  </p>
+                </div>
+                <a href="./thongtindonhang.html"><img src="./assets/images/Icon-green.png" alt="" /></a>
+              </div>
+            </div>
+            <div class="max-w-[270px] h-[385px] border-1 border-solid shadow-lg">
+              <div class="">
+                <img src="./assets/images/product-item.png" alt="product" class="max-w-[270px]" />
+              </div>
+              <p class="font-nunito text-[#68C114] px-[14px] pt-[10px] pb-[10px]">
+                Thảo dược Cao gà gai leo Yên <br />Thủy - 250g
+              </p>
+              <hr class="w-[240px] mx-auto" />
+              <div class="flex pt-[11px] pb-[15px] items-center justify-between px-[14px]">
+                <div class="flex items-center gap-[15px]">
+                  <p class="font-nunito font-bold text-lg text-price">
+                    220.000 <span class="text-sm">đ</span>
+                  </p>
+                  <p class="font-nunito text-sm text-[#A1A1A1]">
+                    250.000<span class="text-xs">đ</span>
+                  </p>
+                </div>
+                <a href="./thongtindonhang.html"><img src="./assets/images/Icon-green.png" alt="" /></a>
+              </div>
+            </div>
+            <div class="max-w-[270px] h-[385px] border-1 border-solid shadow-lg">
+              <div class="">
+                <img src="./assets/images/product-item.png" alt="product" class="max-w-[270px]" />
+              </div>
+              <p class="font-nunito text-[#68C114] px-[14px] pt-[10px] pb-[10px]">
+                Thảo dược Cao gà gai leo Yên <br />Thủy - 250g
+              </p>
+              <hr class="w-[240px] mx-auto" />
+              <div class="flex pt-[11px] pb-[15px] items-center justify-between px-[14px]">
+                <div class="flex items-center gap-[15px]">
+                  <p class="font-nunito font-bold text-lg text-price">
+                    220.000 <span class="text-sm">đ</span>
+                  </p>
+                  <p class="font-nunito text-sm text-[#A1A1A1]">
+                    250.000<span class="text-xs">đ</span>
+                  </p>
+                </div>
+                <a href="./thongtindonhang.html"><img src="./assets/images/Icon-green.png" alt="" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Product mobilde -->
+      <div class="sm:block hidden min-w-[340px] mx-auto">
+        <div>
+          <div class="flex items-center gap-1">
+            <img src="./assets/images/icon-la.png" class="max-w-[19px] h-[11.77px]" alt="icon" />
+            <p class="text-base font-nunito font-bold uppercase pt-[36px] pb-[27px]">Thảo dược</p>
+          </div>
+          <!--  -->
+          <div class="flex flex-wrap justify-around">
+            <div class="max-w-[164px] border-1 mb-[10px] border-solid shadow-lg">
+              <div class="relative">
+                <img src="./assets/images/product-item.png" alt="product" class="max-w-[164px]" />
+                <img src="./assets/images/img50.png" alt="img"
+                  class="max-w-[52px] max-h-[54px] sm:max-w-[31.5px] sm:max-h-[33px] absolute top-0 right-0" />
+              </div>
+              <p class="font-nunito sm:text-xs text-[#68C114] px-[14px] pt-[10px] pb-[10px]">
+                Thảo dược Cao gà gai leo Yên Thủy - 250g
+              </p>
+              <hr class="w-[123px] mx-auto" />
+              <div class="flex pt-[11px] pb-[15px] items-center justify-between px-[14px]">
+                <div class="flex items-center gap-[15px] sm:flex-col sm:items-start sm:gap-0">
+                  <p class="font-nunito font-bold text-lg sm:text-sm text-price">
+                    220.000 <span class="text-sm">đ</span>
+                  </p>
+                  <p class="font-nunito sm:text-[10px] text-sm text-[#A1A1A1]">
+                    250.000<span class="text-xs">đ</span>
+                  </p>
+                </div>
+                <img src="./assets/images/Icon-green.png" alt="" class="sm:max-w-[19px] " />
+              </div>
+            </div>
+            <div class="max-w-[164px] border-1 mb-[10px] border-solid shadow-lg">
+              <div class="relative">
+                <img src="./assets/images/product-item.png" alt="product" class="max-w-[164px]" />
+                <img src="./assets/images/img50.png" alt="img"
+                  class="max-w-[52px] max-h-[54px] sm:max-w-[31.5px] sm:max-h-[33px] absolute top-0 right-0" />
+              </div>
+              <p class="font-nunito sm:text-xs text-[#68C114] px-[14px] pt-[10px] pb-[10px]">
+                Thảo dược Cao gà gai leo Yên Thủy - 250g
+              </p>
+              <hr class="w-[123px] mx-auto" />
+              <div class="flex pt-[11px] pb-[15px] items-center justify-between px-[14px]">
+                <div class="flex items-center gap-[15px] sm:flex-col sm:items-start sm:gap-0">
+                  <p class="font-nunito font-bold text-lg sm:text-sm text-price">
+                    220.000 <span class="text-sm">đ</span>
+                  </p>
+                  <p class="font-nunito sm:text-[10px] text-sm text-[#A1A1A1]">
+                    250.000<span class="text-xs">đ</span>
+                  </p>
+                </div>
+                <img src="./assets/images/Icon-green.png" alt="" class="sm:max-w-[19px] " />
+              </div>
+            </div>
+            <div class="max-w-[164px] border-1 mb-[10px] border-solid shadow-lg">
+              <div class="relative">
+                <img src="./assets/images/product-item.png" alt="product" class="max-w-[164px]" />
+                <img src="./assets/images/img50.png" alt="img"
+                  class="max-w-[52px] max-h-[54px] sm:max-w-[31.5px] sm:max-h-[33px] absolute top-0 right-0" />
+              </div>
+              <p class="font-nunito sm:text-xs text-[#68C114] px-[14px] pt-[10px] pb-[10px]">
+                Thảo dược Cao gà gai leo Yên Thủy - 250g
+              </p>
+              <hr class="w-[123px] mx-auto" />
+              <div class="flex pt-[11px] pb-[15px] items-center justify-between px-[14px]">
+                <div class="flex items-center gap-[15px] sm:flex-col sm:items-start sm:gap-0">
+                  <p class="font-nunito font-bold text-lg sm:text-sm text-price">
+                    220.000 <span class="text-sm">đ</span>
+                  </p>
+                  <p class="font-nunito sm:text-[10px] text-sm text-[#A1A1A1]">
+                    250.000<span class="text-xs">đ</span>
+                  </p>
+                </div>
+                <img src="./assets/images/Icon-green.png" alt="" class="sm:max-w-[19px] " />
+              </div>
+            </div>
+            <div class="max-w-[164px] border-1 mb-[10px] border-solid shadow-lg">
+              <div class="relative">
+                <img src="./assets/images/product-item.png" alt="product" class="max-w-[164px]" />
+                <img src="./assets/images/img50.png" alt="img"
+                  class="max-w-[52px] max-h-[54px] sm:max-w-[31.5px] sm:max-h-[33px] absolute top-0 right-0" />
+              </div>
+              <p class="font-nunito sm:text-xs text-[#68C114] px-[14px] pt-[10px] pb-[10px]">
+                Thảo dược Cao gà gai leo Yên Thủy - 250g
+              </p>
+              <hr class="w-[123px] mx-auto" />
+              <div class="flex pt-[11px] pb-[15px] items-center justify-between px-[14px]">
+                <div class="flex items-center gap-[15px] sm:flex-col sm:items-start sm:gap-0">
+                  <p class="font-nunito font-bold text-lg sm:text-sm text-price">
+                    220.000 <span class="text-sm">đ</span>
+                  </p>
+                  <p class="font-nunito sm:text-[10px] text-sm text-[#A1A1A1]">
+                    250.000<span class="text-xs">đ</span>
+                  </p>
+                </div>
+                <img src="./assets/images/Icon-green.png" alt="" class="sm:max-w-[19px] " />
+              </div>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+        <!--  -->
+        <div>
+          <div class="flex items-center gap-1">
+            <img src="./assets/images/icon-la.png" class="max-w-[19px] h-[11.77px]" alt="icon" />
+            <p class="text-base font-nunito font-bold uppercase pt-[36px] pb-[27px]">Thảo dược</p>
+          </div>
+          <!--  -->
+          <div class="flex flex-wrap justify-around">
+            <div class="max-w-[164px] border-1 mb-[10px] border-solid shadow-lg">
+              <div class="relative">
+                <img src="./assets/images/product-item.png" alt="product" class="max-w-[164px]" />
+                <img src="./assets/images/img50.png" alt="img"
+                  class="max-w-[52px] max-h-[54px] sm:max-w-[31.5px] sm:max-h-[33px] absolute top-0 right-0" />
+              </div>
+              <p class="font-nunito sm:text-xs text-[#68C114] px-[14px] pt-[10px] pb-[10px]">
+                Thảo dược Cao gà gai leo Yên Thủy - 250g
+              </p>
+              <hr class="w-[123px] mx-auto" />
+              <div class="flex pt-[11px] pb-[15px] items-center justify-between px-[14px]">
+                <div class="flex items-center gap-[15px] sm:flex-col sm:items-start sm:gap-0">
+                  <p class="font-nunito font-bold text-lg sm:text-sm text-price">
+                    220.000 <span class="text-sm">đ</span>
+                  </p>
+                  <p class="font-nunito sm:text-[10px] text-sm text-[#A1A1A1]">
+                    250.000<span class="text-xs">đ</span>
+                  </p>
+                </div>
+                <img src="./assets/images/Icon-green.png" alt="" class="sm:max-w-[19px] " />
+              </div>
+            </div>
+            <div class="max-w-[164px] border-1 mb-[10px] border-solid shadow-lg">
+              <div class="relative">
+                <img src="./assets/images/product-item.png" alt="product" class="max-w-[164px]" />
+                <img src="./assets/images/img50.png" alt="img"
+                  class="max-w-[52px] max-h-[54px] sm:max-w-[31.5px] sm:max-h-[33px] absolute top-0 right-0" />
+              </div>
+              <p class="font-nunito sm:text-xs text-[#68C114] px-[14px] pt-[10px] pb-[10px]">
+                Thảo dược Cao gà gai leo Yên Thủy - 250g
+              </p>
+              <hr class="w-[123px] mx-auto" />
+              <div class="flex pt-[11px] pb-[15px] items-center justify-between px-[14px]">
+                <div class="flex items-center gap-[15px] sm:flex-col sm:items-start sm:gap-0">
+                  <p class="font-nunito font-bold text-lg sm:text-sm text-price">
+                    220.000 <span class="text-sm">đ</span>
+                  </p>
+                  <p class="font-nunito sm:text-[10px] text-sm text-[#A1A1A1]">
+                    250.000<span class="text-xs">đ</span>
+                  </p>
+                </div>
+                <img src="./assets/images/Icon-green.png" alt="" class="sm:max-w-[19px] " />
+              </div>
+            </div>
+            <div class="max-w-[164px] border-1 mb-[10px] border-solid shadow-lg">
+              <div class="relative">
+                <img src="./assets/images/product-item.png" alt="product" class="max-w-[164px]" />
+                <img src="./assets/images/img50.png" alt="img"
+                  class="max-w-[52px] max-h-[54px] sm:max-w-[31.5px] sm:max-h-[33px] absolute top-0 right-0" />
+              </div>
+              <p class="font-nunito sm:text-xs text-[#68C114] px-[14px] pt-[10px] pb-[10px]">
+                Thảo dược Cao gà gai leo Yên Thủy - 250g
+              </p>
+              <hr class="w-[123px] mx-auto" />
+              <div class="flex pt-[11px] pb-[15px] items-center justify-between px-[14px]">
+                <div class="flex items-center gap-[15px] sm:flex-col sm:items-start sm:gap-0">
+                  <p class="font-nunito font-bold text-lg sm:text-sm text-price">
+                    220.000 <span class="text-sm">đ</span>
+                  </p>
+                  <p class="font-nunito sm:text-[10px] text-sm text-[#A1A1A1]">
+                    250.000<span class="text-xs">đ</span>
+                  </p>
+                </div>
+                <img src="./assets/images/Icon-green.png" alt="" class="sm:max-w-[19px] " />
+              </div>
+            </div>
+            <div class="max-w-[164px] border-1 mb-[10px] border-solid shadow-lg">
+              <div class="relative">
+                <img src="./assets/images/product-item.png" alt="product" class="max-w-[164px]" />
+                <img src="./assets/images/img50.png" alt="img"
+                  class="max-w-[52px] max-h-[54px] sm:max-w-[31.5px] sm:max-h-[33px] absolute top-0 right-0" />
+              </div>
+              <p class="font-nunito sm:text-xs text-[#68C114] px-[14px] pt-[10px] pb-[10px]">
+                Thảo dược Cao gà gai leo Yên Thủy - 250g
+              </p>
+              <hr class="w-[123px] mx-auto" />
+              <div class="flex pt-[11px] pb-[15px] items-center justify-between px-[14px]">
+                <div class="flex items-center gap-[15px] sm:flex-col sm:items-start sm:gap-0">
+                  <p class="font-nunito font-bold text-lg sm:text-sm text-price">
+                    220.000 <span class="text-sm">đ</span>
+                  </p>
+                  <p class="font-nunito sm:text-[10px] text-sm text-[#A1A1A1]">
+                    250.000<span class="text-xs">đ</span>
+                  </p>
+                </div>
+                <img src="./assets/images/Icon-green.png" alt="" class="sm:max-w-[19px] " />
+              </div>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+        <!--  -->
+        <div>
+          <div class="flex items-center gap-1">
+            <img src="./assets/images/icon-la.png" class="max-w-[19px] h-[11.77px]" alt="icon" />
+            <p class="text-base font-nunito font-bold uppercase pt-[36px] pb-[27px]">Thảo dược</p>
+          </div>
+          <!--  -->
+          <div class="flex flex-wrap justify-around">
+            <div class="max-w-[164px] border-1 mb-[10px] border-solid shadow-lg">
+              <div class="relative">
+                <img src="./assets/images/product-item.png" alt="product" class="max-w-[164px]" />
+                <img src="./assets/images/img50.png" alt="img"
+                  class="max-w-[52px] max-h-[54px] sm:max-w-[31.5px] sm:max-h-[33px] absolute top-0 right-0" />
+              </div>
+              <p class="font-nunito sm:text-xs text-[#68C114] px-[14px] pt-[10px] pb-[10px]">
+                Thảo dược Cao gà gai leo Yên Thủy - 250g
+              </p>
+              <hr class="w-[123px] mx-auto" />
+              <div class="flex pt-[11px] pb-[15px] items-center justify-between px-[14px]">
+                <div class="flex items-center gap-[15px] sm:flex-col sm:items-start sm:gap-0">
+                  <p class="font-nunito font-bold text-lg sm:text-sm text-price">
+                    220.000 <span class="text-sm">đ</span>
+                  </p>
+                  <p class="font-nunito sm:text-[10px] text-sm text-[#A1A1A1]">
+                    250.000<span class="text-xs">đ</span>
+                  </p>
+                </div>
+                <img src="./assets/images/Icon-green.png" alt="" class="sm:max-w-[19px] " />
+              </div>
+            </div>
+            <div class="max-w-[164px] border-1 mb-[10px] border-solid shadow-lg">
+              <div class="relative">
+                <img src="./assets/images/product-item.png" alt="product" class="max-w-[164px]" />
+                <img src="./assets/images/img50.png" alt="img"
+                  class="max-w-[52px] max-h-[54px] sm:max-w-[31.5px] sm:max-h-[33px] absolute top-0 right-0" />
+              </div>
+              <p class="font-nunito sm:text-xs text-[#68C114] px-[14px] pt-[10px] pb-[10px]">
+                Thảo dược Cao gà gai leo Yên Thủy - 250g
+              </p>
+              <hr class="w-[123px] mx-auto" />
+              <div class="flex pt-[11px] pb-[15px] items-center justify-between px-[14px]">
+                <div class="flex items-center gap-[15px] sm:flex-col sm:items-start sm:gap-0">
+                  <p class="font-nunito font-bold text-lg sm:text-sm text-price">
+                    220.000 <span class="text-sm">đ</span>
+                  </p>
+                  <p class="font-nunito sm:text-[10px] text-sm text-[#A1A1A1]">
+                    250.000<span class="text-xs">đ</span>
+                  </p>
+                </div>
+                <img src="./assets/images/Icon-green.png" alt="" class="sm:max-w-[19px] " />
+              </div>
+            </div>
+            <div class="max-w-[164px] border-1 mb-[10px] border-solid shadow-lg">
+              <div class="relative">
+                <img src="./assets/images/product-item.png" alt="product" class="max-w-[164px]" />
+                <img src="./assets/images/img50.png" alt="img"
+                  class="max-w-[52px] max-h-[54px] sm:max-w-[31.5px] sm:max-h-[33px] absolute top-0 right-0" />
+              </div>
+              <p class="font-nunito sm:text-xs text-[#68C114] px-[14px] pt-[10px] pb-[10px]">
+                Thảo dược Cao gà gai leo Yên Thủy - 250g
+              </p>
+              <hr class="w-[123px] mx-auto" />
+              <div class="flex pt-[11px] pb-[15px] items-center justify-between px-[14px]">
+                <div class="flex items-center gap-[15px] sm:flex-col sm:items-start sm:gap-0">
+                  <p class="font-nunito font-bold text-lg sm:text-sm text-price">
+                    220.000 <span class="text-sm">đ</span>
+                  </p>
+                  <p class="font-nunito sm:text-[10px] text-sm text-[#A1A1A1]">
+                    250.000<span class="text-xs">đ</span>
+                  </p>
+                </div>
+                <img src="./assets/images/Icon-green.png" alt="" class="sm:max-w-[19px] " />
+              </div>
+            </div>
+            <div class="max-w-[164px] border-1 mb-[10px] border-solid shadow-lg">
+              <div class="relative">
+                <img src="./assets/images/product-item.png" alt="product" class="max-w-[164px]" />
+                <img src="./assets/images/img50.png" alt="img"
+                  class="max-w-[52px] max-h-[54px] sm:max-w-[31.5px] sm:max-h-[33px] absolute top-0 right-0" />
+              </div>
+              <p class="font-nunito sm:text-xs text-[#68C114] px-[14px] pt-[10px] pb-[10px]">
+                Thảo dược Cao gà gai leo Yên Thủy - 250g
+              </p>
+              <hr class="w-[123px] mx-auto" />
+              <div class="flex pt-[11px] pb-[15px] items-center justify-between px-[14px]">
+                <div class="flex items-center gap-[15px] sm:flex-col sm:items-start sm:gap-0">
+                  <p class="font-nunito font-bold text-lg sm:text-sm text-price">
+                    220.000 <span class="text-sm">đ</span>
+                  </p>
+                  <p class="font-nunito sm:text-[10px] text-sm text-[#A1A1A1]">
+                    250.000<span class="text-xs">đ</span>
+                  </p>
+                </div>
+                <img src="./assets/images/Icon-green.png" alt="" class="sm:max-w-[19px] " />
+              </div>
+            </div>
+          </div>
+          <!--  -->
+        </div>
+        <!--  -->
+      </div>
+
+      <!-- Mobile -->
+    </div>
+    <!-- Why -->
+    <div class="bg-[#FAFAFA] w-full mt-[65px]">
+      <div class="sm:gap-[27px] max-w-[1170px] mx-auto flex sm:flex-col-reverse gap-[48px] py-[74px]">
+        <!-- left -->
+        <div class="sm:max-w-[370px]">
+          <img src="./assets/images/why.png" alt=""
+            class="max-w-[531px] border-2 h-[527px] sm:max-w-full sm:object-cover sm:overflow-hidden " />
+        </div>
+        <!-- right -->
+        <div>
+          <!-- text -->
+          <div class="flex gap-[6px] pb-[18px] justify-center sm:gap-2 sm:max-w-[370px] ">
+            <img src="./assets/images/icon-la.png" alt="icon" class="sm:max-w-[19px]" />
+            <p class="uppercase font-bold text-[28px] sm:text-base font-nunito">
+              Tại sao lựa chọn nông thảo ?
+            </p>
+          </div>
+          <p class="font-nunito pb-[20px] text-center sm:text-sm">
+            Chúng tôi mang đến cho bạn các sản phẩm nông sản và thảo dược
+            được sản xuất sạch bền vững và không có hóa chất.
+          </p>
+          <!-- Step -->
+          <div class="flex gap-[18px] sm:pl-[14px] sm:gap[10px] ">
+            <!--  -->
+            <!-- Left -->
+            <div class="flex flex-col items-center gap-[9px]">
+              <div class="relative">
+                <img src="./assets/images/circle-white.png" class="absolute" alt="icon" />
+                <img src="./assets/images/Circle01.png" class="max-w-[72px] " alt="icon" />
+              </div>
+              <div>
+                <img src="./assets/images/Line.png" alt="line" />
+              </div>
+              <div class="relative">
+                <img src="./assets/images/circle-white.png" class="absolute" alt="icon" />
+                <img src="./assets/images/Circle02.png" class="max-w-[72px] " alt="icon" />
+              </div>
+              <div>
+                <img src="./assets/images/Line.png" alt="line" />
+              </div>
+              <div class="relative">
+                <img src="./assets/images/circle-white.png" class="absolute" alt="icon" />
+                <img src="./assets/images/Circle03.png" class="max-w-[72px]" alt="icon" />
+              </div>
+            </div>
+            <!-- right step -->
+            <div class="flex flex-col h-[397px] gap-[47px] sm:gap-[36px]">
+              <div>
+                <p class="font-nunito text-[21px] sm:text-base sm:font-bold text-bgColor pb-2">
+                  100% hữu cơ
+                </p>
+                <p class="font-nunito sm:text-sm">
+                  Thực hành tốt trồng trọt theo tiêu chuẩn GACP-WHO để
+                  nguyên liệu an toàn cho sức khỏe của bạn
+                </p>
+              </div>
+              <div>
+                <p class="font-nunito text-[21px] sm:text-base pb-2">Công nghệ</p>
+                <p class="font-nunito sm:text-sm">
+                  Áp dụng công nghệ sản xuất tiêu chuẩn tùy theo loại sản
+                  phẩm. Tuân thủ phương pháp sản xuất khoa học, an toàn.
+                </p>
+              </div>
+              <div>
+                <p class="font-nunito text-[21px] sm:text-base pb-2">Trách nhiệm</p>
+                <p class="font-nunito sm:text-sm">
+                  Nông Thảo chăm chút từng khâu sản xuất, kiểm định và phân
+                  phối để sản phẩm đến tay bạn có chất lượng tốt nhất
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--  -->
+      </div>
+    </div>
+    <!-- News -->
+    <div>
+      <div class="max-w-[1170px] mx-auto">
+        <div class="flex justify-center sm:items-center gap-1 mt-[46px] mb-[24px]">
+          <img src="./assets/images/icon-la.png" alt="icon" class="max-w-[42px] sm:max-w-[19px] sm:max-h-[11.77px]" />
+          <p class="font-nunito font-bold text-[28px] sm:text-lg uppercase">
+            tin tức & kiến thức
+          </p>
+        </div>
+        <!-- Prodcut -->
+        <div class="flex gap-[30px] sm:pl-[14px] sm:max-w-[370px] justify-center sm:justify-start overflow-hidden">
+          <!-- Product-item -->
+          <div class="max-w-[370px] sm:max-w-[270px] border-2 border-solid shadow-lg">
+            <!-- <div> -->
+            <img src="./assets/images/home-news.png" alt="product" class="max-w-[370px] sm:max-w-[270px] w-full" />
+            <!-- </div> -->
+            <div class="flex flex-col px-[14px] gap-3 py-[14px]">
+              <p class="font-nunito text-[12px] text-[#68C114] uppercase">
+                Nông nghiệp sạch
+              </p>
+              <p class="font-nunito text-lg text-[#356C07] sm:text-sm font-bold">
+                Nông Thảo đã trồng và thu hoạch vườn<br />
+                cà chua như thế nào?
+              </p>
+              <p class="sm:font-nunito sm:text-sm">
+                Mời bạn đọc tìm hiểu thêm về quy trình trồng<br />
+                và thu hoạch cà chua hữu cơ của...
+              </p>
+            </div>
+            <hr class="w-[370px]" />
+            <div class="flex items-center justify-between px-[14px] py-[16px]">
+              <div class="text-[#68C114] flex items-center">
+                <p class="uppercase"><a href="./child-information.html">Xem chi tiết</a></p>
+                <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.79351 13.2571L7.79122 12.2562L11.0496 8.99788L7.79122 5.73955L8.79351 4.74292L13.0506 9L8.79422 13.2571H8.79351ZM4.9508 13.2571L3.94922 12.2562L7.20755 8.99788L3.94922 5.7445L4.9508 4.74292L9.20859 9L4.95151 13.2571H4.9508Z"
+                    fill="#68C114" />
+                </svg>
+              </div>
+              <img src="./assets/images/view.png" alt="" />
+            </div>
+          </div>
+          <div class="max-w-[370px] sm:max-w-[270px] border-1 border-solid shadow-lg">
+            <!-- <div> -->
+            <img src="./assets/images/home-news.png" alt="product" class="max-w-[370px] sm:max-w-[270px] w-full" />
+            <!-- </div> -->
+            <div class="flex flex-col px-[14px] gap-3 py-[14px]">
+              <p class="font-nunito text-[12px] text-[#68C114] uppercase">
+                Nông nghiệp sạch
+              </p>
+              <p class="font-nunito text-lg text-[#356C07] sm:text-sm font-bold">
+                Nông Thảo đã trồng và thu hoạch vườn<br />
+                cà chua như thế nào?
+              </p>
+              <p class="sm:font-nunito sm:text-sm">
+                Mời bạn đọc tìm hiểu thêm về quy trình trồng<br />
+                và thu hoạch cà chua hữu cơ của...
+              </p>
+            </div>
+            <hr class="w-[370px]" />
+            <div class="flex items-center justify-between px-[14px] py-[16px]">
+              <div class="text-[#68C114] flex items-center">
+                <p class="uppercase"><a href="./child-information.html">Xem chi tiết</a></p>
+                <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.79351 13.2571L7.79122 12.2562L11.0496 8.99788L7.79122 5.73955L8.79351 4.74292L13.0506 9L8.79422 13.2571H8.79351ZM4.9508 13.2571L3.94922 12.2562L7.20755 8.99788L3.94922 5.7445L4.9508 4.74292L9.20859 9L4.95151 13.2571H4.9508Z"
+                    fill="#68C114" />
+                </svg>
+              </div>
+              <img src="./assets/images/view.png" alt="" />
+            </div>
+          </div>
+          <!--  -->
+
+          <div class="max-w-[370px] h-[480px]  sm:max-w-[270px]  border-1 border-solid shadow-lg">
+            <div>
+              <img src="./assets/images/home-news.png" alt="product" class="max-w-[370px]  sm:max-w-[270px] " />
+            </div>
+            <div class="flex flex-col px-[14px] gap-3 py-[14px]">
+              <p class="font-nunito text-[12px] text-[#68C114] uppercase">
+                Nông nghiệp sạch
+              </p>
+              <p class="font-nunito text-lg text-[#356C07] font-bold">
+                Nông Thảo đã trồng và thu hoạch vườn<br />
+                cà chua như thế nào?
+              </p>
+              <p>
+                Mời bạn đọc tìm hiểu thêm về quy trình trồng<br />
+                và thu hoạch cà chua hữu cơ của...
+              </p>
+            </div>
+            <hr class="w-[370px]" />
+            <div class="flex items-center justify-between px-[14px] py-[16px]">
+              <div class="text-[#68C114] flex items-center">
+                <p class="uppercase"><a href="./child-information.html">Xem chi tiết</a></p>
+                <svg width="17" height="18" viewBox="0 0 17 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M8.79351 13.2571L7.79122 12.2562L11.0496 8.99788L7.79122 5.73955L8.79351 4.74292L13.0506 9L8.79422 13.2571H8.79351ZM4.9508 13.2571L3.94922 12.2562L7.20755 8.99788L3.94922 5.7445L4.9508 4.74292L9.20859 9L4.95151 13.2571H4.9508Z"
+                    fill="#68C114" />
+                </svg>
+              </div>
+              <img src="./assets/images/view.png" alt="" />
+            </div>
+          </div>
+
+          <!-- Product-item -->
+        </div>
+        <!-- scroll-button all -->
+        <div class="flex justify-center gap-[15px] py-[30px]">
+          <div class="w-[10px] h-[10px] bg-[#68C114] rounded-full"></div>
+          <div class="w-[10px] h-[10px] border-[1px] border-solid bg-white rounded-full"></div>
+          <div class="w-[10px] h-[10px] border-[1px] border-solid bg-white rounded-full"></div>
+        </div>
+        <div class="text-center sm:hidden">
+          <a href="./information.html">
+            <button class="w-[160px] h-[45px] border-[1px] border-solid border-[#356C07] text-[#356C07]">
+              Xem tất cả
+            </button>
+          </a>
+          <div class="w-[159px] h-[1px] bg-bgColor mx-auto mt-[7px] mb-[48px]"></div>
+        </div>
+      </div>
+    </div>
+    <!-- connect -->
+    <div class="w-full relative">
+      <div class="fixed bottom-0 right-0 flex flex-col sm:pr-[6px] gap-[14px] pr-[22px] pb-9">
+        <div>
+          <img src="./assets/images/phone-home.png" alt="icon" class="max-w-[48px]" />
+        </div>
+        <div>
+          <img src="./assets/images/Facebook-messenger.png" alt="icon" class="max-w-[48px]" />
+        </div>
+        <div>
+          <img src="./assets/images/arrow.png" alt="icon" class="max-w-[48px]" />
+        </div>
+      </div>
+    </div>
+    <!--  -->
+  </div>
+
+  <footer class="w-full bg-[#356C07] font-nunito ">
+
+    <div class="flex max-h-60">
+      <div>
+        <img class="img-style" src="./assets/images/footer-1.png" alt="">
+      </div>
+      <div>
+        <img class="img-style" src="./assets/images/footer-2.png" alt="">
+      </div>
+      <div>
+        <img class="img-style" src="./assets/images/footer-3.png" alt="">
+      </div>
+      <div>
+        <img class="img-style sm:hidden" src="./assets/images/footer-4.png" alt="">
+      </div>
+      <div>
+        <img class="img-style sm:hidden" src="./assets/images/footer-5.png" alt="">
+      </div>
+      <div>
+        <img class="img-style sm:hidden" src="./assets/images/footer-2.png" alt="">
+      </div>
+      <div>
+        <img class="img-style sm:hidden" src="./assets/images/footer-4.png" alt="">
+      </div>
+      <div>
+        <img class="img-style sm:hidden" src="./assets/images/footer-6.png" alt="">
+      </div>
+    </div>
+    <div
+      class="container mt-10 flex justify-between max-w-6xl text-white py-5 sm:flex sm:flex-col sm:px-6 sm:gap-[15px]">
+      <div class="max-w-sm">
+        <div>
+          <img class="mix-blend-color-dodge" src="./assets/images/footer.png" alt="">
+        </div>
+        <p class="mt-6 text-white">MST: 012345678910 - Ngày cấp: 10/02/2022 <br>
+          Nơi cấp: Sở Kế hoạch & Đầu tư TP Hà Nội</p>
+        <div class="flex gap-4 mt-6">
+          Liên kết
+          <img class="w-6 h-6 rounded-full" src="./assets/images/shopee.png" alt="">
+          <img class="w-6 h-6 rounded-full" src="./assets/images/tiki.png" alt="">
+          <img class="w-6 h-6 rounded-full" src="./assets/images/lazada.png" alt="">
+          <img class="w-6 h-6 rounded-full" src="./assets/images/facebook.png" alt="">
+          <img class="w-6 h-6 rounded-full" src="./assets/images/in.png" alt="">
+          <img class="w-6 h-6 rounded-full" src="./assets/images/tiktok.png" alt="">
+        </div>
+      </div>
+      <div class="max-w-[248px]  sm:max-w-full sm:border-t-2 sm:border-b-2 sm:py-3">
+        <h4>Liên Hệ</h4>
+        <ul class="mt-8 flex flex-col gap-3 sm:hidden">
+          <li class="flex items-start gap-3">
+            <img src="./assets/images/location.svg" alt="">Tầng 4-5-6, Tòa nhà Capital Place, số 29 đường
+            Liễu Giai, P.Ngọc Khánh, Q.Ba
+            Đình, Hà Nội
+          </li>
+          <li class="flex items-start gap-3">
+            <img src="./assets/images/phone.svg" alt="">0969.71.6848
+          </li>
+          <li class="flex items-start gap-3">
+            <img src="./assets/images/mail.svg" alt="">hotro@nongthao.vn
+          </li>
+        </ul>
+      </div>
+      <div class="max-w-xs sm:border-b-2 sm:py-3">
+        <h4>Thông tin</h4>
+        <ul class="list-disc ml-4 mt-4 flex flex-col gap-3 sm:hidden">
+          <li><a href="">Giới thiệu Nông Thảo</a></li>
+          <li><a href="">Điều khoản</a></li>
+          <li><a href="">Chính sách bảo mật</a></li>
+          <li><a href="">Hướng dẫn mua hàng</a></li>
+          <li><a href="">Trả hàng & hoàn tiền</a></li>
+          <li><a href="">Nông Thảo Blogs</a></li>
+        </ul>
+      </div>
+      <div class="max-w-[270px] sm:max-w-full">
+        <h4>Đăng ký nhận tin</h4>
+        <p class="mt-6 text-white">Vui lòng nhập email để nhận thêm nhiều ưu đãi từ Nông Thảo</p>
+        <div class="mt-2 flex">
+          <input class="px-3 py-2 sm:w-full" placeholder="Email của bạn..." type="text"><span
+            class="bg-[#68C114] max-w-[47px] max-h-[45px] flex items-center justify-center py-3 px-3">
+            <div>
+              <img class="" src="./assets/images/send.svg" alt="">
+            </div>
+          </span>
+        </div>
+        <div class="flex justify-between mt-8">
+          <div>
+            <img class="img-style" src="./assets/images/bocongthuong.png" alt="">
+          </div>
+          <div>
+            <img class="img-style" src="./assets/images/dmca.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex items-center justify-center py-3 opacity-50 bg-gray-50">
+      <p class="text-center text-sm">© 2022 - Bản quyền thuộc về Công ty TNHH Nông Thảo.</p>
+    </div>
+  </footer>
+  <script src="./assets/js/toggle.js"></script>
 </body>
 
 </html>
