@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="w-full shadow-lg font-nunito">
+        <div class="container">
+            <header class="flex justify-between w-full max-w-6xl h-20 items-center mx-auto sm:p-3 relative">
+                <div class="hidden sm:block toggle-button">
+                    <img src="./assets/images/menu.svg" alt="">
+                </div>
+                <div>
+                    <img class="w-60 sm:w-[138px]" src="./assets/images/logo.png" alt="">
+                </div>
+                <div class="sm:hidden">
+                    <ul class="flex gap-8 uppercase">
+                        <li><a class="focus:text-bgColor" href="#">Sản Phẩm</a></li>
+                        <li><a class="focus:text-bgColor" href="">Về Nông Thảo</a></li>
+                        <li><a class="focus:text-bgColor" href="">Blog</a></li>
+                        <li><a class="focus:text-bgColor" href="">Liên Hệ</a></li>
+                    </ul>
+                </div>
+                <div id="menu" class="fixed left-0 top-0 h-full bg-white px-4 z-10 py-6 hidden">
+                    <div class="max-w-[36px] max-h-[36px] float-right toggle-button">
+                        <img class="img-style" src="./assets/images/Cross.png" alt="">
+                    </div>
+                    <div>
+                        <img class="w-32" src="./assets/images/logo.png" alt="">
+                    </div>
+
+                    <div class="max-w-[252px] w-full flex relative mt-[27px]">
+                        <input class="w-full  bg-[#ebf0e6]  rounded-2xl py-2 px-4" type="text"
+                            placeholder="Bạn muốn tìm..."><img class="absolute right-0 top-[0.13rem] h-[36px] w-[36px]"
+                            src="./assets/images/navbar-search-icon.png" alt="">
+                    </div>
+                    <div class="flex flex-col">
+                        <div class="flex justify-between border-b-2 pb-1 mt-5">
+                            <h3><a class="text-bgColor" href="">SẢN PHẨM</a></h3>
+                            <div><img src="./assets/images/arrow-navbar.svg" alt=""></div>
+                        </div>
+                        <div class="mt-3">
+                            <ul class="px-4 flex flex-col gap-2">
+                                <li class="border-b-2"><a href="">Thảo dược</a></li>
+                                <li class="border-b-2"><a href="">Nông sản</a></li>
+                                <li class="border-b-2"><a href="">Hoa quả</a></li>
+                            </ul>
+
+                        </div>
+                        <div class="pb-1 mt-6">
+                            <h3 class="border-b-2"><a class="text-bgColor " href="">VỀ NÔNG THẢO</a></h3>
+                        </div>
+                        <div class="flex justify-between border-b-2 pb-1 mt-4"><a class="text-bgColor" href="">BLOGS</a>
+                            <div><img src="./assets/images/arrow-navbar.svg" alt=""></div>
+                        </div>
+                        <div class="mt-4"><a class="text-bgColor" href="">LIÊN HỆ</a></div>
+                    </div>
+                    <div class="mt-12 flex flex-col items-center gap-3">
+                        <button
+                            class="w-full py-3 px-8 bg-red-600 text-[18px] font-bold text-white">0988.818.841</button>
+                        <span class="text-bgColor">Gọi hỗ trợ ngay!</span>
+                    </div>
+                </div>
+                <div class="flex gap-4">
+                    <img class="sm:hidden" src="./assets/images/search-glass.svg" alt="">
+                    <img src="./assets/images/cart.svg" alt="">
+                </div>
+            </header>
+        </div>
+    </header>
+    <div class="container mx-auto font-nunito w-full ">
+        <div class="border-solid border-gray-300 border-2">
+            <!-- <header class="flex items-center justify-evenly p-4 bg-white">
+                <img class="rounded-lg h-11" src="./assets/images/logo.png" alt="Logo">
+                <ul class="flex space-x-4 text-base font-semibold">
+                    <li class="hover:text-blue-500 cursor-pointer uppercase">Sản phẩm</li>
+                    <li class="hover:text-blue-500 cursor-pointer uppercase text-green-regal">Về nông thảo</li>
+                    <li class="hover:text-blue-500 cursor-pointer uppercase">Blog</li>
+                    <li class="hover:text-blue-500 cursor-pointer uppercase">Liên hệ</li>
+                </ul>
+                <div class="flex items-center">
+                    <img class="h-9" src="./assets/images/search.png" alt="">
+                    <img class="h-9" src="./assets/images/shopping-cart.png" alt="">
+                </div>
+            </header> -->
+            <div class="relative mb-5">
+                <img class="sm:h-[103px] " src="./assets/images/banner-home.png" alt="Banner">
+                <div
+                    class="absolute inset-0 font-bold flex items-center justify-center uppercase text-4xl text-white sm:text-[28px]">
+                    Tin tức & chia sẻ
+                </div>
+            </div>
+            <div class="sm:ml-5">
+                <div class="flex max-w-66 mx-auto mb-6 sm:mb-4">
+                    <div class="text-black-grey text-sm font-normal sm:ml-1">Trang chủ ></div>
+                    <div class="text-C4 text-sm font-normal">Tin tức</div>
+                </div>
+                <div class=" max-w-66 mx-auto pb-4.4">
+                    <div class="flex justify-between mb-5 sm:mb-3">
+                        <div class="flex items-center">
+                            <img class=" w-2.625 h-1.625 mr-2 sm:w-5 sm:h-3 sm:mr-1" src="./assets/images/grass.png"
+                                alt="">
+                            <div class="text-3xl font-bold text-black1A uppercase sm:text-base">Nông nghiệp sạch</div>
+                        </div>
+                        <div class="self-end text-green-grass font-semibold sm:hidden">Xem tất cả &nbsp; &gt;&gt;</div>
+                    </div>
+                    <div class="flex gap-7 relative sm:overflow-x-auto sm:whitespace-nowrap ">
+                        <div class="shadow-custom sm:w-16.875 sm: shadow-2xl">
+                            <img src="./assets/images/potato.png" alt="">
+                            <div class="border-b-0.91 border-custom-gray sm:w-[270px] ">
+                                <div
+                                    class="max-w-19 m-auto pt-3 pb-3 sm:w-[240px] sm:whitespace-normal sm:break-words ">
+                                    <div class="text-green-custom text-xs font-normal uppercase ">Nông nghiệp sạch</div>
+                                    <div class="text-green-grass my-0.7 font-bold text-lg sm:text-[14px] sm:leading-5">
+                                        Nông Thảo đã trồng và thu
+                                        hoạch vườn cà chua như thế nào?</div>
+                                    <div class="text-black-grey font-normal text-base sm:text-[14px] sm:leading-5">Mời
+                                        bạn đọc tìm hiểu thêm về quy
+                                        trình trồng và thu hoạch cà chua hữu cơ của...
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="flex justify-between max-w-19 mx-auto m-4 sm:w-[240px]">
+                                <div class="text-green-grass text-sm font-normal uppercase sm:text-[12px]">Xem chi tiết
+                                    &nbsp; &gt;&gt;
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img class="w-[9px] h-[9px] sm:w-[9px] sm:h-[9px]"
+                                        src="./assets/images/eye-icon.png" alt="">
+                                    <div class="text-xs font-normal sm:text-[10px]">2.648</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-0.91 border-custom-gray sm:w-16.875  sm:shadow-custom">
+                            <img src="./assets/images/potato.png" alt="">
+                            <div class="border-b-0.91 border-custom-gray sm:w-16.875">
+                                <div
+                                    class="max-w-19 m-auto pt-3 pb-3 sm:w-[240px] sm:whitespace-normal sm:break-words ">
+                                    <div class="text-green-custom text-xs font-normal uppercase ">Nông nghiệp sạch</div>
+                                    <div class="text-green-grass my-0.7 font-bold text-lg sm:text-[14px] sm:leading-5">
+                                        Nông Thảo đã trồng và thu
+                                        hoạch vườn cà chua như thế nào?</div>
+                                    <div class="text-black-grey font-normal text-base sm:text-[14px] sm:leading-5">Mời
+                                        bạn đọc tìm hiểu thêm về quy
+                                        trình trồng và thu hoạch cà chua hữu cơ của...
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="flex justify-between max-w-19 mx-auto m-4 sm:w-[240px]">
+                                <div class="text-green-grass text-sm font-normal uppercase sm:text-[12px]">Xem chi tiết
+                                    &nbsp; &gt;&gt;
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img class="w-[9px] h-[9px] sm:w-[9px] sm:h-[9px]"
+                                        src="./assets/images/eye-icon.png" alt="">
+                                    <div class="text-xs font-normal sm:text-[10px]">2.648</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-0.91 border-custom-gray sm:w-16.875  sm:shadow-custom">
+                            <img src="./assets/images/potato.png" alt="">
+                            <div class="border-b-0.91 border-custom-gray sm:w-16.875">
+                                <div
+                                    class="max-w-19 m-auto pt-3 pb-3 sm:w-[240px] sm:whitespace-normal sm:break-words">
+                                    <div class="text-green-custom text-xs font-normal uppercase ">Nông nghiệp sạch</div>
+                                    <div class="text-green-grass my-0.7 font-bold text-lg sm:text-[14px] sm:leading-5">
+                                        Nông Thảo đã trồng và thu
+                                        hoạch vườn cà chua như thế nào?</div>
+                                    <div class="text-black-grey font-normal text-base sm:text-[14px] sm:leading-5">Mời
+                                        bạn đọc tìm hiểu thêm về quy
+                                        trình trồng và thu hoạch cà chua hữu cơ của...
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="flex justify-between max-w-19 mx-auto m-4 sm:w-[240px]">
+                                <div class="text-green-grass text-sm font-normal uppercase sm:text-[12px]">Xem chi tiết
+                                    &nbsp; &gt;&gt;
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img class="w-[9px] h-[9px] sm:w-[9px] sm:h-[9px]"
+                                        src="./assets/images/eye-icon.png" alt="">
+                                    <div class="text-xs font-normal sm:text-[10px]">2.648</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute justify-between items-center flex mt-16 w-full sm:hidden">
+                            <img class="w-9" src="./assets/images/previous.png" alt="">
+                            <img class="w-9" src="./assets/images/next.png" alt="">
+                        </div>
+                    </div>
+                    <div class="absolute w-15 mt-8 left-0 right-0 mx-auto">
+                        <img class="mx-auto sm:w-[60px] sm:h-[10px]" src="./assets/images/load-page.png" alt="">
+                    </div>
+                </div>
+                <div class="bg-FA pt-1.9 pb-4.4 sm:bg-transparent">
+                    <div class="flex justify-between  max-w-66 mx-auto mb-5">
+                        <div class="flex items-center">
+                            <img class=" w-2.625 h-1.625 mr-2" src="./assets/images/grass.png" alt="">
+                            <div class="text-3xl font-bold text-black1A uppercase sm:text-base">Thảo dược</div>
+                        </div>
+                        <div class="self-end text-green-grass font-semibold sm:hidden">Xem tất cả &nbsp; &gt;&gt;</div>
+                    </div>
+                    <div class="flex gap-7 relative sm:overflow-x-auto sm:whitespace-nowrap max-w-66 mx-auto">
+                        <div class="shadow-custom sm:w-16.875 sm:shadow-2xl">
+                            <img src="./assets/images/potato.png" alt="">
+                            <div class="border-b-0.91 border-custom-gray sm:w-[270px] ">
+                                <div
+                                    class="max-w-19 m-auto pt-3 pb-3 sm:w-[240px] sm:whitespace-normal sm:break-words ">
+                                    <div class="text-green-custom text-xs font-normal uppercase ">Nông nghiệp sạch</div>
+                                    <div class="text-green-grass my-0.7 font-bold text-lg sm:text-[14px] sm:leading-5">
+                                        Nông Thảo đã trồng và thu
+                                        hoạch vườn cà chua như thế nào?</div>
+                                    <div class="text-black-grey font-normal text-base sm:text-[14px] sm:leading-5">Mời
+                                        bạn đọc tìm hiểu thêm về quy
+                                        trình trồng và thu hoạch cà chua hữu cơ của...
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="flex justify-between max-w-19 mx-auto m-4 sm:w-[240px]">
+                                <div class="text-green-grass text-sm font-normal uppercase sm:text-[12px]">Xem chi tiết
+                                    &nbsp; &gt;&gt;
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img class="w-[9px] h-[9px] sm:w-[9px] sm:h-[9px]"
+                                        src="./assets/images/eye-icon.png" alt="">
+                                    <div class="text-xs font-normal sm:text-[10px]">2.648</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-0.91 border-custom-gray sm:w-16.875  sm:shadow-custom">
+                            <img src="./assets/images/potato.png" alt="">
+                            <div class="border-b-0.91 border-custom-gray sm:w-16.875">
+                                <div
+                                    class="max-w-19 m-auto pt-3 pb-3 sm:w-[240px] sm:whitespace-normal sm:break-words ">
+                                    <div class="text-green-custom text-xs font-normal uppercase ">Nông nghiệp sạch</div>
+                                    <div class="text-green-grass my-0.7 font-bold text-lg sm:text-[14px] sm:leading-5">
+                                        Nông Thảo đã trồng và thu
+                                        hoạch vườn cà chua như thế nào?</div>
+                                    <div class="text-black-grey font-normal text-base sm:text-[14px] sm:leading-5">Mời
+                                        bạn đọc tìm hiểu thêm về quy
+                                        trình trồng và thu hoạch cà chua hữu cơ của...
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="flex justify-between max-w-19 mx-auto m-4 sm:w-[240px]">
+                                <div class="text-green-grass text-sm font-normal uppercase sm:text-[12px]">Xem chi tiết
+                                    &nbsp; &gt;&gt;
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img class="w-[9px] h-[9px] sm:w-[9px] sm:h-[9px]"
+                                        src="./assets/images/eye-icon.png" alt="">
+                                    <div class="text-xs font-normal sm:text-[10px]">2.648</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-0.91 border-custom-gray sm:w-16.875  sm:shadow-custom">
+                            <img src="./assets/images/potato.png" alt="">
+                            <div class="border-b-0.91 border-custom-gray sm:w-16.875">
+                                <div
+                                    class="max-w-19 m-auto pt-3 pb-3 sm:w-[240px] sm:whitespace-normal sm:break-words ">
+                                    <div class="text-green-custom text-xs font-normal uppercase ">Nông nghiệp sạch</div>
+                                    <div class="text-green-grass my-0.7 font-bold text-lg sm:text-[14px] sm:leading-5">
+                                        Nông Thảo đã trồng và thu
+                                        hoạch vườn cà chua như thế nào?</div>
+                                    <div class="text-black-grey font-normal text-base sm:text-[14px] sm:leading-5">Mời
+                                        bạn đọc tìm hiểu thêm về quy
+                                        trình trồng và thu hoạch cà chua hữu cơ của...
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="flex justify-between max-w-19 mx-auto m-4 sm:w-[240px]">
+                                <div class="text-green-grass text-sm font-normal uppercase sm:text-[12px]">Xem chi tiết
+                                    &nbsp; &gt;&gt;
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img class="w-[9px] h-[9px] sm:w-[9px] sm:h-[9px]"
+                                        src="./assets/images/eye-icon.png" alt="">
+                                    <div class="text-xs font-normal sm:text-[10px]">2.648</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute justify-between items-center flex mt-16 w-full sm:hidden">
+                            <img class="w-9" src="./assets/images/previous.png" alt="">
+                            <img class="w-9" src="./assets/images/next.png" alt="">
+                        </div>
+                    </div>
+                    <div class="absolute w-15 mt-8 left-0 right-0 mx-auto">
+                        <img class=" mx-auto" src="./assets/images/load-page.png" alt="">
+                    </div>
+                </div>
+                <div class=" max-w-66 mx-auto pt-1.9 pb-4.4">
+                    <div class="flex justify-between mb-5 sm:mb-3">
+                        <div class="flex items-center">
+                            <img class=" w-2.625 h-1.625 mr-2 sm:w-5 sm:h-3 sm:mr-1" src="./assets/images/grass.png"
+                                alt="">
+                            <div class="text-3xl font-bold text-black1A uppercase sm:text-base">Mẹo vặt</div>
+                        </div>
+                        <div class="self-end text-green-grass font-semibold sm:hidden">Xem tất cả &nbsp; &gt;&gt;</div>
+                    </div>
+                    <div class="flex gap-7 relative sm:overflow-x-auto sm:whitespace-nowrap ">
+                        <div class="shadow-custom sm:w-16.875 sm: shadow-2xl">
+                            <img src="./assets/images/potato.png" alt="">
+                            <div class="border-b-0.91 border-custom-gray sm:w-[270px] ">
+                                <div
+                                    class="max-w-19 m-auto pt-3 pb-3 sm:w-[240px] sm:whitespace-normal sm:break-words ">
+                                    <div class="text-green-custom text-xs font-normal uppercase ">Nông nghiệp sạch</div>
+                                    <div class="text-green-grass my-0.7 font-bold text-lg sm:text-[14px] sm:leading-5">
+                                        Nông Thảo đã trồng và thu
+                                        hoạch vườn cà chua như thế nào?</div>
+                                    <div class="text-black-grey font-normal text-base sm:text-[14px] sm:leading-5">Mời
+                                        bạn đọc tìm hiểu thêm về quy
+                                        trình trồng và thu hoạch cà chua hữu cơ của...
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="flex justify-between max-w-19 mx-auto m-4 sm:w-[240px]">
+                                <div class="text-green-grass text-sm font-normal uppercase sm:text-[12px]">Xem chi tiết
+                                    &nbsp; &gt;&gt;
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img class="w-[9px] h-[9px] sm:w-[9px] sm:h-[9px]"
+                                        src="./assets/images/eye-icon.png" alt="">
+                                    <div class="text-xs font-normal sm:text-[10px]">2.648</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-0.91 border-custom-gray sm:w-16.875  sm:shadow-custom">
+                            <img src="./assets/images/potato.png" alt="">
+                            <div class="border-b-0.91 border-custom-gray sm:w-16.875">
+                                <div
+                                    class="max-w-19 m-auto pt-3 pb-3 sm:w-[240px] sm:whitespace-normal sm:break-words ">
+                                    <div class="text-green-custom text-xs font-normal uppercase ">Nông nghiệp sạch</div>
+                                    <div class="text-green-grass my-0.7 font-bold text-lg sm:text-[14px] sm:leading-5">
+                                        Nông Thảo đã trồng và thu
+                                        hoạch vườn cà chua như thế nào?</div>
+                                    <div class="text-black-grey font-normal text-base sm:text-[14px] sm:leading-5">Mời
+                                        bạn đọc tìm hiểu thêm về quy
+                                        trình trồng và thu hoạch cà chua hữu cơ của...
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="flex justify-between max-w-19 mx-auto m-4 sm:w-[240px]">
+                                <div class="text-green-grass text-sm font-normal uppercase sm:text-[12px]">Xem chi tiết
+                                    &nbsp; &gt;&gt;
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img class="w-[9px] h-[9px] sm:w-[9px] sm:h-[9px]"
+                                        src="./assets/images/eye-icon.png" alt="">
+                                    <div class="text-xs font-normal sm:text-[10px]">2.648</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-0.91 border-custom-gray sm:w-16.875  sm:shadow-custom">
+                            <img src="./assets/images/potato.png" alt="">
+                            <div class="border-b-0.91 border-custom-gray sm:w-16.875">
+                                <div
+                                    class="max-w-19 m-auto pt-3 pb-3 sm:w-[240px] sm:whitespace-normal sm:break-words ">
+                                    <div class="text-green-custom text-xs font-normal uppercase ">Nông nghiệp sạch</div>
+                                    <div class="text-green-grass my-0.7 font-bold text-lg sm:text-[14px] sm:leading-5">
+                                        Nông Thảo đã trồng và thu
+                                        hoạch vườn cà chua như thế nào?</div>
+                                    <div class="text-black-grey font-normal text-base sm:text-[14px] sm:leading-5">Mời
+                                        bạn đọc tìm hiểu thêm về quy
+                                        trình trồng và thu hoạch cà chua hữu cơ của...
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="flex justify-between max-w-19 mx-auto m-4 sm:w-[240px]">
+                                <div class="text-green-grass text-sm font-normal uppercase sm:text-[12px]">Xem chi tiết
+                                    &nbsp; &gt;&gt;
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img class="w-[9px] h-[9px] sm:w-[9px] sm:h-[9px]"
+                                        src="./assets/images/eye-icon.png" alt="">
+                                    <div class="text-xs font-normal sm:text-[10px]">2.648</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute justify-between items-center flex mt-16 w-full sm:hidden">
+                            <img class="w-9" src="./assets/images/previous.png" alt="">
+                            <img class="w-9" src="./assets/images/next.png" alt="">
+                        </div>
+                    </div>
+                    <div class="absolute w-15 mt-8 left-0 right-0 mx-auto">
+                        <img class=" mx-auto" src="./assets/images/load-page.png" alt="">
+                    </div>
+                </div>
+                <div class="bg-FA pt-1.9 pb-4.4 sm:bg-transparent">
+                    <div class="flex justify-between  max-w-66 mx-auto mb-5">
+                        <div class="flex items-center">
+                            <img class=" w-2.625 h-1.625 mr-2" src="./assets/images/grass.png" alt="">
+                            <div class="text-3xl font-bold text-black1A uppercase sm:text-base">Con tự học</div>
+                        </div>
+                        <div class="self-end text-green-grass font-semibold sm:hidden">Xem tất cả &nbsp; &gt;&gt;</div>
+                    </div>
+                    <div class="flex gap-7 relative sm:overflow-x-auto sm:whitespace-nowrap max-w-66 mx-auto">
+                        <div class="shadow-custom sm:w-16.875 sm:shadow-2xl">
+                            <img src="./assets/images/potato.png" alt="">
+                            <div class="border-b-0.91 border-custom-gray sm:w-[270px] ">
+                                <div
+                                    class="max-w-19 m-auto pt-3 pb-3 sm:w-[240px] sm:whitespace-normal sm:break-words ">
+                                    <div class="text-green-custom text-xs font-normal uppercase ">Nông nghiệp sạch</div>
+                                    <div class="text-green-grass my-0.7 font-bold text-lg sm:text-[14px] sm:leading-5">
+                                        Nông Thảo đã trồng và thu
+                                        hoạch vườn cà chua như thế nào?</div>
+                                    <div class="text-black-grey font-normal text-base sm:text-[14px] sm:leading-5">Mời
+                                        bạn đọc tìm hiểu thêm về quy
+                                        trình trồng và thu hoạch cà chua hữu cơ của...
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="flex justify-between max-w-19 mx-auto m-4 sm:w-[240px]">
+                                <div class="text-green-grass text-sm font-normal uppercase sm:text-[12px]">Xem chi tiết
+                                    &nbsp; &gt;&gt;
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img class="w-[9px] h-[9px] sm:w-[9px] sm:h-[9px]"
+                                        src="./assets/images/eye-icon.png" alt="">
+                                    <div class="text-xs font-normal sm:text-[10px]">2.648</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-0.91 border-custom-gray sm:w-16.875  sm:shadow-custom">
+                            <img src="./assets/images/potato.png" alt="">
+                            <div class="border-b-0.91 border-custom-gray sm:w-16.875">
+                                <div
+                                    class="max-w-19 m-auto pt-3 pb-3 sm:w-[240px] sm:whitespace-normal sm:break-words ">
+                                    <div class="text-green-custom text-xs font-normal uppercase ">Nông nghiệp sạch</div>
+                                    <div class="text-green-grass my-0.7 font-bold text-lg sm:text-[14px] sm:leading-5">
+                                        Nông Thảo đã trồng và thu
+                                        hoạch vườn cà chua như thế nào?</div>
+                                    <div class="text-black-grey font-normal text-base sm:text-[14px] sm:leading-5">Mời
+                                        bạn đọc tìm hiểu thêm về quy
+                                        trình trồng và thu hoạch cà chua hữu cơ của...
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="flex justify-between max-w-19 mx-auto m-4 sm:w-[240px]">
+                                <div class="text-green-grass text-sm font-normal uppercase sm:text-[12px]">Xem chi tiết
+                                    &nbsp; &gt;&gt;
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img class="w-[9px] h-[9px] sm:w-[9px] sm:h-[9px]"
+                                        src="./assets/images/eye-icon.png" alt="">
+                                    <div class="text-xs font-normal sm:text-[10px]">2.648</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="border-0.91 border-custom-gray sm:w-16.875  sm:shadow-custom">
+                            <img src="./assets/images/potato.png" alt="">
+                            <div class="border-b-0.91 border-custom-gray sm:w-16.875">
+                                <div
+                                    class="max-w-19 m-auto pt-3 pb-3 sm:w-[240px] sm:whitespace-normal sm:break-words ">
+                                    <div class="text-green-custom text-xs font-normal uppercase ">Nông nghiệp sạch</div>
+                                    <div class="text-green-grass my-0.7 font-bold text-lg sm:text-[14px] sm:leading-5">
+                                        Nông Thảo đã trồng và thu
+                                        hoạch vườn cà chua như thế nào?</div>
+                                    <div class="text-black-grey font-normal text-base sm:text-[14px] sm:leading-5">Mời
+                                        bạn đọc tìm hiểu thêm về quy
+                                        trình trồng và thu hoạch cà chua hữu cơ của...
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="flex justify-between max-w-19 mx-auto m-4 sm:w-[240px]">
+                                <div class="text-green-grass text-sm font-normal uppercase sm:text-[12px]">Xem chi tiết
+                                    &nbsp; &gt;&gt;
+                                </div>
+                                <div class="flex items-center gap-1">
+                                    <img class="w-[9px] h-[9px] sm:w-[9px] sm:h-[9px]"
+                                        src="./assets/images/eye-icon.png" alt="">
+                                    <div class="text-xs font-normal sm:text-[10px]">2.648</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="absolute justify-between items-center flex mt-16 w-full sm:hidden">
+                            <img class="w-9" src="./assets/images/previous.png" alt="">
+                            <img class="w-9" src="./assets/images/next.png" alt="">
+                        </div>
+                    </div>
+                    <div class="absolute w-15 mt-8 left-0 right-0 mx-auto">
+                        <img class=" mx-auto" src="./assets/images/load-page.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer class="w-full bg-[#356C07] font-nunito ">
+
+        <div class="flex max-h-60">
+            <div>
+                <img class="img-style" src="./assets/images/footer-1.png" alt="">
+            </div>
+            <div>
+                <img class="img-style" src="./assets/images/footer-2.png" alt="">
+            </div>
+            <div>
+                <img class="img-style" src="./assets/images/footer-3.png" alt="">
+            </div>
+            <div>
+                <img class="img-style sm:hidden" src="./assets/images/footer-4.png" alt="">
+            </div>
+            <div>
+                <img class="img-style sm:hidden" src="./assets/images/footer-5.png" alt="">
+            </div>
+            <div>
+                <img class="img-style sm:hidden" src="./assets/images/footer-2.png" alt="">
+            </div>
+            <div>
+                <img class="img-style sm:hidden" src="./assets/images/footer-4.png" alt="">
+            </div>
+            <div>
+                <img class="img-style sm:hidden" src="./assets/images/footer-6.png" alt="">
+            </div>
+        </div>
+        <div
+            class="container mt-10 flex justify-between max-w-6xl text-white py-5 sm:flex sm:flex-col sm:px-6 sm:gap-[15px]">
+            <div class="max-w-sm">
+                <div>
+                    <img class="mix-blend-color-dodge" src="./assets/images/footer.png" alt="">
+                </div>
+                <p class="mt-6 text-white">MST: 012345678910 - Ngày cấp: 10/02/2022 <br>
+                    Nơi cấp: Sở Kế hoạch & Đầu tư TP Hà Nội</p>
+                <div class="flex gap-4 mt-6">
+                    Liên kết
+
+                    <img class="w-6 h-6 rounded-full" src="./assets/images/shopee.png" alt="">
+                    <img class="w-6 h-6 rounded-full" src="./assets/images/tiki.png" alt="">
+                    <img class="w-6 h-6 rounded-full" src="./assets/images/lazada.png" alt="">
+                    <img class="w-6 h-6 rounded-full" src="./assets/images/facebook.png" alt="">
+                    <img class="w-6 h-6 rounded-full" src="./assets/images/in.png" alt="">
+                    <img class="w-6 h-6 rounded-full" src="./assets/images/tiktok.png" alt="">
+                </div>
+            </div>
+            <div class="max-w-[248px]  sm:max-w-full sm:border-t-2 sm:border-b-2 sm:py-3">
+                <h4>Liên Hệ</h4>
+                <ul class="mt-8 flex flex-col gap-3 sm:hidden">
+                    <li class="flex items-start gap-3">
+                        <img src="./assets/images/location.svg" alt="">Tầng 4-5-6, Tòa nhà Capital Place, số 29 đường
+                        Liễu Giai, P.Ngọc Khánh, Q.Ba
+                        Đình, Hà Nội
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <img src="./assets/images/phone.svg" alt="">0969.71.6848
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <img src="./assets/images/mail.svg" alt="">hotro@nongthao.vn
+                    </li>
+                </ul>
+            </div>
+            <div class="max-w-xs sm:border-b-2 sm:py-3">
+                <h4>Thông tin</h4>
+                <ul class="list-disc ml-4 mt-4 flex flex-col gap-3 sm:hidden">
+                    <li><a href="">Giới thiệu Nông Thảo</a></li>
+                    <li><a href="">Điều khoản</a></li>
+                    <li><a href="">Chính sách bảo mật</a></li>
+                    <li><a href="">Hướng dẫn mua hàng</a></li>
+                    <li><a href="">Trả hàng & hoàn tiền</a></li>
+                    <li><a href="">Nông Thảo Blogs</a></li>
+                </ul>
+            </div>
+            <div class="max-w-[270px] sm:max-w-full">
+                <h4>Đăng ký nhận tin</h4>
+                <p class="mt-6 text-white">Vui lòng nhập email để nhận thêm nhiều ưu đãi từ Nông Thảo</p>
+                <div class="mt-2 flex">
+                    <input class="px-3 py-2 sm:w-full" placeholder="Email của bạn..." type="text"><span
+                        class="bg-[#68C114] max-w-[47px] max-h-[45px] flex items-center justify-center py-3 px-3">
+                        <div>
+                            <img class="" src="./assets/images/send.svg" alt="">
+                        </div>
+                    </span>
+                </div>
+                <div class="flex justify-between mt-8">
+                    <div>
+                        <img class="img-style" src="./assets/images/bocongthuong.png" alt="">
+                    </div>
+                    <div>
+                        <img class="img-style" src="./assets/images/dmca.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex items-center justify-center py-3 opacity-50 bg-gray-50">
+            <p class="text-center text-sm">© 2022 - Bản quyền thuộc về Công ty TNHH Nông Thảo.</p>
+        </div>
+    </footer>
+
+    <div class="w-full relative ">
+        <div class="fixed bottom-0 right-0 flex flex-col sm:pr-[6px] gap-[14px] pr-[22px] pb-9">
+            <div>
+                <img src="./assets/images/phone-home.png" alt="icon" class="max-w-[48px]" />
+            </div>
+            <div>
+                <img src="./assets/images/Facebook-messenger.png" alt="icon" class="max-w-[48px]" />
+            </div>
+            <div>
+                <img src="./assets/images/arrow.png" alt="icon" class="max-w-[48px]" />
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/toggle.js"></script>
+</body>
+
+</html>
