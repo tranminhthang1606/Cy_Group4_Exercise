@@ -12,19 +12,19 @@
 <body>
     <header class="w-full shadow-lg font-nunito">
         <div class="container">
-            <header class="flex justify-between w-full max-w-6xl h-20 items-center mx-auto sm:p-3 relative">
+            <div class="flex justify-between w-full max-w-6xl h-20 items-center mx-auto sm:p-3 relative">
                 <div class="hidden sm:block toggle-button">
                     <img src="./assets/images/menu.svg" alt="">
                 </div>
                 <div>
-                    <img class="w-60 sm:w-[138px]" src="./assets/images/logo.png" alt="">
+                    <a href="./index.html"><img class="w-60 sm:w-[138px]" src="./assets/images/logo.png" alt=""></a>
                 </div>
                 <div class="sm:hidden">
                     <ul class="flex gap-8 uppercase">
-                        <li><a class="focus:text-bgColor" href="#">Sản Phẩm</a></li>
-                        <li><a class="focus:text-bgColor" href="">Về Nông Thảo</a></li>
-                        <li><a class="focus:text-bgColor" href="">Blog</a></li>
-                        <li><a class="focus:text-bgColor" href="">Liên Hệ</a></li>
+                        <li><a class="focus:text-bgColor" href="./danhmuctong.html">Sản Phẩm</a></li>
+                        <li><a class="focus:text-bgColor" href="./NongThao.html">Về Nông Thảo</a></li>
+                        <li><a class="focus:text-bgColor" href="./information.html">Blog</a></li>
+                        <li><a class="focus:text-bgColor" href="./contact.html">Liên Hệ</a></li>
                     </ul>
                 </div>
                 <div id="menu" class="fixed left-0 top-0 h-full bg-white px-4 z-10 py-6 hidden">
@@ -42,25 +42,27 @@
                     </div>
                     <div class="flex flex-col">
                         <div class="flex justify-between border-b-2 pb-1 mt-5">
-                            <h3><a class="text-bgColor" href="">SẢN PHẨM</a></h3>
+                            <h3><a class="text-bgColor" href="./danhmuctong.html">SẢN PHẨM</a></h3>
                             <div><img src="./assets/images/arrow-navbar.svg" alt=""></div>
                         </div>
                         <div class="mt-3">
                             <ul class="px-4 flex flex-col gap-2">
-                                <li class="border-b-2"><a href="">Thảo dược</a></li>
-                                <li class="border-b-2"><a href="">Nông sản</a></li>
-                                <li class="border-b-2"><a href="">Hoa quả</a></li>
+                                <li class="border-b-2"><a href="./danhmuctong.html#thao_duoc">Thảo dược</a></li>
+                                <li class="border-b-2"><a href="./danhmuctong.html#nong_san">Nông sản</a></li>
+                                <li class="border-b-2"><a href="./danhmuctong.html#hoa_qua_huu_co">Hoa quả</a></li>
                             </ul>
 
                         </div>
                         <div class="pb-1 mt-6">
-                            <h3 class="border-b-2"><a class="text-bgColor " href="">VỀ NÔNG THẢO</a></h3>
+                            <h3 class="border-b-2"><a class="text-bgColor " href="./NongThao.html">VỀ NÔNG THẢO</a></h3>
                         </div>
-                        <div class="flex justify-between border-b-2 pb-1 mt-4"><a class="text-bgColor" href="">BLOGS</a>
+                        <div class="flex justify-between border-b-2 pb-1 mt-4"><a class="text-bgColor"
+                                href="./information.html">BLOGS</a>
                             <div><img src="./assets/images/arrow-navbar.svg" alt=""></div>
                         </div>
-                        <div class="mt-4"><a class="text-bgColor" href="">LIÊN HỆ</a></div>
+                        <div class="mt-4"><a class="text-bgColor" href="./contact.html">LIÊN HỆ</a></div>
                     </div>
+
                     <div class="mt-12 flex flex-col items-center gap-3">
                         <button
                             class="w-full py-3 px-8 bg-red-600 text-[18px] font-bold text-white">0988.818.841</button>
@@ -69,9 +71,9 @@
                 </div>
                 <div class="flex gap-4">
                     <img class="sm:hidden" src="./assets/images/search-glass.svg" alt="">
-                    <img src="./assets/images/cart.svg" alt="">
+                    <a href="./thongtindonhang.html"><img src="./assets/images/cart.svg" alt=""></a>
                 </div>
-            </header>
+            </div>
         </div>
     </header>
     <div class="container mx-auto font-nunito w-full ">
@@ -128,9 +130,12 @@
                                 </div>
                             </div>
                             <div class="flex justify-between max-w-19 mx-auto m-4 sm:w-[240px]">
-                                <div class="text-green-grass text-sm font-normal uppercase sm:text-[12px]">Xem chi tiết
-                                    &nbsp; &gt;&gt;
-                                </div>
+                                <a href="./child-information.html">
+                                    <div class="text-green-grass text-sm font-normal uppercase sm:text-[12px]">Xem chi
+                                        tiết
+                                        &nbsp; &gt;&gt;
+                                    </div>
+                                </a>
                                 <div class="flex items-center gap-1">
                                     <img class="w-[9px] h-[9px] sm:w-[9px] sm:h-[9px]"
                                         src="./assets/images/eye-icon.png" alt="">
@@ -155,9 +160,12 @@
                                 </div>
                             </div>
                             <div class="flex justify-between max-w-19 mx-auto m-4 sm:w-[240px]">
-                                <div class="text-green-grass text-sm font-normal uppercase sm:text-[12px]">Xem chi tiết
-                                    &nbsp; &gt;&gt;
-                                </div>
+                                <a href="./child-information.html">
+                                    <div class="text-green-grass text-sm font-normal uppercase sm:text-[12px]">Xem chi
+                                        tiết
+                                        &nbsp; &gt;&gt;
+                                    </div>
+                                </a>
                                 <div class="flex items-center gap-1">
                                     <img class="w-[9px] h-[9px] sm:w-[9px] sm:h-[9px]"
                                         src="./assets/images/eye-icon.png" alt="">
@@ -168,8 +176,7 @@
                         <div class="border-0.91 border-custom-gray sm:w-16.875  sm:shadow-custom">
                             <img src="./assets/images/potato.png" alt="">
                             <div class="border-b-0.91 border-custom-gray sm:w-16.875">
-                                <div
-                                    class="max-w-19 m-auto pt-3 pb-3 sm:w-[240px] sm:whitespace-normal sm:break-words">
+                                <div class="max-w-19 m-auto pt-3 pb-3 sm:w-[240px] sm:whitespace-normal sm:break-words">
                                     <div class="text-green-custom text-xs font-normal uppercase ">Nông nghiệp sạch</div>
                                     <div class="text-green-grass my-0.7 font-bold text-lg sm:text-[14px] sm:leading-5">
                                         Nông Thảo đã trồng và thu
@@ -182,9 +189,12 @@
                                 </div>
                             </div>
                             <div class="flex justify-between max-w-19 mx-auto m-4 sm:w-[240px]">
-                                <div class="text-green-grass text-sm font-normal uppercase sm:text-[12px]">Xem chi tiết
-                                    &nbsp; &gt;&gt;
-                                </div>
+                                <a href="./child-information.html">
+                                    <div class="text-green-grass text-sm font-normal uppercase sm:text-[12px]">Xem chi
+                                        tiết
+                                        &nbsp; &gt;&gt;
+                                    </div>
+                                </a>
                                 <div class="flex items-center gap-1">
                                     <img class="w-[9px] h-[9px] sm:w-[9px] sm:h-[9px]"
                                         src="./assets/images/eye-icon.png" alt="">
@@ -227,9 +237,12 @@
                                 </div>
                             </div>
                             <div class="flex justify-between max-w-19 mx-auto m-4 sm:w-[240px]">
-                                <div class="text-green-grass text-sm font-normal uppercase sm:text-[12px]">Xem chi tiết
-                                    &nbsp; &gt;&gt;
-                                </div>
+                                <a href="./child-information.html">
+                                    <div class="text-green-grass text-sm font-normal uppercase sm:text-[12px]">Xem chi
+                                        tiết
+                                        &nbsp; &gt;&gt;
+                                    </div>
+                                </a>
                                 <div class="flex items-center gap-1">
                                     <img class="w-[9px] h-[9px] sm:w-[9px] sm:h-[9px]"
                                         src="./assets/images/eye-icon.png" alt="">
@@ -254,9 +267,12 @@
                                 </div>
                             </div>
                             <div class="flex justify-between max-w-19 mx-auto m-4 sm:w-[240px]">
-                                <div class="text-green-grass text-sm font-normal uppercase sm:text-[12px]">Xem chi tiết
-                                    &nbsp; &gt;&gt;
-                                </div>
+                                <a href="./child-information.html">
+                                    <div class="text-green-grass text-sm font-normal uppercase sm:text-[12px]">Xem chi
+                                        tiết
+                                        &nbsp; &gt;&gt;
+                                    </div>
+                                </a>
                                 <div class="flex items-center gap-1">
                                     <img class="w-[9px] h-[9px] sm:w-[9px] sm:h-[9px]"
                                         src="./assets/images/eye-icon.png" alt="">
@@ -281,9 +297,12 @@
                                 </div>
                             </div>
                             <div class="flex justify-between max-w-19 mx-auto m-4 sm:w-[240px]">
-                                <div class="text-green-grass text-sm font-normal uppercase sm:text-[12px]">Xem chi tiết
-                                    &nbsp; &gt;&gt;
-                                </div>
+                                <a href="./child-information.html">
+                                    <div class="text-green-grass text-sm font-normal uppercase sm:text-[12px]">Xem chi
+                                        tiết
+                                        &nbsp; &gt;&gt;
+                                    </div>
+                                </a>
                                 <div class="flex items-center gap-1">
                                     <img class="w-[9px] h-[9px] sm:w-[9px] sm:h-[9px]"
                                         src="./assets/images/eye-icon.png" alt="">
@@ -327,9 +346,12 @@
                                 </div>
                             </div>
                             <div class="flex justify-between max-w-19 mx-auto m-4 sm:w-[240px]">
-                                <div class="text-green-grass text-sm font-normal uppercase sm:text-[12px]">Xem chi tiết
-                                    &nbsp; &gt;&gt;
-                                </div>
+                                <a href="./child-information.html">
+                                    <div class="text-green-grass text-sm font-normal uppercase sm:text-[12px]">Xem chi
+                                        tiết
+                                        &nbsp; &gt;&gt;
+                                    </div>
+                                </a>
                                 <div class="flex items-center gap-1">
                                     <img class="w-[9px] h-[9px] sm:w-[9px] sm:h-[9px]"
                                         src="./assets/images/eye-icon.png" alt="">
@@ -354,9 +376,12 @@
                                 </div>
                             </div>
                             <div class="flex justify-between max-w-19 mx-auto m-4 sm:w-[240px]">
-                                <div class="text-green-grass text-sm font-normal uppercase sm:text-[12px]">Xem chi tiết
-                                    &nbsp; &gt;&gt;
-                                </div>
+                                <a href="./child-information.html">
+                                    <div class="text-green-grass text-sm font-normal uppercase sm:text-[12px]">Xem chi
+                                        tiết
+                                        &nbsp; &gt;&gt;
+                                    </div>
+                                </a>
                                 <div class="flex items-center gap-1">
                                     <img class="w-[9px] h-[9px] sm:w-[9px] sm:h-[9px]"
                                         src="./assets/images/eye-icon.png" alt="">
@@ -381,9 +406,12 @@
                                 </div>
                             </div>
                             <div class="flex justify-between max-w-19 mx-auto m-4 sm:w-[240px]">
-                                <div class="text-green-grass text-sm font-normal uppercase sm:text-[12px]">Xem chi tiết
-                                    &nbsp; &gt;&gt;
-                                </div>
+                                <a href="./child-information.html">
+                                    <div class="text-green-grass text-sm font-normal uppercase sm:text-[12px]">Xem chi
+                                        tiết
+                                        &nbsp; &gt;&gt;
+                                    </div>
+                                </a>
                                 <div class="flex items-center gap-1">
                                     <img class="w-[9px] h-[9px] sm:w-[9px] sm:h-[9px]"
                                         src="./assets/images/eye-icon.png" alt="">
@@ -426,9 +454,12 @@
                                 </div>
                             </div>
                             <div class="flex justify-between max-w-19 mx-auto m-4 sm:w-[240px]">
-                                <div class="text-green-grass text-sm font-normal uppercase sm:text-[12px]">Xem chi tiết
-                                    &nbsp; &gt;&gt;
-                                </div>
+                                <a href="./child-information.html">
+                                    <div class="text-green-grass text-sm font-normal uppercase sm:text-[12px]">Xem chi
+                                        tiết
+                                        &nbsp; &gt;&gt;
+                                    </div>
+                                </a>
                                 <div class="flex items-center gap-1">
                                     <img class="w-[9px] h-[9px] sm:w-[9px] sm:h-[9px]"
                                         src="./assets/images/eye-icon.png" alt="">
@@ -453,9 +484,12 @@
                                 </div>
                             </div>
                             <div class="flex justify-between max-w-19 mx-auto m-4 sm:w-[240px]">
-                                <div class="text-green-grass text-sm font-normal uppercase sm:text-[12px]">Xem chi tiết
-                                    &nbsp; &gt;&gt;
-                                </div>
+                                <a href="./child-information.html">
+                                    <div class="text-green-grass text-sm font-normal uppercase sm:text-[12px]">Xem chi
+                                        tiết
+                                        &nbsp; &gt;&gt;
+                                    </div>
+                                </a>
                                 <div class="flex items-center gap-1">
                                     <img class="w-[9px] h-[9px] sm:w-[9px] sm:h-[9px]"
                                         src="./assets/images/eye-icon.png" alt="">
@@ -480,9 +514,12 @@
                                 </div>
                             </div>
                             <div class="flex justify-between max-w-19 mx-auto m-4 sm:w-[240px]">
-                                <div class="text-green-grass text-sm font-normal uppercase sm:text-[12px]">Xem chi tiết
-                                    &nbsp; &gt;&gt;
-                                </div>
+                                <a href="./child-information.html">
+                                    <div class="text-green-grass text-sm font-normal uppercase sm:text-[12px]">Xem chi
+                                        tiết
+                                        &nbsp; &gt;&gt;
+                                    </div>
+                                </a>
                                 <div class="flex items-center gap-1">
                                     <img class="w-[9px] h-[9px] sm:w-[9px] sm:h-[9px]"
                                         src="./assets/images/eye-icon.png" alt="">
