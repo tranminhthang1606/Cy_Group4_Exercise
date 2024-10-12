@@ -1,242 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <link rel="stylesheet" href="../dist/css/styles.css"> -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../dist/css/main.css">
     <title>Bài viết chi tiết</title>
 </head>
-<body class="font-nunito text-sm bg-red">
+
+<body class="font-nunito text-sm">
     <div class="container max-w-1920">
-        <div class="content max-w-1920">
+        <div class="content max-w-1920 overflow-x-hidden">
+            <header class="w-full shadow-lg font-nunito">
+                <div class="container">
+                    <div class="flex justify-between w-full max-w-6xl h-20 items-center mx-auto sm:p-3 relative">
+                        <div class="hidden sm:block toggle-button">
+                            <img src="./assets/images/menu.svg" alt="">
+                        </div>
+                        <div>
+                            <a href="./index.html"><img class="w-60 sm:w-[138px]" src="./assets/images/logo.png" alt=""></a>
+                        </div>
+                        <div class="sm:hidden">
+                            <ul class="flex gap-8 uppercase">
+                                <li><a class="focus:text-bgColor" href="./danhmuctong.html">Sản Phẩm</a></li>
+                                <li><a class="focus:text-bgColor" href="./NongThao.html">Về Nông Thảo</a></li>
+                                <li><a class="focus:text-bgColor" href="./information.html">Blog</a></li>
+                                <li><a class="focus:text-bgColor" href="./contact.html">Liên Hệ</a></li>
+                            </ul>
+                        </div>
+                        <div id="menu" class="fixed left-0 top-0 h-full bg-white px-4 z-10 py-6 hidden">
+                            <div class="max-w-[36px] max-h-[36px] float-right toggle-button">
+                                <img class="img-style" src="./assets/images/Cross.png" alt="">
+                            </div>
+                            <div>
+                                <img class="w-32" src="./assets/images/logo.png" alt="">
+                            </div>
+            
+                            <div class="max-w-[252px] w-full flex relative mt-[27px]">
+                                <input class="w-full  bg-[#ebf0e6]  rounded-2xl py-2 px-4" type="text"
+                                    placeholder="Bạn muốn tìm..."><img class="absolute right-0 top-[0.13rem] h-[36px] w-[36px]"
+                                    src="./assets/images/navbar-search-icon.png" alt="">
+                            </div>
+                            <div class="flex flex-col">
+                                <div class="flex justify-between border-b-2 pb-1 mt-5">
+                                    <h3><a class="text-bgColor" href="./danhmuctong.html">SẢN PHẨM</a></h3>
+                                    <div><img src="./assets/images/arrow-navbar.svg" alt=""></div>
+                                </div>
+                                <div class="mt-3">
+                                    <ul class="px-4 flex flex-col gap-2">
+                                        <li class="border-b-2"><a href="./danhmuctong.html#thao_duoc">Thảo dược</a></li>
+                                        <li class="border-b-2"><a href="./danhmuctong.html#nong_san">Nông sản</a></li>
+                                        <li class="border-b-2"><a href="./danhmuctong.html#hoa_qua_huu_co">Hoa quả</a></li>
+                                    </ul>
+            
+                                </div>
+                                <div class="pb-1 mt-6">
+                                    <h3 class="border-b-2"><a class="text-bgColor " href="./NongThao.html">VỀ NÔNG THẢO</a></h3>
+                                </div>
+                                <div class="flex justify-between border-b-2 pb-1 mt-4"><a class="text-bgColor" href="./information.html">BLOGS</a>
+                                    <div><img src="./assets/images/arrow-navbar.svg" alt=""></div>
+                                </div>
+                                <div class="mt-4"><a class="text-bgColor" href="./contact.html">LIÊN HỆ</a></div>
+                            </div>
+            
+                            <div class="mt-12 flex flex-col items-center gap-3">
+                                <button
+                                    class="w-full py-3 px-8 bg-red-600 text-[18px] font-bold text-white">0988.818.841</button>
+                                <span class="text-bgColor">Gọi hỗ trợ ngay!</span>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <img class="sm:hidden" src="./assets/images/search-glass.svg" alt="">
+                            <a href="./thongtindonhang.html"><img src="./assets/images/cart.svg" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+            </header>
+
             <div class="box__content max-w-full">
                 <div class="content__page flex max-w-full">
                     <div class="group__sidebar--content max-w-1170 m-auto p-6">
                         <div class="box__content--menu flex mb-6 mt-6 items-center max-w-full">
-                            <p class="mr-3 text-[14px] font-nunito">Trang chủ</p>
-                            <img src="assets/images/arrow-right.png" alt="" class="w-[9.695px] h-[5.989px] fill-[#666] mr-3">
+                            <p class="mr-3 text-[14px] font-nunito max-w-full">Trang chủ</p>
+                            <img src="assets/images/arrow-right.png" alt=""
+                                class="w-[9.695px] h-[5.989px] fill-[#666] mr-3 max-w-full">
                             <p class="font-nunito mr-3">tin tức</p>
-                            <img src="assets/images/arrow-right.png" alt="" class="w-[9.695px] h-[5.989px] fill-[#666] mr-3">
-                            <p class="text-[#c4c4c4] font-nunito">nông nghiệp sạch</p>
+                            <img src="assets/images/arrow-right.png" alt=""
+                                class="w-[9.695px] h-[5.989px] fill-[#666] mr-3 max-w-full">
+                            <p class="text-[#c4c4c4] font-nunito max-w-full">nông nghiệp sạch</p>
                         </div>
-                        
-                        <div class="group__sidebar--flex flex max-w-full flex-wrap" style="border: 1px solid;">
 
+                        <div class="group__sidebar--flex flex max-w-full flex-wrap">
                             <div class="max-w-full">
-                                <div class="box__content--title w-700 max-w-1250">
-                                    <h1 class="text-4xl text-[#356C07] font-bold mb-6 font-bold">Nông Thảo đã trồng và thu hoạch vườn cà chua như thế nào?</h1>
+                                <div class="box__content--title w-700 max-w-1250 sm:w-[230px]">
+                                    <h1
+                                        class="text-4xl text-[#356C07] font-bold mb-6 font-bold max-w-full sm:text-[20px]">
+                                        Nông Thảo đã trồng và thu hoạch vườn cà chua như thế nào?</h1>
                                 </div>
-                                
+
                                 <div class="flex justify-between">
-                                    <div class="group__logo">
+                                    <div class="group__logo sm:hidden">
                                         <div class="group__sidebar--like mr-8 mb-2">
                                             <img src="assets/images/man.png" alt="" class="w-60 h-60">
                                         </div>
-                                
+
                                         <div class="group__sidebar--account flex w-[68px] gap-[2px]">
                                             <div class="group__sidebar--logo">
                                                 <img src="assets/images/acoount.png" alt="">
                                             </div>
-                                
+
                                             <div class="group__sidebar--name">
                                                 <p>vi khánh</p>
                                             </div>
                                         </div>
-                                
+
                                         <div class="group__sidebar--show flex w-[68px] gap-1">
                                             <div class="group__sidebar--eyes">
                                                 <img src="assets/images/eyes.png" alt="">
                                             </div>
-                                
+
                                             <div class="group__sidebar--text">
                                                 <p>2.648</p>
                                             </div>
                                         </div>
-                                
+
                                         <div class="group__button--like mb-2">
                                             <div class="group__button--logo">
                                                 <img src="assets/images/like.png" alt="" class="">
                                             </div>
-                                
+
                                             <div class="group__button--text">
-                                                <button class="rounded-custom-radius bg-custom-bg text-white p-2 font-nunito text-xs w-[68px]">Like 41</button>
+                                                <button
+                                                    class="rounded-custom-radius bg-custom-bg text-white p-2 font-nunito text-xs w-[68px]">Like
+                                                    41</button>
                                             </div>
                                         </div>
-                                
+
                                         <div class="group__button--share">
                                             <div class="group__button--text--share">
-                                                <button class="rounded-custom-radius bg-custom-bg text-white p-2 font-nunito text-xs w-[68px]">Share</button>
+                                                <button
+                                                    class="rounded-custom-radius bg-custom-bg text-white p-2 font-nunito text-xs w-[68px]">Share</button>
                                             </div>
                                         </div>
                                     </div>
-                                
-                                    <div class="group__content max-w-full max-w-570 w-570">
-                                        <div class="group__content--title">
-                                            <p class="text-custom-green font-nunito text-base italic font-normal mb-4 leading-normal max-w-570 w-570">Để hiểu rõ hơn chất lượng sản phẩm Cà chua hữu cơ của Nông Thảo mời bạn đọc tìm hiểu thêm về quy
+
+                                    <div class="group__content max-w-full sm:max-w-full sm:w-[270px]">
+                                        <div class="group__content--title max-w-full">
+                                            <p
+                                                class="text-custom-green font-nunito text-base italic font-normal mb-4 leading-normal max-w-full w-570">
+                                                Để hiểu rõ hơn chất lượng sản phẩm Cà chua hữu cơ của Nông Thảo mời bạn
+                                                đọc tìm hiểu thêm về quy
                                                 trình
                                                 trồng và thu
                                                 hoạch theo tiêu chuẩn VietGap của chúng tôi.</p>
                                         </div>
-                                
-                                        <div class="group__content--menu">
-                                            <div class="pl-3 pt-3 pb-3">
-                                                <div class="group__menu--icon flex justify-between border-b border-b-black-opacity pb-3">
-                                                    <div class="group__content--menu--header">
+
+                                        <div class="group__content--menu max-w-full w-570">
+                                            <div class="pl-3 pt-3 pb-3 max-w-full">
+                                                <div
+                                                    class="group__menu--icon flex justify-between border-b border-b-black-opacity pb-3">
+                                                    <div class="group__content--menu--header max-w-full">
                                                         <p class="text-[18px]">Mục lục bài viết</p>
                                                     </div>
-                                                
-                                                    <div class="group__content--icon">
+
+                                                    <div class="group__content--icon max-w-full">
                                                         <img src="assets/images/arrowdown.png" alt="" class="w-6">
                                                     </div>
                                                 </div>
-                                                
-                                                <div class="mt-5 leading-normal font-bold font-nunito h-[28px] ">1. Quy trình làm đất</div>
-                                                
+
+                                                <div
+                                                    class="mt-5 leading-normal font-bold font-nunito h-[28px] max-w-full">
+                                                    1. Quy trình làm đất</div>
+
                                                 <ol>
-                                                    <li class="leading-normal ml-2 mt-3">1.1.5. Quy trình làm đất</li>
+                                                    <li class="leading-normal ml-2 mt-3 max-w-full">1.1.5. Quy trình làm
+                                                        đất</li>
                                                 </ol>
-                                                
-                                                <p class="leading-normal font-bold mt-5">2. Quy trình trồng</p>
+
+                                                <p class="leading-normal font-bold mt-5 max-w-full">2. Quy trình trồng
+                                                </p>
                                             </div>
-                                
-                                            <div class="group__content--banner mb-4 mt-8">
-                                                <img src="assets/images/background2.png" alt="" class="w-570">
+
+                                            <div class="group__content--banner mb-4 mt-8 max-w-full">
+                                                <img src="assets/images/background2.png" alt=""
+                                                    class="max-w-full w-570">
                                             </div>
-                                
-                                            <div>
-                                                <p class="leading-normal ">Để hiểu rõ hơn chất lượng sản phẩm Cà chua hữu cơ của Nông Thảo mời bạn đọc tìm hiểu thêm về
+
+                                            <div class="max-w-full w-570">
+                                                <p class="leading-normal max-w-full">Để hiểu rõ hơn chất lượng sản phẩm
+                                                    Cà chua hữu cơ của Nông Thảo mời bạn đọc tìm hiểu thêm về
                                                     quy trình
                                                     trồng và thu
                                                     hoạch theo tiêu chuẩn VietGap của chúng tôi.</p>
-                                                
-                                                <p class="leading-normal">Để hiểu rõ hơn chất lượng sản phẩm Cà chua hữu cơ của Nông Thảo mời bạn đọc tìm hiểu thêm về
+
+                                                <p class="leading-normal max-w-full">Để hiểu rõ hơn chất lượng sản phẩm
+                                                    Cà chua hữu cơ của Nông Thảo mời bạn đọc tìm hiểu thêm về
                                                     quy trình
                                                     trồng và thu
                                                     hoạch theo tiêu chuẩn VietGap của chúng tôi.</p>
-                                                
-                                                <p class="text-lg font-bold text-2xl leading-normal text-3xl mt-4 mb-3">1. Quy trình làm đất</p>
-                                                
-                                                <p class="leading-normal">Để hiểu rõ hơn chất lượng sản phẩm <span class="text-[#68C114]">Cà chua hữu cơ của Nông Thảo</span> mời bạn đọc tìm hiểu thêm về quy trình
+
+                                                <p
+                                                    class="text-lg font-bold leading-normal text-30 mt-4 mb-3 max-w-full">
+                                                    1. Quy trình làm đất</p>
+
+                                                <p class="leading-normal max-w-full">Để hiểu rõ hơn chất lượng sản phẩm
+                                                    <span class="text-[#68C114]">Cà chua hữu cơ của Nông Thảo</span> mời
+                                                    bạn đọc tìm hiểu thêm về quy trình
                                                     trồng và thu
                                                     hoạch theo tiêu chuẩn VietGap của chúng tôi.</p>
-                                                
-                                                <p class="leading-normal">Để hiểu rõ hơn chất lượng sản phẩm Cà chua hữu cơ của Nông Thảo mời bạn đọc tìm hiểu thêm về quy trình
+
+                                                <p class="leading-normal max-w-full">Để hiểu rõ hơn chất lượng sản phẩm
+                                                    Cà chua hữu cơ của Nông Thảo mời bạn đọc tìm hiểu thêm về quy trình
                                                     trồng và thu
                                                     hoạch theo tiêu chuẩn VietGap của chúng tôi.</p>
-                                                
-                                                <p class="text-lg font-bold text-2xl leading-normal text-3xl mt-4 mb-3">1.1.5. Bước xử lý đất đơn giản</p>
+
+                                                <p
+                                                    class="text-lg font-bold text-2xl leading-normal text-3xl mt-4 mb-3 max-w-full">
+                                                    1.1.5. Bước xử lý đất đơn giản</p>
                                             </div>
-                                
-                                            <ul class="list-disc ml-5 mt-4 mb-4">
-                                                <li class="mb-2">Bước 1</li>
-                                                <li class="mb-2">Bước 2</li>
-                                                <li class="mb-2">Bước 3</li>
-                                                <li class="mb-2">Bước 4</li>
-                                                <li class="mb-2">Bước 5</li>
+
+                                            <ul class="list-disc ml-5 mt-4 mb-4 max-w-full w-570">
+                                                <li class="mb-2 max-w-full">Bước 1</li>
+                                                <li class="mb-2 max-w-full">Bước 2</li>
+                                                <li class="mb-2 max-w-full">Bước 3</li>
+                                                <li class="mb-2 max-w-full">Bước 4</li>
+                                                <li class="mb-2 max-w-full">Bước 5</li>
                                             </ul>
-                                
-                                            <p class="text-lg font-bold text-2xl leading-normal text-3xl mb-3">2. Quy trình trồng</p>
-                                
-                                            <p>Để hiểu rõ hơn chất lượng sản phẩm Cà chua hữu cơ của Nông Thảo mời bạn đọc tìm hiểu thêm về quy trình
+
+                                            <p
+                                                class="text-lg font-bold text-2xl leading-normal text-3xl mb-3 max-w-full w-570">
+                                                2. Quy trình trồng</p>
+
+                                            <p class="max-w-full w-570">Để hiểu rõ hơn chất lượng sản phẩm Cà chua hữu
+                                                cơ của Nông Thảo mời bạn đọc tìm hiểu thêm về quy trình
                                                 trồng và thu
                                                 hoạch theo tiêu chuẩn VietGap của chúng tôi.</p>
-                                
-                                            <p>Để hiểu rõ hơn chất lượng sản phẩm Cà chua hữu cơ của Nông Thảo mời bạn đọc tìm hiểu thêm về quy trình
+
+                                            <p class="max-w-full w-570">Để hiểu rõ hơn chất lượng sản phẩm Cà chua hữu
+                                                cơ của Nông Thảo mời bạn đọc tìm hiểu thêm về quy trình
                                                 trồng và thu
                                                 hoạch theo tiêu chuẩn VietGap của chúng tôi.</p>
-                                
-                                            <div class="group__coment flex justify-between border-b border-black-opacity border-t border-black-opacity pt-3 pb-3 mt-5 mb-5">
-                                                <div class="group__coment--1 flex">
+
+                                            <div
+                                                class="group__coment flex justify-between border-b border-black-opacity border-t border-black-opacity pt-3 pb-3 mt-5 mb-5 max-w-full w-570">
+                                                <div class="group__coment--1 flex max-w-full">
                                                     <p class="mr-3">06</p>
                                                     <p>bình luận</p>
                                                 </div>
-                                
-                                                <div class="group__coment--2 w-2/3 flex justify-end">
+
+                                                <div class="group__coment--2 w-2/3 flex justify-end max-w-full">
                                                     <div>chia sẻ ngay</div>
                                                     <img src="assets/images/face.png" alt="" class="w-17 h-17">
                                                     <img src="assets/images/in.png" alt="" class="w-17 h-17">
                                                     <img src="assets/images/twi.png" alt="" class="w-17 h-17">
                                                 </div>
                                             </div>
-                                
-                                            <div class="comment__1 mb-5">
-                                                <p class="logo flex items-center mb-4">
+
+                                            <div class="comment__1 mb-5 max-w-full w-570">
+                                                <p class="logo flex items-center mb-4 max-w-full">
                                                     <img src="assets/images/k.png" alt="" class="w-38 h-38 mr-3">
-                                                    <p class="text-custom-green font-black">Vi khánh</p>
+                                                <p class="text-custom-green font-black">Vi khánh</p>
                                                 </p>
-                                
-                                                <p class="leading-normal">Thật là một bài viết quá hay về quy trình chăm sóc chanh tây. Mình tò mò không biết chi phí cho quá
+
+                                                <p class="leading-normal max-w-full">Thật là một bài viết quá hay về quy
+                                                    trình chăm sóc chanh tây. Mình tò mò không biết chi phí cho quá
                                                     trình này như thế
-                                                    nào, để làm hết 1ha thì bạn cần bao nhiêu nhân công và trong bao nhiêu ngày?</p>
-                                
-                                                <div class="flex items-center mt-5">
-                                                    <img src="assets/images/chat.png" alt="" class="w-17 h-17 mr-2">
+                                                    nào, để làm hết 1ha thì bạn cần bao nhiêu nhân công và trong bao
+                                                    nhiêu ngày?</p>
+
+                                                <div class="flex items-center mt-5 max-w-full">
+                                                    <img src="assets/images/chat.png" alt=""
+                                                        class="w-17 h-17 mr-2 max-w-full">
                                                     <p>Trả lời</p>
                                                 </div>
                                             </div>
 
-                                            <div class="comment__1 mb-5 border-l border-l-[1px] border-l-[#68C114] pl-4">
+                                            <div
+                                                class="comment__1 mb-5 border-l border-l-[1px] border-l-[#68C114] pl-4 max-w-full w-570">
+                                                <div class="logo flex items-center mb-4 max-w-full">
+                                                    <img src="assets/images/k.png" alt="" class="w-38 h-38 mr-3">
+                                                    <p class="text-custom-green font-black">Vi khánh</p>
+                                                </div>
+
+                                                <p class="max-w-full">Thật là một bài viết quá hay về quy trình chăm sóc
+                                                    chanh tây. Mình tò mò không biết chi phí cho quá
+                                                    trình này như thế
+                                                    nào, để làm hết 1ha thì bạn cần bao nhiêu nhân công và trong bao
+                                                    nhiêu ngày?</p>
+
+                                                <div class="flex items-center mt-5">
+                                                    <img src="assets/images/chat.png" alt=""
+                                                        class="w-17 h-17 mr-2 max-w-full">
+                                                    <p>Trả lời</p>
+                                                </div>
+                                            </div>
+
+                                            <div
+                                                class="comment__1 mb-5 border-l border-l-[1px] border-l-[#68C114] pl-4 max-w-full w-570">
                                                 <div class="logo flex items-center mb-4">
                                                     <img src="assets/images/k.png" alt="" class="w-38 h-38 mr-3">
                                                     <p class="text-custom-green font-black">Vi khánh</p>
                                                 </div>
-                                            
-                                                <p>Thật là một bài viết quá hay về quy trình chăm sóc chanh tây. Mình tò mò không biết chi phí cho quá
+
+                                                <p>Thật là một bài viết quá hay về quy trình chăm sóc chanh tây. Mình tò
+                                                    mò không biết chi phí cho quá
                                                     trình này như thế
-                                                    nào, để làm hết 1ha thì bạn cần bao nhiêu nhân công và trong bao nhiêu ngày?</p>
-                                            
+                                                    nào, để làm hết 1ha thì bạn cần bao nhiêu nhân công và trong bao
+                                                    nhiêu ngày?</p>
+
                                                 <div class="flex items-center mt-5">
                                                     <img src="assets/images/chat.png" alt="" class="w-17 h-17 mr-2">
                                                     <p>Trả lời</p>
                                                 </div>
                                             </div>
 
-                                            <div class="comment__1 mb-5 border-l border-l-[1px] border-l-[#68C114] pl-4">
+                                            <div
+                                                class="comment__1 mb-5 border-l border-l-[1px] border-l-[#68C114] pl-4 max-w-full w-570">
                                                 <div class="logo flex items-center mb-4">
                                                     <img src="assets/images/k.png" alt="" class="w-38 h-38 mr-3">
                                                     <p class="text-custom-green font-black">Vi khánh</p>
                                                 </div>
-                                            
-                                                <p>Thật là một bài viết quá hay về quy trình chăm sóc chanh tây. Mình tò mò không biết chi phí cho quá
+
+                                                <p>Thật là một bài viết quá hay về quy trình chăm sóc chanh tây. Mình tò
+                                                    mò không biết chi phí cho quá
                                                     trình này như thế
-                                                    nào, để làm hết 1ha thì bạn cần bao nhiêu nhân công và trong bao nhiêu ngày?</p>
-                                            
-                                                <div class="flex items-center mt-5">
+                                                    nào, để làm hết 1ha thì bạn cần bao nhiêu nhân công và trong bao
+                                                    nhiêu ngày?</p>
+
+                                                <div class="flex items-center mt-5 max-w-full">
                                                     <img src="assets/images/chat.png" alt="" class="w-17 h-17 mr-2">
                                                     <p>Trả lời</p>
                                                 </div>
                                             </div>
 
-                                            <div class="comment__1 mb-5 border-l border-l-[1px] border-l-[#68C114] pl-4">
-                                                <div class="logo flex items-center mb-4">
-                                                    <img src="assets/images/k.png" alt="" class="w-38 h-38 mr-3">
-                                                    <p class="text-custom-green font-black">Vi khánh</p>
-                                                </div>
-                                            
-                                                <p>Thật là một bài viết quá hay về quy trình chăm sóc chanh tây. Mình tò mò không biết chi phí cho quá
-                                                    trình này như thế
-                                                    nào, để làm hết 1ha thì bạn cần bao nhiêu nhân công và trong bao nhiêu ngày?</p>
-                                            
-                                                <div class="flex items-center mt-5">
-                                                    <img src="assets/images/chat.png" alt="" class="w-17 h-17 mr-2">
-                                                    <p>Trả lời</p>
-                                                </div>
-                                            </div>
-
-                                            <div class="w-[568px] h-[407px] bg-custom-rgba text-[21px] p-4">
-                                                <p class="text-[#4F4F4F] font-nunito text-[21px] font-bold mb-3">Để lại bình luận của bạn</p>
-                                                <p class="w-[515px] text-[#4F4F4F] text-justify">Địa chỉ email của bạn sẽ không được công bố. Các trường bắt buộc được đánh dấu *</p>
-                                                <div class="bg-white-500 w-[515px] h-[130px] bg-[#fff] mt-6 p-4 font-normal font-nunito">
+                                            <div
+                                                class="w-[568px] h-[407px] bg-custom-rgba text-[21px] p-4 max-w-full w-570 sm:w-[270px]">
+                                                <p class="text-[#4F4F4F] font-nunito text-[21px] font-bold mb-3">Để lại
+                                                    bình luận của bạn</p>
+                                                <p
+                                                    class="w-[515px] text-[#4F4F4F] text-justify sm:w-[240px] sm:text-[13px]">
+                                                    Địa chỉ email của bạn sẽ không được công bố. Các trường bắt buộc
+                                                    được đánh dấu *</p>
+                                                <div
+                                                    class="bg-white-500 w-[515px] h-[130px] bg-[#fff] mt-6 p-4 font-normal font-nunito sm:w-[240px]">
                                                     <p class="text-[#C4C4C4] text-base">Bình luận</p>
                                                 </div>
 
-                                                <div class="mt-4 flex justify-between w-[515px]">
-                                                    <input type="text" placeholder="Họ và tên *" class="w-[250px] h-[45px]">
-                                                    <input type="email" placeholder="E-mail *" class="w-[250px] h-[45px]">
+                                                <div
+                                                    class="mt-4 flex justify-between w-[515px] max-w-full sm:w-[270px] sm:flex sm:flex-col">
+                                                    <input type="text" placeholder="Họ và tên *"
+                                                        class="w-[250px] h-[45px] sm:w-[240px]">
+                                                    <input type="email" placeholder="E-mail *"
+                                                        class="w-[250px] h-[45px] sm:w-[240px] mt-3">
                                                 </div>
 
-                                                <button class="text-white mt-5 w-[515px] h-[43px] bg-[#68C114] rounded-sm">Gửi bình luận</button>
+                                                <button
+                                                    class="text-white mt-5 w-[515px] h-[43px] bg-[#68C114] rounded-sm max-w-full sm:mt-14">Gửi
+                                                    bình luận</button>
                                             </div>
                                         </div>
                                     </div>
@@ -244,149 +365,292 @@
                             </div>
 
 
-                            <div class="page__2 max-w-300 w-300 text-center ml-9">
-                                <div class="page__2--first flex justify-between">
+                            <div class="page__2 max-w-full w-300 w-300 text-center ml-9">
+                                <div
+                                    class="page__2--first flex justify-between max-w-full sm:ml-[-40px] sm:w-[270px] mt-4">
                                     <div class="page__2--box--1 w-72 h-1 bg-custom-green mb-4 rounded-custom-10">
-                            
+
                                     </div>
-                            
-                                    <div class="page__2--box--2 w-217 h-1 bg-[#EAEAEA] h-[0.521px] bg-[#EAEAEA]">
-                            
+
+                                    <div
+                                        class="page__2--box--2 w-217 h-1 bg-[#EAEAEA] h-[0.521px] bg-[#EAEAEA] max-w-full">
+
                                     </div>
                                 </div>
-                            
-                                <div class="page__2--content">
-                                    <p class="bg-custom-rgba p-4  mb-4 uppercase font-normal text-custom-size font-nunito text-custom-color">Nông
+
+                                <div
+                                    class="page__2--content max-w-full w-300 sm:w-[300px] sm:ml-auto sm:ml-[-52px] sm:mt-[78px]">
+                                    <p
+                                        class="bg-custom-rgba p-4  mb-4 uppercase font-normal text-custom-size font-nunito text-custom-color">
+                                        Nông
                                         nghiệp sạch</p>
                                     <p
-                                        class="p-4 mb-4 w-300 border-custom border-custom-rgba uppercase font-normal text-custom-size font-nunito text-custom-color">
+                                        class="p-4 mb-4 max-w-300 border-custom border-custom-rgba uppercase font-normal text-custom-size font-nunito text-custom-color">
                                         Thảo dược</p>
                                     <p
-                                        class="p-4 mb-4 w-300 border-custom border-custom-rgba uppercase font-normal text-custom-size font-nunito text-custom-color">
+                                        class="p-4 mb-4 max-w-300 border-custom border-custom-rgba uppercase font-normal text-custom-size font-nunito text-custom-color">
                                         Mẹo vặt</p>
                                     <p
-                                        class="p-4 mb-4 w-300 border-custom border-custom-rgba uppercase font-normal text-custom-size font-nunito text-custom-color">
+                                        class="p-4 mb-4 max-w-300 border-custom border-custom-rgba uppercase font-normal text-custom-size font-nunito text-custom-color">
                                         con tự học</p>
                                 </div>
-                            
-                                <div class="page__2--first flex justify-between">
+
+                                <div class="page__2--first flex justify-between max-w-full sm:w-[270px] sm:ml-[-40px]">
                                     <div class="page__2--box--1 w-72 h-1 bg-custom-green mb-4 rounded-custom-10">
-                                
+
                                     </div>
-                                
+
                                     <div class="page__2--box--2 w-217 h-1 bg-[#EAEAEA] h-[0.521px] bg-[#EAEAEA]">
-                                
+
                                     </div>
                                 </div>
-                            
-                                <div class="page__2--post ">
+
+                                <div class="page__2--post max-w-full sm:w-[300px] sm:ml-[-45px]">
                                     <div class="flex items-center gap-2 mt-8">
                                         <div class="page__2--tree">
                                             <img src="assets/images/tree.png" alt="" class="w-30">
                                         </div>
-                                        
-                                        <p class="text-gray-800 text-center font-nunito text-21px font-bold leading-normal">BÀI VIẾT HAY</p>
+
+                                        <p
+                                            class="text-gray-800 text-center font-nunito text-21px font-bold leading-normal">
+                                            BÀI VIẾT HAY</p>
                                     </div>
 
-                                    <div class="flex gap-4 mb-9 mt-7">
-                                        <img src="assets/images/person-1.png" alt="" class="w-custom-width h-custom-height">
-                                        <p class="text-custom-gray font-nunito text-16px font-normal leading-[22.576px] w-custom-164 text-left">Nông Thảo đã trồng và thu hoạch vườn cà chua như thế nào?</p>
+                                    <div class="flex gap-4 mb-9 mt-7 max-w-full">
+                                        <img src="assets/images/person-1.png" alt=""
+                                            class="w-custom-width h-custom-height max-w-full">
+                                        <p
+                                            class="text-custom-gray font-nunito text-16px font-normal leading-[22.576px] w-custom-164 text-left max-w-full">
+                                            Nông Thảo đã trồng và thu hoạch vườn cà chua như thế nào?</p>
                                     </div>
 
-                                    <div class="flex gap-4 mb-9">
-                                        <img src="assets/images/person-2.png" alt="" class="w-custom-width h-custom-height">
-                                        <p class="text-custom-gray font-nunito text-16px font-normal leading-[22.576px] w-custom-164 text-left">Nông Thảo đã
+                                    <div class="flex gap-4 mb-9 max-w-full">
+                                        <img src="assets/images/person-2.png" alt=""
+                                            class="w-custom-width h-custom-height max-w-full">
+                                        <p
+                                            class="text-custom-gray font-nunito text-16px font-normal leading-[22.576px] w-custom-164 text-left">
+                                            Nông Thảo đã
                                             trồng và thu hoạch vườn cà chua như thế nào?</p>
                                     </div>
 
-                                    <div class="flex gap-4 mb-9">
-                                        <img src="assets/images/person-3.png" alt="" class="w-custom-width h-custom-height">
-                                        <p class="text-custom-gray font-nunito text-16px font-normal leading-[22.576px] w-custom-164 text-left">Nông Thảo đã
+                                    <div class="flex gap-4 mb-9 max-w-full">
+                                        <img src="assets/images/person-3.png" alt=""
+                                            class="w-custom-width h-custom-height max-w-full">
+                                        <p
+                                            class="text-custom-gray font-nunito text-16px font-normal leading-[22.576px] w-custom-164 text-left max-w-full">
+                                            Nông Thảo đã
                                             trồng và thu hoạch vườn cà chua như thế nào?</p>
                                     </div>
 
-                                    <div class="flex gap-4 mb-9">
-                                        <img src="assets/images/person-4.png" alt="" class="w-custom-width h-custom-height">
-                                        <p class="text-custom-gray font-nunito text-16px font-normal leading-[22.576px] w-custom-164 text-left">Nông Thảo đã
+                                    <div class="flex gap-4 mb-9 max-w-full">
+                                        <img src="assets/images/person-4.png" alt=""
+                                            class="w-custom-width h-custom-height max-w-full">
+                                        <p
+                                            class="text-custom-gray font-nunito text-16px font-normal leading-[22.576px] w-custom-164 text-left max-w-full">
+                                            Nông Thảo đã
                                             trồng và thu hoạch vườn cà chua như thế nào?</p>
                                     </div>
 
-                                    <div class="flex gap-4 mb-9">
-                                        <img src="assets/images/person-5.png" alt="" class="w-custom-width h-custom-height">
-                                        <p class="text-custom-gray font-nunito text-16px font-normal leading-[22.576px] w-custom-164 text-left">Nông Thảo đã
+                                    <div class="flex gap-4 mb-9 max-w-full">
+                                        <img src="assets/images/person-5.png" alt=""
+                                            class="w-custom-width h-custom-height">
+                                        <p
+                                            class="text-custom-gray font-nunito text-16px font-normal leading-[22.576px] w-custom-164 text-left max-w-full">
+                                            Nông Thảo đã
                                             trồng và thu hoạch vườn cà chua như thế nào?</p>
                                     </div>
 
                                     <!-- <div class="w-300 h-1 bg-gray-200"></div> -->
                                 </div>
 
-                                <div class="page__2--first flex justify-between">
+                                <div class="page__2--first flex justify-between max-w-full">
                                     <div class="page__2--box--1 w-72 h-1 bg-custom-green mb-4 rounded-custom-10">
-                                
+
                                     </div>
-                                
+
                                     <div class="page__2--box--2 w-217 h-1 bg-[#EAEAEA] h-[0.521px]">
-                                
+
                                     </div>
                                 </div>
 
-                                <div class="page__2--post ">
+                                <div class="page__2--post max-w-full sm:ml-[-45px]">
                                     <div class="flex items-center gap-2 mt-8">
                                         <div class="page__2--tree">
                                             <img src="assets/images/tree.png" alt="" class="w-30">
                                         </div>
-                                
-                                        <p class="text-gray-800 text-center font-nunito text-21px font-bold leading-normal">BÀI VIẾT HAY</p>
+
+                                        <p
+                                            class="text-gray-800 text-center font-nunito text-21px font-bold leading-normal">
+                                            BÀI VIẾT HAY</p>
                                     </div>
-                                
+
                                     <div class="flex gap-4 mb-9 mt-7">
-                                        <img src="assets/images/person-1.png" alt="" class="w-custom-width h-custom-height">
-                                        <p class="text-custom-gray font-nunito text-16px font-normal leading-[22.576px] w-custom-164 text-left">Nông
+                                        <img src="assets/images/person-1.png" alt=""
+                                            class="w-custom-width h-custom-height">
+                                        <p
+                                            class="text-custom-gray font-nunito text-16px font-normal leading-[22.576px] w-custom-164 text-left">
+                                            Nông
                                             Thảo đã trồng và thu hoạch vườn cà chua như thế nào?</p>
                                     </div>
-                                
+
                                     <div class="flex gap-4 mb-9">
-                                        <img src="assets/images/person-2.png" alt="" class="w-custom-width h-custom-height">
-                                        <p class="text-custom-gray font-nunito text-16px font-normal leading-[22.576px] w-custom-164 text-left">Nông
+                                        <img src="assets/images/person-2.png" alt=""
+                                            class="w-custom-width h-custom-height">
+                                        <p
+                                            class="text-custom-gray font-nunito text-16px font-normal leading-[22.576px] w-custom-164 text-left">
+                                            Nông
                                             Thảo đã
                                             trồng và thu hoạch vườn cà chua như thế nào?</p>
                                     </div>
-                                
+
                                     <div class="flex gap-4 mb-9">
-                                        <img src="assets/images/person-3.png" alt="" class="w-custom-width h-custom-height">
-                                        <p class="text-custom-gray font-nunito text-16px font-normal leading-[22.576px] w-custom-164 text-left">Nông
+                                        <img src="assets/images/person-3.png" alt=""
+                                            class="w-custom-width h-custom-height">
+                                        <p
+                                            class="text-custom-gray font-nunito text-16px font-normal leading-[22.576px] w-custom-164 text-left">
+                                            Nông
                                             Thảo đã
                                             trồng và thu hoạch vườn cà chua như thế nào?</p>
                                     </div>
-                                
+
                                     <div class="flex gap-4 mb-9">
-                                        <img src="assets/images/person-4.png" alt="" class="w-custom-width h-custom-height">
-                                        <p class="text-custom-gray font-nunito text-16px font-normal leading-[22.576px] w-custom-164 text-left">Nông
+                                        <img src="assets/images/person-4.png" alt=""
+                                            class="w-custom-width h-custom-height">
+                                        <p
+                                            class="text-custom-gray font-nunito text-16px font-normal leading-[22.576px] w-custom-164 text-left">
+                                            Nông
                                             Thảo đã
                                             trồng và thu hoạch vườn cà chua như thế nào?</p>
                                     </div>
-                                
+
                                     <div class="flex gap-4 mb-4">
-                                        <img src="assets/images/person-5.png" alt="" class="w-custom-width h-custom-height">
-                                        <p class="text-custom-gray font-nunito text-16px font-normal leading-[22.576px] w-custom-164 text-left">Nông
+                                        <img src="assets/images/person-5.png" alt=""
+                                            class="w-custom-width h-custom-height">
+                                        <p
+                                            class="text-custom-gray font-nunito text-16px font-normal leading-[22.576px] w-custom-164 text-left">
+                                            Nông
                                             Thảo đã
                                             trồng và thu hoạch vườn cà chua như thế nào?</p>
                                     </div>
-                                
+
                                     <div class="w-300 h-custom-0.521 bg-gray-200"></div>
                                 </div>
 
-                                <img src="assets/images/vihonda.png" alt="" class="w-[301px] h-[597px] mt-7">
-                                <img src="assets/images/vhonda2.png" alt="" class="w-[301px] h-[597px] mt-7">
+                                <img src="assets/images/vihonda.png" alt=""
+                                    class="w-[301px] h-[597px] mt-7 sm:ml-[-50px]">
+                                <img src="assets/images/vhonda2.png" alt=""
+                                    class="w-[301px] h-[597px] mt-7 sm:ml-[-50px]">
                             </div>
 
                         </div>
-                        
-                    </div> 
+
+                    </div>
                 </div>
             </div>
+            <footer class="w-full bg-[#356C07] font-nunito mt-[60px]">
+
+                <div class="flex max-h-60">
+                    <div>
+                        <img class="img-style" src="./assets/images/footer-1.png" alt="">
+                    </div>
+                    <div>
+                        <img class="img-style" src="./assets/images/footer-2.png" alt="">
+                    </div>
+                    <div>
+                        <img class="img-style" src="./assets/images/footer-3.png" alt="">
+                    </div>
+                    <div>
+                        <img class="img-style sm:hidden" src="./assets/images/footer-4.png" alt="">
+                    </div>
+                    <div>
+                        <img class="img-style sm:hidden" src="./assets/images/footer-5.png" alt="">
+                    </div>
+                    <div>
+                        <img class="img-style sm:hidden" src="./assets/images/footer-2.png" alt="">
+                    </div>
+                    <div>
+                        <img class="img-style sm:hidden" src="./assets/images/footer-4.png" alt="">
+                    </div>
+                    <div>
+                        <img class="img-style sm:hidden" src="./assets/images/footer-6.png" alt="">
+                    </div>
+                </div>
+                <div
+                    class="container mt-10 flex justify-between max-w-6xl text-white py-5 sm:flex sm:flex-col sm:px-6 sm:gap-[15px] mx-auto">
+                    <div class="max-w-sm">
+                        <div>
+                            <img class="mix-blend-color-dodge" src="./assets/images/footer.png" alt="">
+                        </div>
+                        <p class="mt-6 text-white">MST: 012345678910 - Ngày cấp: 10/02/2022 <br>
+                            Nơi cấp: Sở Kế hoạch & Đầu tư TP Hà Nội</p>
+                        <div class="flex gap-4 mt-6">
+                            Liên kết
+                            <img class="w-6 h-6 rounded-full" src="./assets/images/shopee.png" alt="">
+                            <img class="w-6 h-6 rounded-full" src="./assets/images/tiki.png" alt="">
+                            <img class="w-6 h-6 rounded-full" src="./assets/images/lazada.png" alt="">
+                            <img class="w-6 h-6 rounded-full" src="./assets/images/facebook.png" alt="">
+                            <img class="w-6 h-6 rounded-full" src="./assets/images/in.png" alt="">
+                            <img class="w-6 h-6 rounded-full" src="./assets/images/tiktok.png" alt="">
+                        </div>
+                    </div>
+                    <div class="max-w-[248px]  sm:max-w-full sm:border-t-2 sm:border-b-2 sm:py-3">
+                        <h4>Liên Hệ</h4>
+                        <ul class="mt-8 flex flex-col gap-3 sm:hidden">
+                            <li class="flex items-start gap-3">
+                                <img src="./assets/images/location.svg" alt="">Tầng 4-5-6, Tòa nhà Capital Place, số 29
+                                đường
+                                Liễu Giai, P.Ngọc Khánh, Q.Ba
+                                Đình, Hà Nội
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <img src="./assets/images/phone.svg" alt="">0969.71.6848
+                            </li>
+                            <li class="flex items-start gap-3">
+                                <img src="./assets/images/mail.svg" alt="">hotro@nongthao.vn
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="max-w-xs sm:border-b-2 sm:py-3">
+                        <h4>Thông tin</h4>
+                        <ul class="list-disc ml-4 mt-4 flex flex-col gap-3 sm:hidden">
+                            <li><a href="">Giới thiệu Nông Thảo</a></li>
+                            <li><a href="">Điều khoản</a></li>
+                            <li><a href="">Chính sách bảo mật</a></li>
+                            <li><a href="">Hướng dẫn mua hàng</a></li>
+                            <li><a href="">Trả hàng & hoàn tiền</a></li>
+                            <li><a href="">Nông Thảo Blogs</a></li>
+                        </ul>
+                    </div>
+                    <div class="max-w-[270px] sm:max-w-full">
+                        <h4>Đăng ký nhận tin</h4>
+                        <p class="mt-6 text-white">Vui lòng nhập email để nhận thêm nhiều ưu đãi từ Nông Thảo</p>
+                        <div class="mt-2 flex">
+                            <input class="px-3 py-2 sm:w-full" placeholder="Email của bạn..." type="text"><span
+                                class="bg-[#68C114] max-w-[47px] max-h-[45px] flex items-center justify-center py-3 px-3">
+                                <div>
+                                    <img class="" src="./assets/images/send.svg" alt="">
+                                </div>
+                            </span>
+                        </div>
+                        <div class="flex justify-between mt-8">
+                            <div>
+                                <img class="img-style" src="./assets/images/bocongthuong.png" alt="">
+                            </div>
+                            <div>
+                                <img class="img-style" src="./assets/images/dmca.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center py-3 opacity-50 bg-gray-50">
+                    <p class="text-center text-sm">© 2022 - Bản quyền thuộc về Công ty TNHH Nông Thảo.</p>
+                </div>
+            </footer>
         </div>
 
     </div>
+
+    <script src="./assets/js/toggle.js"></script>
 </body>
+
 </html>
