@@ -13,7 +13,7 @@ function styles() {
       tailwindcss('./tailwind.config.js'),  // Áp dụng Tailwind CSS
       autoprefixer()  // Tự động thêm tiền tố cho CSS
     ]))
-    .pipe(gulp.dest('dist/css'));  // Lưu file styles.css
+    .pipe(gulp.dest('assets/css'));  // Lưu file styles.css
 }
 
 // Theo dõi sự thay đổi
